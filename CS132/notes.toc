@@ -1,0 +1,269 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}C Programming}{4}{section.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1}First programme}{4}{subsection.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2}Data types}{4}{subsection.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3}Operators}{4}{subsection.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4}Loops}{5}{subsection.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.4.1}If statement}{5}{subsubsection.1.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.4.2}FOR loop (Bounded Iteration)}{5}{subsubsection.1.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.4.3}WHILE and DO-WHILE}{5}{subsubsection.1.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Number Conversions}{5}{section.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}Binary}{5}{subsection.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.1}Binary to Octal}{5}{subsubsection.2.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.2}Binary to Hex}{6}{subsubsection.2.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.3}Signed Magnitude of Binary}{6}{subsubsection.2.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.4}Two's Complement Representation of Binary}{6}{subsubsection.2.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.5}Fixed Point Representation of Binary}{7}{subsubsection.2.1.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.6}Floating Point Representation}{7}{subsubsection.2.1.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.7}IEEE Floating Point}{8}{subsubsection.2.1.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Logic and circuits}{8}{section.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Simplifying Circuits}{8}{subsection.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Karnaugh Maps (K-maps)}{8}{subsection.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3}Bit Adder}{9}{subsection.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.1}$N$-bit adder}{10}{subsubsection.3.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.2}Representing negatives}{10}{subsubsection.3.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4}Active and Inactive states}{11}{subsection.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.4.1}Active High}{11}{subsubsection.3.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.4.2}Active low}{11}{subsubsection.3.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5}Decoder}{11}{subsection.3.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6}Encoder}{12}{subsection.3.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.7}Multiplexer}{12}{subsection.3.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.8}De-Multiplexer}{12}{subsection.3.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.9}Sequential Logic}{12}{subsection.3.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.9.1}Flip-Flops}{13}{subsubsection.3.9.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.10}D-Type Latch}{13}{subsection.3.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.11}Clocked Flip-Flops}{14}{subsection.3.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.12}N-bit Register}{14}{subsection.3.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.13}N-bit Shift Register}{15}{subsection.3.13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.14}N-bit Counter}{15}{subsection.3.14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.14.1}First run}{15}{subsubsection.3.14.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.14.2}Second run}{15}{subsubsection.3.14.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.14.3}Third Run}{15}{subsubsection.3.14.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.15}Three-state Logic}{15}{subsection.3.15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.16}Three-state Buses}{16}{subsection.3.16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.17}N-bit Three-state Buses}{16}{subsection.3.17}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.18}Properties of Logic Gates}{16}{subsection.3.18}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.19}Propagation Delay}{17}{subsection.3.19}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Assembler}{17}{section.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}Microprocessor Fundamentals}{17}{subsection.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.1}Central Processing Unit (CPU)}{17}{subsubsection.4.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.2}Fetch-Decode-Execute Cycle}{18}{subsubsection.4.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2}68008 Architecture}{18}{subsection.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.1}Data Register}{18}{subsubsection.4.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.2}Status Register}{18}{subsubsection.4.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.3}Address Register}{18}{subsubsection.4.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.4}Stack Pointer}{18}{subsubsection.4.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.5}Program Counter}{19}{subsubsection.4.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3}Register Transfer Language}{19}{subsection.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4}Instruction Cycle}{19}{subsection.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.4.1}Fetching}{19}{subsubsection.4.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.4.2}Decode}{20}{subsubsection.4.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5}Assembly Language}{20}{subsection.4.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.5.1}Assembler format}{20}{subsubsection.4.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.6}68008 Instructions}{20}{subsection.4.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.6.1}Data Movement}{21}{subsubsection.4.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.6.2}Arithmetic Instructions}{21}{subsubsection.4.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.6.3}Logical Instructions}{22}{subsubsection.4.6.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.6.4}Subroutines}{23}{subsubsection.4.6.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.6.5}Stacks}{23}{subsubsection.4.6.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.6.6}Addressing Modes}{23}{subsubsection.4.6.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Memory Systems}{23}{section.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1}Memory Hierarchy}{23}{subsection.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.1.1}Designer's Dilemma}{23}{subsubsection.5.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2}Semiconductor Memory Types}{24}{subsection.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3}Cache Memory}{24}{subsection.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.3.1}Concepts}{25}{subsubsection.5.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.3.2}Types of Cache Miss}{25}{subsubsection.5.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.3.3}Measuring Cache performance}{25}{subsubsection.5.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.3.4}Hierarchy in Cache}{25}{subsubsection.5.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4}Moore's Law}{25}{subsection.5.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.5}Memory Cell Organisation}{26}{subsection.5.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.5.1}SRAM}{26}{subsubsection.5.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.5.2}DRAM}{26}{subsubsection.5.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.5.3}Comparing DRAM and SRAM}{27}{subsubsection.5.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.5.4}Organisation of a Memory Chip}{27}{subsubsection.5.5.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.6}Error Detection and Correction}{27}{subsection.5.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.6.1}Detecting single and isolated errors}{28}{subsubsection.5.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.6.2}Parity}{28}{subsubsection.5.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.6.3}Burst Error}{28}{subsubsection.5.6.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.7}Common Memory Components}{28}{subsection.5.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.7.1}Hard Disks}{28}{subsubsection.5.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.7.2}Optical Disks}{28}{subsubsection.5.7.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}I/O Systems}{28}{section.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1}Memory Mapped I/O}{28}{subsection.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2}Synchronising with I/O devices - Polling}{29}{subsection.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.2.1}Polling and Busy-wait Polling}{29}{subsubsection.6.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.2.2}Advantages}{29}{subsubsection.6.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.2.3}Disadvantaging}{29}{subsubsection.6.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3}Synchronising with I/O devices - Handshaking}{29}{subsection.6.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.3.1}Unsynchronised}{29}{subsubsection.6.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.3.2}Open-ended handshaking}{30}{subsubsection.6.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.3.3}Closed-loop handshaking}{30}{subsubsection.6.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.3.4}Timing Diagram}{30}{subsubsection.6.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.4}Synchronising with I/O devices - Interrupts}{30}{subsection.6.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.4.1}Effect of an interrupt input}{30}{subsubsection.6.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.4.2}Interrupt Handling Sequence}{30}{subsubsection.6.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.4.3}Nested Interrupts}{31}{subsubsection.6.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.4.4}Interrupts for I/O Examples}{31}{subsubsection.6.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.4.5}Advantages of Interrupts}{31}{subsubsection.6.4.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.4.6}Disadvantages of Interrupts}{31}{subsubsection.6.4.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.5}Direct Memory Access (DMA)}{31}{subsection.6.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.5.1}DMA Operation}{31}{subsubsection.6.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.5.2}Modes of Operation}{32}{subsubsection.6.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}Processor Architecture}{32}{section.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1}Microprocessor Organisation}{32}{subsection.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {7.1.1}Mainstore and Instructions}{32}{subsubsection.7.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {7.1.2}Register}{32}{subsubsection.7.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {7.1.3}Arithmetic Logic Unit}{33}{subsubsection.7.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {7.1.4}Bus}{33}{subsubsection.7.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {7.1.5}Control Unit}{33}{subsubsection.7.1.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {7.1.6}Internal Organisation}{34}{subsubsection.7.1.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {7.1.7}Instructions and Control Signals}{35}{subsubsection.7.1.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.2}Macro and Micro Instructions}{36}{subsection.7.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {7.2.1}Fetch Macro Instructions}{36}{subsubsection.7.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {7.2.2}Assumptions}{37}{subsubsection.7.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3}Control Unit Design}{37}{subsection.7.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {7.3.1}Control Unit Tasks}{37}{subsubsection.7.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {7.3.2}Hardwired CU}{37}{subsubsection.7.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {7.3.3}Advantages of Hardwired CU}{38}{subsubsection.7.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {7.3.4}Disadvantages of Hardwired CU}{38}{subsubsection.7.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {7.3.5}Microprogrammed CU}{38}{subsubsection.7.3.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {7.3.6}Advantages of Microprogrammed CU}{39}{subsubsection.7.3.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {7.3.7}Disadvantages of Microprogrammed CU}{39}{subsubsection.7.3.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.4}How could we change our PATP?}{39}{subsection.7.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.5}RISC and CISC}{39}{subsection.7.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A}A detailed explanation of the recursive relationship}{39}{appendix.A}%

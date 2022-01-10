@@ -1,0 +1,134 @@
+\BOOKMARK [1][-]{section.1}{C Programming}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{First programme}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Data types}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Operators}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.4}{Loops}{section.1}% 5
+\BOOKMARK [3][-]{subsubsection.1.4.1}{If statement}{subsection.1.4}% 6
+\BOOKMARK [3][-]{subsubsection.1.4.2}{FOR loop \(Bounded Iteration\)}{subsection.1.4}% 7
+\BOOKMARK [3][-]{subsubsection.1.4.3}{WHILE and DO-WHILE}{subsection.1.4}% 8
+\BOOKMARK [1][-]{section.2}{Number Conversions}{}% 9
+\BOOKMARK [2][-]{subsection.2.1}{Binary}{section.2}% 10
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Binary to Octal}{subsection.2.1}% 11
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Binary to Hex}{subsection.2.1}% 12
+\BOOKMARK [3][-]{subsubsection.2.1.3}{Signed Magnitude of Binary}{subsection.2.1}% 13
+\BOOKMARK [3][-]{subsubsection.2.1.4}{Two's Complement Representation of Binary}{subsection.2.1}% 14
+\BOOKMARK [3][-]{subsubsection.2.1.5}{Fixed Point Representation of Binary}{subsection.2.1}% 15
+\BOOKMARK [3][-]{subsubsection.2.1.6}{Floating Point Representation}{subsection.2.1}% 16
+\BOOKMARK [3][-]{subsubsection.2.1.7}{IEEE Floating Point}{subsection.2.1}% 17
+\BOOKMARK [1][-]{section.3}{Logic and circuits}{}% 18
+\BOOKMARK [2][-]{subsection.3.1}{Simplifying Circuits}{section.3}% 19
+\BOOKMARK [2][-]{subsection.3.2}{Karnaugh Maps \(K-maps\)}{section.3}% 20
+\BOOKMARK [2][-]{subsection.3.3}{Bit Adder}{section.3}% 21
+\BOOKMARK [3][-]{subsubsection.3.3.1}{N-bit adder}{subsection.3.3}% 22
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Representing negatives}{subsection.3.3}% 23
+\BOOKMARK [2][-]{subsection.3.4}{Active and Inactive states}{section.3}% 24
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Active High}{subsection.3.4}% 25
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Active low}{subsection.3.4}% 26
+\BOOKMARK [2][-]{subsection.3.5}{Decoder}{section.3}% 27
+\BOOKMARK [2][-]{subsection.3.6}{Encoder}{section.3}% 28
+\BOOKMARK [2][-]{subsection.3.7}{Multiplexer}{section.3}% 29
+\BOOKMARK [2][-]{subsection.3.8}{De-Multiplexer}{section.3}% 30
+\BOOKMARK [2][-]{subsection.3.9}{Sequential Logic}{section.3}% 31
+\BOOKMARK [3][-]{subsubsection.3.9.1}{Flip-Flops}{subsection.3.9}% 32
+\BOOKMARK [2][-]{subsection.3.10}{D-Type Latch}{section.3}% 33
+\BOOKMARK [2][-]{subsection.3.11}{Clocked Flip-Flops}{section.3}% 34
+\BOOKMARK [2][-]{subsection.3.12}{N-bit Register}{section.3}% 35
+\BOOKMARK [2][-]{subsection.3.13}{N-bit Shift Register}{section.3}% 36
+\BOOKMARK [2][-]{subsection.3.14}{N-bit Counter}{section.3}% 37
+\BOOKMARK [3][-]{subsubsection.3.14.1}{First run}{subsection.3.14}% 38
+\BOOKMARK [3][-]{subsubsection.3.14.2}{Second run}{subsection.3.14}% 39
+\BOOKMARK [3][-]{subsubsection.3.14.3}{Third Run}{subsection.3.14}% 40
+\BOOKMARK [2][-]{subsection.3.15}{Three-state Logic}{section.3}% 41
+\BOOKMARK [2][-]{subsection.3.16}{Three-state Buses}{section.3}% 42
+\BOOKMARK [2][-]{subsection.3.17}{N-bit Three-state Buses}{section.3}% 43
+\BOOKMARK [2][-]{subsection.3.18}{Properties of Logic Gates}{section.3}% 44
+\BOOKMARK [2][-]{subsection.3.19}{Propagation Delay}{section.3}% 45
+\BOOKMARK [1][-]{section.4}{Assembler}{}% 46
+\BOOKMARK [2][-]{subsection.4.1}{Microprocessor Fundamentals}{section.4}% 47
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Central Processing Unit \(CPU\)}{subsection.4.1}% 48
+\BOOKMARK [3][-]{subsubsection.4.1.2}{Fetch-Decode-Execute Cycle}{subsection.4.1}% 49
+\BOOKMARK [2][-]{subsection.4.2}{68008 Architecture}{section.4}% 50
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Data Register}{subsection.4.2}% 51
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Status Register}{subsection.4.2}% 52
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Address Register}{subsection.4.2}% 53
+\BOOKMARK [3][-]{subsubsection.4.2.4}{Stack Pointer}{subsection.4.2}% 54
+\BOOKMARK [3][-]{subsubsection.4.2.5}{Program Counter}{subsection.4.2}% 55
+\BOOKMARK [2][-]{subsection.4.3}{Register Transfer Language}{section.4}% 56
+\BOOKMARK [2][-]{subsection.4.4}{Instruction Cycle}{section.4}% 57
+\BOOKMARK [3][-]{subsubsection.4.4.1}{Fetching}{subsection.4.4}% 58
+\BOOKMARK [3][-]{subsubsection.4.4.2}{Decode}{subsection.4.4}% 59
+\BOOKMARK [2][-]{subsection.4.5}{Assembly Language}{section.4}% 60
+\BOOKMARK [3][-]{subsubsection.4.5.1}{Assembler format}{subsection.4.5}% 61
+\BOOKMARK [2][-]{subsection.4.6}{68008 Instructions}{section.4}% 62
+\BOOKMARK [3][-]{subsubsection.4.6.1}{Data Movement}{subsection.4.6}% 63
+\BOOKMARK [3][-]{subsubsection.4.6.2}{Arithmetic Instructions}{subsection.4.6}% 64
+\BOOKMARK [3][-]{subsubsection.4.6.3}{Logical Instructions}{subsection.4.6}% 65
+\BOOKMARK [3][-]{subsubsection.4.6.4}{Subroutines}{subsection.4.6}% 66
+\BOOKMARK [3][-]{subsubsection.4.6.5}{Stacks}{subsection.4.6}% 67
+\BOOKMARK [3][-]{subsubsection.4.6.6}{Addressing Modes}{subsection.4.6}% 68
+\BOOKMARK [1][-]{section.5}{Memory Systems}{}% 69
+\BOOKMARK [2][-]{subsection.5.1}{Memory Hierarchy}{section.5}% 70
+\BOOKMARK [3][-]{subsubsection.5.1.1}{Designer's Dilemma}{subsection.5.1}% 71
+\BOOKMARK [2][-]{subsection.5.2}{Semiconductor Memory Types}{section.5}% 72
+\BOOKMARK [2][-]{subsection.5.3}{Cache Memory}{section.5}% 73
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Concepts}{subsection.5.3}% 74
+\BOOKMARK [3][-]{subsubsection.5.3.2}{Types of Cache Miss}{subsection.5.3}% 75
+\BOOKMARK [3][-]{subsubsection.5.3.3}{Measuring Cache performance}{subsection.5.3}% 76
+\BOOKMARK [3][-]{subsubsection.5.3.4}{Hierarchy in Cache}{subsection.5.3}% 77
+\BOOKMARK [2][-]{subsection.5.4}{Moore's Law}{section.5}% 78
+\BOOKMARK [2][-]{subsection.5.5}{Memory Cell Organisation}{section.5}% 79
+\BOOKMARK [3][-]{subsubsection.5.5.1}{SRAM}{subsection.5.5}% 80
+\BOOKMARK [3][-]{subsubsection.5.5.2}{DRAM}{subsection.5.5}% 81
+\BOOKMARK [3][-]{subsubsection.5.5.3}{Comparing DRAM and SRAM}{subsection.5.5}% 82
+\BOOKMARK [3][-]{subsubsection.5.5.4}{Organisation of a Memory Chip}{subsection.5.5}% 83
+\BOOKMARK [2][-]{subsection.5.6}{Error Detection and Correction}{section.5}% 84
+\BOOKMARK [3][-]{subsubsection.5.6.1}{Detecting single and isolated errors}{subsection.5.6}% 85
+\BOOKMARK [3][-]{subsubsection.5.6.2}{Parity}{subsection.5.6}% 86
+\BOOKMARK [3][-]{subsubsection.5.6.3}{Burst Error}{subsection.5.6}% 87
+\BOOKMARK [2][-]{subsection.5.7}{Common Memory Components}{section.5}% 88
+\BOOKMARK [3][-]{subsubsection.5.7.1}{Hard Disks}{subsection.5.7}% 89
+\BOOKMARK [3][-]{subsubsection.5.7.2}{Optical Disks}{subsection.5.7}% 90
+\BOOKMARK [1][-]{section.6}{I/O Systems}{}% 91
+\BOOKMARK [2][-]{subsection.6.1}{Memory Mapped I/O}{section.6}% 92
+\BOOKMARK [2][-]{subsection.6.2}{Synchronising with I/O devices - Polling}{section.6}% 93
+\BOOKMARK [3][-]{subsubsection.6.2.1}{Polling and Busy-wait Polling}{subsection.6.2}% 94
+\BOOKMARK [3][-]{subsubsection.6.2.2}{Advantages}{subsection.6.2}% 95
+\BOOKMARK [3][-]{subsubsection.6.2.3}{Disadvantaging}{subsection.6.2}% 96
+\BOOKMARK [2][-]{subsection.6.3}{Synchronising with I/O devices - Handshaking}{section.6}% 97
+\BOOKMARK [3][-]{subsubsection.6.3.1}{Unsynchronised}{subsection.6.3}% 98
+\BOOKMARK [3][-]{subsubsection.6.3.2}{Open-ended handshaking}{subsection.6.3}% 99
+\BOOKMARK [3][-]{subsubsection.6.3.3}{Closed-loop handshaking}{subsection.6.3}% 100
+\BOOKMARK [3][-]{subsubsection.6.3.4}{Timing Diagram}{subsection.6.3}% 101
+\BOOKMARK [2][-]{subsection.6.4}{Synchronising with I/O devices - Interrupts}{section.6}% 102
+\BOOKMARK [3][-]{subsubsection.6.4.1}{Effect of an interrupt input}{subsection.6.4}% 103
+\BOOKMARK [3][-]{subsubsection.6.4.2}{Interrupt Handling Sequence}{subsection.6.4}% 104
+\BOOKMARK [3][-]{subsubsection.6.4.3}{Nested Interrupts}{subsection.6.4}% 105
+\BOOKMARK [3][-]{subsubsection.6.4.4}{Interrupts for I/O Examples}{subsection.6.4}% 106
+\BOOKMARK [3][-]{subsubsection.6.4.5}{Advantages of Interrupts}{subsection.6.4}% 107
+\BOOKMARK [3][-]{subsubsection.6.4.6}{Disadvantages of Interrupts}{subsection.6.4}% 108
+\BOOKMARK [2][-]{subsection.6.5}{Direct Memory Access \(DMA\)}{section.6}% 109
+\BOOKMARK [3][-]{subsubsection.6.5.1}{DMA Operation}{subsection.6.5}% 110
+\BOOKMARK [3][-]{subsubsection.6.5.2}{Modes of Operation}{subsection.6.5}% 111
+\BOOKMARK [1][-]{section.7}{Processor Architecture}{}% 112
+\BOOKMARK [2][-]{subsection.7.1}{Microprocessor Organisation}{section.7}% 113
+\BOOKMARK [3][-]{subsubsection.7.1.1}{Mainstore and Instructions}{subsection.7.1}% 114
+\BOOKMARK [3][-]{subsubsection.7.1.2}{Register}{subsection.7.1}% 115
+\BOOKMARK [3][-]{subsubsection.7.1.3}{Arithmetic Logic Unit}{subsection.7.1}% 116
+\BOOKMARK [3][-]{subsubsection.7.1.4}{Bus}{subsection.7.1}% 117
+\BOOKMARK [3][-]{subsubsection.7.1.5}{Control Unit}{subsection.7.1}% 118
+\BOOKMARK [3][-]{subsubsection.7.1.6}{Internal Organisation}{subsection.7.1}% 119
+\BOOKMARK [3][-]{subsubsection.7.1.7}{Instructions and Control Signals}{subsection.7.1}% 120
+\BOOKMARK [2][-]{subsection.7.2}{Macro and Micro Instructions}{section.7}% 121
+\BOOKMARK [3][-]{subsubsection.7.2.1}{Fetch Macro Instructions}{subsection.7.2}% 122
+\BOOKMARK [3][-]{subsubsection.7.2.2}{Assumptions}{subsection.7.2}% 123
+\BOOKMARK [2][-]{subsection.7.3}{Control Unit Design}{section.7}% 124
+\BOOKMARK [3][-]{subsubsection.7.3.1}{Control Unit Tasks}{subsection.7.3}% 125
+\BOOKMARK [3][-]{subsubsection.7.3.2}{Hardwired CU}{subsection.7.3}% 126
+\BOOKMARK [3][-]{subsubsection.7.3.3}{Advantages of Hardwired CU}{subsection.7.3}% 127
+\BOOKMARK [3][-]{subsubsection.7.3.4}{Disadvantages of Hardwired CU}{subsection.7.3}% 128
+\BOOKMARK [3][-]{subsubsection.7.3.5}{Microprogrammed CU}{subsection.7.3}% 129
+\BOOKMARK [3][-]{subsubsection.7.3.6}{Advantages of Microprogrammed CU}{subsection.7.3}% 130
+\BOOKMARK [3][-]{subsubsection.7.3.7}{Disadvantages of Microprogrammed CU}{subsection.7.3}% 131
+\BOOKMARK [2][-]{subsection.7.4}{How could we change our PATP?}{section.7}% 132
+\BOOKMARK [2][-]{subsection.7.5}{RISC and CISC}{section.7}% 133
+\BOOKMARK [1][-]{appendix.A}{A detailed explanation of the recursive relationship}{}% 134

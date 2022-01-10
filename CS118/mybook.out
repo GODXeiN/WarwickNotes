@@ -1,0 +1,68 @@
+\BOOKMARK [0][-]{chapter.1}{Definitions}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Base n counting}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Binary}{chapter.2}% 3
+\BOOKMARK [2][-]{subsection.2.1.1}{The connection between between Base 2 and Base 10}{section.2.1}% 4
+\BOOKMARK [2][-]{subsection.2.1.2}{Base n}{section.2.1}% 5
+\BOOKMARK [0][-]{chapter.3}{Understanding Java}{}% 6
+\BOOKMARK [1][-]{section.3.1}{Errors}{chapter.3}% 7
+\BOOKMARK [2][-]{subsection.3.1.1}{Syntax Error}{section.3.1}% 8
+\BOOKMARK [2][-]{subsection.3.1.2}{Runtime Error}{section.3.1}% 9
+\BOOKMARK [2][-]{subsection.3.1.3}{Logic Error}{section.3.1}% 10
+\BOOKMARK [1][-]{section.3.2}{Variables}{chapter.3}% 11
+\BOOKMARK [1][-]{section.3.3}{Taking in input from console}{chapter.3}% 12
+\BOOKMARK [1][-]{section.3.4}{Identifiers}{chapter.3}% 13
+\BOOKMARK [1][-]{section.3.5}{Variables and Data Types}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.6}{Math operators}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.7}{Number Literals}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.8}{Augmented Assignment Operators}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.9}{Increment and Decrement operators}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.10}{Numeric Type Conversions}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.11}{Software Development Process}{chapter.3}% 20
+\BOOKMARK [0][-]{chapter.4}{Selections}{}% 21
+\BOOKMARK [1][-]{section.4.1}{Boolean Data Types}{chapter.4}% 22
+\BOOKMARK [1][-]{section.4.2}{if Statements}{chapter.4}% 23
+\BOOKMARK [2][-]{subsection.4.2.1}{one-way if statements}{section.4.2}% 24
+\BOOKMARK [2][-]{subsection.4.2.2}{Two-Way if statements}{section.4.2}% 25
+\BOOKMARK [2][-]{subsection.4.2.3}{Nested and Multi-way if and if-else statements}{section.4.2}% 26
+\BOOKMARK [2][-]{subsection.4.2.4}{Common and crucial errors}{section.4.2}% 27
+\BOOKMARK [2][-]{subsection.4.2.5}{Random Number Generator}{section.4.2}% 28
+\BOOKMARK [2][-]{subsection.4.2.6}{Logical Operators}{section.4.2}% 29
+\BOOKMARK [2][-]{subsection.4.2.7}{switch Statements}{section.4.2}% 30
+\BOOKMARK [2][-]{subsection.4.2.8}{Conditional Operators}{section.4.2}% 31
+\BOOKMARK [2][-]{subsection.4.2.9}{Operator Precedence and Associativity}{section.4.2}% 32
+\BOOKMARK [2][-]{subsection.4.2.10}{Debugging}{section.4.2}% 33
+\BOOKMARK [1][-]{section.4.3}{Mathematical Functions, Characters, and String}{chapter.4}% 34
+\BOOKMARK [2][-]{subsection.4.3.1}{Mathematical Functions}{section.4.3}% 35
+\BOOKMARK [2][-]{subsection.4.3.2}{Data Type and Operations}{section.4.3}% 36
+\BOOKMARK [1][-]{section.4.4}{Arrays and Loops}{chapter.4}% 37
+\BOOKMARK [2][-]{subsection.4.4.1}{Bounded and Unbounded Repetition}{section.4.4}% 38
+\BOOKMARK [2][-]{subsection.4.4.2}{Break and Continue}{section.4.4}% 39
+\BOOKMARK [2][-]{subsection.4.4.3}{Arrays}{section.4.4}% 40
+\BOOKMARK [1][-]{section.4.5}{Methods}{chapter.4}% 41
+\BOOKMARK [2][-]{subsection.4.5.1}{The Main method}{section.4.5}% 42
+\BOOKMARK [2][-]{subsection.4.5.2}{Other Methods}{section.4.5}% 43
+\BOOKMARK [2][-]{subsection.4.5.3}{Advanced Methods}{section.4.5}% 44
+\BOOKMARK [2][-]{subsection.4.5.4}{Scope}{section.4.5}% 45
+\BOOKMARK [2][-]{subsection.4.5.5}{Recursion}{section.4.5}% 46
+\BOOKMARK [1][-]{section.4.6}{Objects}{chapter.4}% 47
+\BOOKMARK [2][-]{subsection.4.6.1}{Classes}{section.4.6}% 48
+\BOOKMARK [2][-]{subsection.4.6.2}{Alternative Way of Thinking}{section.4.6}% 49
+\BOOKMARK [2][-]{subsection.4.6.3}{Constructor methods}{section.4.6}% 50
+\BOOKMARK [2][-]{subsection.4.6.4}{Creating Objects}{section.4.6}% 51
+\BOOKMARK [2][-]{subsection.4.6.5}{Point Objects}{section.4.6}% 52
+\BOOKMARK [1][-]{section.4.7}{Modifiers}{chapter.4}% 53
+\BOOKMARK [2][-]{subsection.4.7.1}{Access Modifiers}{section.4.7}% 54
+\BOOKMARK [2][-]{subsection.4.7.2}{Class variables}{section.4.7}% 55
+\BOOKMARK [2][-]{subsection.4.7.3}{Static}{section.4.7}% 56
+\BOOKMARK [2][-]{subsection.4.7.4}{Enumeration}{section.4.7}% 57
+\BOOKMARK [1][-]{section.4.8}{Inheritance and Polymorphism}{chapter.4}% 58
+\BOOKMARK [2][-]{subsection.4.8.1}{Inheritance}{section.4.8}% 59
+\BOOKMARK [2][-]{subsection.4.8.2}{Polymorphism}{section.4.8}% 60
+\BOOKMARK [1][-]{section.4.9}{Abstract Classes and Inheritance}{chapter.4}% 61
+\BOOKMARK [2][-]{subsection.4.9.1}{Abstract Classes}{section.4.9}% 62
+\BOOKMARK [2][-]{subsection.4.9.2}{Multi-inheritance}{section.4.9}% 63
+\BOOKMARK [1][-]{section.4.10}{Exceptions}{chapter.4}% 64
+\BOOKMARK [2][-]{subsection.4.10.1}{Checked Exceptions}{section.4.10}% 65
+\BOOKMARK [2][-]{subsection.4.10.2}{Unchecked Exceptions}{section.4.10}% 66
+\BOOKMARK [2][-]{subsection.4.10.3}{Chained Exceptions}{section.4.10}% 67
+\BOOKMARK [1][-]{section.4.11}{Generics}{chapter.4}% 68
