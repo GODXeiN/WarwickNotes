@@ -233,6 +233,107 @@ For example, the game magic cookies utilises functional reactive programming to 
 	\item XMonad: Window manager
 	\item OS: Mirage (OCaml), House (Haskell) and more
 \end{itemize}
+\section{Basics of Haskell}
+\subsection{Modules}
+Haskell code is separated into files called modules. A module file always begin with
+\begin{lstlisting}[language = Haskell , caption={Module} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+module Whatever where
+...
+\end{lstlisting}
+Note that the filename ends with $.hs$, and is the same as the module name.
+\subsection{Imports}
+Similarly, you can import nearby modules. For example, for the file $foo.hs$ :
+\begin{lstlisting}[language = Haskell , caption={Import} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+module foo where
+double x = x * 2
+\end{lstlisting}
+And then in another file,
+\begin{lstlisting}[language = Haskell , caption={Import of foo} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+module bar where
+import Foo
+quadruple x = double (double x)
+\end{lstlisting}
+In the same way, libraries are imported as they are just functions. For example,
+\begin{lstlisting}[language = Haskell , caption={Library import} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+module Whatever where
+import Data.Char
+swapCase c =	 if isUpper c
+					     then toLower c
+				    	 else toUpper c
+\end{lstlisting}
+\subsection{Definitions}
+A Haskell file is a series of definitions. For example, for the code
+\begin{lstlisting}[language = Haskell , caption={Defn.hs} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+module Defn where
+triangle n = sum [1..n]
+\end{lstlisting}
+On the LHS of $=$ is a name, with zero or more arguments. On the RHS is an expression which utilises the arguments. Note that Haskell does not utilise parentheses. Arguments are separated by whitespace.
+\subsection{Lambda Notation and Mapping notations}
+Recall that in lambda calculus we denote inputs using lambdas, that is
+\begin{align*}
+	&\lambda x y . x \times y \\
+	=& \lambda x \lambda y . x \times y 
+\end{align*}
+Similarly, in Haskell, the lambda notation is blended with the mapping arrow. That is, for example, we can define our function $multiply$ in following ways:
+\begin{lstlisting}[language = Haskell , caption={Multiply.hs} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+import Multiply where
+multiply x y = x * y
+multiply = \x y -> x * y
+multiply x = \y -> x * y
+multiply = \x -> \y -> x * y
+\end{lstlisting}
+These all are the same thing.
+\subsection{Partial Functions}
+It is possible to provide a singular argument into a function that takes in multiple arguments. For example, for our code above, if declared $multiply 5$, then we would replace $x$ with $5$. Note that it is $x$ in particular because it is the variable that is declared first. 
+\begin{lstlisting}[language = Haskell , caption={Multiply 5} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+multiply = \x y -> y * x
+multiply 5 --(\y -> y * 5)
+\end{lstlisting}
+\subsection{Smooth Operator}
 
+Other than declaring functions, it is also possible to declare operators in a similar fashion. Consider the following code:
+\begin{lstlisting}[language = Haskell , caption={Operator} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+x ^^^ y = max x y
+\end{lstlisting}
+One can spot the similarities. However, note that operator names are made up of symbols rather than letters.
+Similarly to partial functions, there are also partially applied operators. For example,
+\begin{lstlisting}[language = Haskell , caption={Partially applied operator} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+plusFive = (+ 5)
+\end{lstlisting}
+This would add a $5$ to any other operator.
+\subsection{Difference between a function and an operator}
+Functions are a prefix, whilst operators go between arguments (infix). It is possible to treat a function like an operator. Consider the following code:
+\begin{lstlisting}[language = Haskell , caption={Function to operator} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+GHCi > 5 `max` 6
+6
 
+GHCI> (*) 5 6
+30
+\end{lstlisting}
+For example, the max function is enclosed within $``$ which allows us to use it like an operator.The latter operation is another alternative way of writing it.
+\subsection{Pattern Matching}
+Consider the following definition of factorial of a variable $x$ :
+\begin{lstlisting}[language = Haskell , caption={factorial} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+fac x = if x == 0 
+						then 1
+						else x * f (x - 1)
+\end{lstlisting}
+This can be rewritten as
+\begin{lstlisting}[language = Haskell , caption={factorial redefined} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+fac x = case x of
+		0 -> 1
+		n -> n * f (n - 1)
+\end{lstlisting}	
+You can also express it in top-level patterns. That is, we pattern match our arguments directly
+\begin{lstlisting}[language = Haskell , caption={factorial pattern matched} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+fac 0 = 1
+fac x = x * f (x - 1)
+\end{lstlisting}
+Often, Haskell code is written like this
+Lastly, you can also introduce "guards" for the code. If we need to check some predicate of the input and not a specific pattern
+\begin{lstlisting}[language = Haskell , caption={factorial guard} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+f x
+			| x == 0 				= 1
+			| otherwise 		= x * f(x-1)
+\end{lstlisting}
 \end{document}

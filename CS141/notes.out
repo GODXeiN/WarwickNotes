@@ -7,3 +7,12 @@
 \BOOKMARK [3][-]{subsubsection.1.4.2}{Domain-specific language}{subsection.1.4}% 7
 \BOOKMARK [3][-]{subsubsection.1.4.3}{Games}{subsection.1.4}% 8
 \BOOKMARK [3][-]{subsubsection.1.4.4}{System Software}{subsection.1.4}% 9
+\BOOKMARK [1][-]{section.2}{Basics of Haskell}{}% 10
+\BOOKMARK [2][-]{subsection.2.1}{Modules}{section.2}% 11
+\BOOKMARK [2][-]{subsection.2.2}{Imports}{section.2}% 12
+\BOOKMARK [2][-]{subsection.2.3}{Definitions}{section.2}% 13
+\BOOKMARK [2][-]{subsection.2.4}{Lambda Notation and Mapping notations}{section.2}% 14
+\BOOKMARK [2][-]{subsection.2.5}{Partial Functions}{section.2}% 15
+\BOOKMARK [2][-]{subsection.2.6}{Smooth Operator}{section.2}% 16
+\BOOKMARK [2][-]{subsection.2.7}{Difference between a function and an operator}{section.2}% 17
+\BOOKMARK [2][-]{subsection.2.8}{Pattern Matching}{section.2}% 18

@@ -82,6 +82,39 @@
 	\end{center}
 	\end{titlepage}
 	\newpage
-	\section{Number System}
 	
+\section{Number System}
+\subsection{Binary}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Binary number system \label{Binary number system}\end{defn}]
+The binary number system uses the digits $0,1$ to express itself. In particular the positive integers are represented as:
+\begin{align}
+\sum_{i=0}^{n} a2^{i}
+\end{align}
+where $a \in \mathbb{B}$ and $\mathbb{B} = \{0,1\}$. Different number systems are usually expressed with subscripts. E.g. $100101_{two}$. 
+\end{tcolorbox}
+\subsection{Converting to base $n$}
+We can utilise the division algorithm to achieve this. That is, for some base $n$ to convert from  base $10$ we divide by $n$ to get remainders.
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{exmp}Division of binary \label{Division of binary}\end{exmp}]
+        
+                \begin{align}
+                19 \div 2 = 9 R 1 \\
+		9 \div 2 = 4 R 1 \\
+		4 \div 2 = 2 R 0 \\
+		2 \div 2 = 1 R 0 \\
+		1 \div 2 = 0 R 1 
+                \end{align}
+\end{tcolorbox}
+\subsection{The division algorithm}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{thm}The division algorithm \label{The division algorithm}\end{thm}]
+	Given any integers $a,b \in \mathbb{Z}$ and $b \neq 0$, there are unique integers $q,r \in \mathbb{Z}$ such that $a = qb+r$ and $0 \le r < |b|$.
+\end{tcolorbox}
+\subsection{The Euclidean algorithm}
+The euclidean algorithm utilises the division algorithm to find $gcd(m,n)=b$ where $m,n,b \in \mathbb{Z}$.
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Greatest Common Divisor \label{Greatest Common Divisor}\end{defn}]
+The greatest common divisors of two numbers $m,n$ where $m,n \in \mathbb{Z}$ is the greatest number $\zeta$ such that $\zeta  \mid  m$ and $\zeta  \mid  n$. It is denoted as $gcd(m,n)$.
+\end{tcolorbox}
+Then, through division, observe that 
+$n = mb + r$
+In particular, the key observation would be $gcd(r,m) = gcd(n,m) = b$.
+Repeat this process until one of the numbers reaches $0$.
 \end{document}
