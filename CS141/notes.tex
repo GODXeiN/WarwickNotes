@@ -1,0 +1,238 @@
+\documentclass[a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{listings}
+\usepackage{lmodern}
+\usepackage{amsfonts}
+\usepackage{titling}
+\usepackage{lipsum}
+\usepackage[left=1in, right=1in, bottom=1in, top=1in]{geometry}
+\usepackage{amsthm}
+\usepackage{tcolorbox}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{makeidx}
+\usepackage{tikz}
+\usepackage{cases}
+\usepackage{apacite}
+\usepackage{tkz-berge}
+\usepackage{url}
+\usepackage{tgtermes}
+\usepackage{sectsty}
+\usepackage{subcaption}
+\usepackage{setspace}
+\usepackage{float}
+\usepackage{amsmath, amssymb}
+
+
+% figure support
+\usepackage{import}
+\usepackage{xifthen}
+\pdfminorversion=7
+\usepackage{pdfpages}
+\usepackage{transparent}
+\usepackage{color}
+\newcommand{\incfig}[2][1]{%
+    \def\svgwidth{#1\columnwidth}
+    \import{./figures/}{#2.pdf_tex}
+}
+
+%mathstyling
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem*{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}[section]
+\newtheorem{conj}{Conjecture}[section]
+\newtheorem{exmp}{Example}[section]
+\newtheorem{axiom}{Axiom}
+\theoremstyle{remark}
+\newtheorem*{rem}{Remark}
+\newtheorem*{note}{Note}
+
+\definecolor{darkgreen}{rgb}{0.0, 0.5, 0.0}
+
+\pdfsuppresswarningpagegroup=1
+\lstset{
+tabsize = 4, %% set tab space width
+showstringspaces = false, %% prevent space marking in strings, string is defined as the text that is generally printed directly to the console
+numbers = left, %% display line numbers on the left
+commentstyle = \color{darkgreen}, %% set comment color
+keywordstyle = \color{blue}, %% set keyword color
+stringstyle = \color{red}, %% set string color
+rulecolor = \color{black}, %% set frame color to avoid being affected by text color
+basicstyle = \small \ttfamily , %% set listing font and size
+breaklines = true, %% enable line breaking
+numberstyle = \tiny,
+  frame=none,
+  xleftmargin=2pt,
+  stepnumber=1,
+  belowcaptionskip=\bigskipamount,
+  captionpos=b,
+  escapeinside={*'}{'*},
+  language=haskell,
+  tabsize=2,
+  emphstyle={\bf},
+  showspaces=false,
+  columns=flexible,
+  showstringspaces=false,
+  morecomment=[l]\%,
+}
+\begin{document}
+	\begin{titlepage}
+	\begin{center}
+	\large
+	University of Warwick \\
+	Department of Computer Science \\
+	\huge
+	\vspace{50mm}
+	\rule{\linewidth}{0.5pt} \\
+	CS141 \\
+	\vspace{5mm}
+	\Large
+	Functional Programming
+	\rule{\linewidth}{0.5pt}
+	\vspace{5mm}
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{crest_black.eps}
+	\end{figure}
+	\vspace{37mm}
+	Cem Yilmaz \\
+	\today
+	\end{center}
+	\end{titlepage}
+	\newpage
+	\tableofcontents
+	\newpage
+	\section{What is Functional Programming}
+	\subsection{History}
+	
+	In 1928, David Hilbert posed the question "Given any true mathematical statement, is there an algorithm for verifying that it is true?". This is now known as the "Entscheidungsproblem", that is, the decision problem. E.g.
+	\begin{align*}
+		1 = 1 \\
+		2 = 2 \\
+		2 < 3 \\
+		1 < 3
+	\end{align*}
+In 1931, Kurt Gödel came up with the paradox with the statement "This statement is not provable". If we assume not provable, there is a double negation which implies it is provable. This contradicts the assumption. If we assume true, we have a true statement that is not provable. This is called the incompleteness theorem. This answered the question that mathematics cannot answer every statement.\\
+\begin{flushleft}
+In 1936, Alonzo Church came up with $\lambda-$calculus as a system for describing algorithms. Kurt Gödel then believed that he can do better. He believed that some algorithms would not be able to be described with $\lambda-$calculus. Kurt then came up with a system of recursive functions. Alonzo Church then claimed that any algorithm that can be described using recursive functions can also be described using $\lambda-$calculus.  \\ 
+\end{flushleft}
+\begin{flushleft}
+Alan Turing then came along and then came up with his own system of describing algorithms utilising Turing machines. However, he also showed that anything described using Turing machine could be described with $\lambda-$calculus. However, notice that despite these being different systems, they were also equivalent in describing algorithms. \\
+\subsection{Today}
+
+Today, programming as you know it, for example:
+\[
+\prod_{i=1}^{4} = 1 \times 2 \times 3 \times 4 
+\] 
+If we wanted to turn this to the roughly equivalent program in a language such as Java or C
+\begin{lstlisting}[language = Java , caption ={Product in Java} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+int x = 1;
+for (int = 1; i <= 4; i++) {
+	x *= i;
+}
+\end{lstlisting}
+\begin{table}[H]
+	\centering
+	\caption{Table of results}
+	\label{tab:results}
+	\begin{tabular}{|c|c|}
+		\hline
+	Variable & Value \\
+	\hline
+	$x$ & $1$ \\
+	$x$ & $2$ \\
+	$x$ & $6$ \\
+	$x$ & $24$ \\
+	\hline
+	\end{tabular}
+\end{table}
+\end{flushleft}
+However, in a function language, we can express it as
+
+\begin{lstlisting}[language = Haskell , caption={Product in Haskell} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+product[1..4]
+\end{lstlisting}
+That is, product is a function. You can also expand this to be
+\begin{lstlisting}[language = Haskell , caption={Expanded Product} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+product[1,2,3,4] 
+1 * product[2,3,4]
+1 * 2 * product[3,4]
+1 * 2 * 3 * product[4]
+1 * 2 * 3 * 4
+24
+\end{lstlisting}
+The definition of product function is rather simple:
+\begin{lstlisting}[language = Haskell , caption={Product function} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+product [n] = n -- Described in terms of 2 equations. First it checks if there a single item and returns it
+product(n:ns) = n * product ns -- Takes the the first item in the list and keeps the rest
+\end{lstlisting}
+Let us now compare imperative programming with functional \\
+\begin{flushleft}
+\makebox[\textwidth][c]{
+	\centering
+	\label{tab:impvsfun}
+	\begin{tabular}{|c|c|}
+	\hline
+	Imperative& Functional \\
+	\hline
+	Mutation of state & Reduction of expression \\
+	Tell the computer how you want to do something & Tell the computer what you want to compute and let it work out how to do it \\
+	Statements executed in order specified & Sub-expressions can often be evaluated in an arbitrary order \\
+	Loops & Recursion \\
+	\hline
+	\end{tabular}
+}
+\end{flushleft}
+\subsection{Programming Paradigms}
+In history, there used to be a clear distinction between programming paradigms. However, today, this has changed. That is,
+\begin{itemize}
+	\item Java / C# are now multi-paradigm: They're imperative, object-oriented, functional, etc.
+	\item Python, JavaScript, C++ have similarly multi-paradigm.
+\end{itemize}
+As such, learning functional programming will be useful as paradigms have blended together.
+\subsection{What Haskell is good for}
+\subsubsection{Web Services}
+
+Furthermore, a particularly nice application to functional programming is that they're good at web services. 
+\begin{itemize}
+	\item Lots of cool frameworks for developing web applications
+	\item Easy to embed domain-specific languages for routing, templates, etc.
+	\item Servant: describe web service as a type, automatically generate client programs 
+	\item One of the coursework assignments uses a web service written in Haskell to provide a browser-based interface
+\end{itemize}
+\subsubsection{Domain-specific language}
+
+Domain-specific languages are also a thing. For example, you can write music in a Haskell library to describe music.
+\begin{lstlisting}[language = Haskell , caption={Music in Haskell} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+import Mezoo
+
+v1 = d qn :|: g qn :|: fs qn :|:  g en :|: a en :|: bf qn :|: a qn :|: g hn
+v2 = d qn :|: ef qn :|: d qn :|: bf_ en :|: a_ en :|: b_ qn :|: a_ qn :|: g_ hn
+
+main = playLive (v1 :-: v2)
+\end{lstlisting}
+What's cooler is that if we try to compile, we would get an error that the composition is not harmonic, that is, if it does not sound good, it does not compile. In particular,
+\begin{itemize}
+	\item Major sevenths are not permitted in harmony: Bb and B\_
+	\item Direction motion in a perfect octave is forbidden: Bb and B\_, then A and A\_
+	\item Parallel octaves are forbidden: A and A\_, then G and G\_
+\end{itemize}
+\subsubsection{Games}
+For example, the game magic cookies utilises functional reactive programming to describe its game logic. It is the same code across different platforms. It is also good for time-travel debugging.
+\subsubsection{System Software}
+\begin{itemize}
+	\item XMonad: Window manager
+	\item OS: Mirage (OCaml), House (Haskell) and more
+\end{itemize}
+
+
+\end{document}
