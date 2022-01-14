@@ -82,7 +82,8 @@
 	\end{center}
 	\end{titlepage}
 	\newpage
-	
+	\tableofcontents
+	\newpage
 \section{Number System}
 \subsection{Binary}
 \begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Binary number system \label{Binary number system}\end{defn}]
@@ -117,4 +118,166 @@ Then, through division, observe that
 $n = mb + r$
 In particular, the key observation would be $gcd(r,m) = gcd(n,m) = b$.
 Repeat this process until one of the numbers reaches $0$.
+\subsection{Modular Arithmetic}
+Modular arithmetic ensures that the two numbers have the same remainder.
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{exmp}Modular Arithmetic \label{Modular Arithmetic}\end{exmp}]
+        The numbers $19$ and $21$ are congruent to modulo $2$. That is, they both have remainder $1$.
+                \begin{align}
+                19   \equiv 21 \bmod 2	 
+                \end{align}
+\end{tcolorbox}
+The notation $a \bmod n $ can also be used as a notation to denote the remainder of the integer $a$. Furthermore, the modular arithmetic can be subtracted, added and multiplied as usual. In particular,
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{exmp}Properties of Modular Arithmetic \label{Properties of Modular Arithmetic}\end{exmp}]
+        Consider the following examples
+                \begin{align}
+                x   \equiv 3 \bmod n \\
+		y   \equiv 5 \bmod n \\
+		x+y   \equiv 8 \bmod n \\
+		x \times y   \equiv 15 \bmod n 
+                \end{align}
+\end{tcolorbox}
+Because of these properties, indeed
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{cor}Power of modular arithmetic \label{Power of modular arithmetic}\end{cor}]
+        Then, from multiplication property, the following holds true. If for some integers $x,y$ the property $x   \equiv y \bmod n $ holds, then
+                \begin{align}
+                x^{k}   \equiv y^{k} \bmod n 
+                \end{align}
+		also holds.
+\end{tcolorbox}
+\subsection{Use of Modular Arithmetic}
+Let $N$ represent the number of bits used in a system. Then, there are $2^{N}$ bits of string length $N$ can be used to represent the numbers in the integer range $[-2^{N-1},2^{N-1}-1]$. In modular arithmetic, the integer $x$ can be then represented as $x \bmod 2^{N}$. This is two's complement. For example,
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{exmp}Two's Complement \label{}\end{exmp}]
+        
+\begin{table}[H]
+	\centering
+	\caption{Two's Complement}
+	\label{tab:two}
+	\begin{tabular}{|c|c|c|c|c|c|}
+		\hline
+	$x$ & $x \bmod 2^{3}$ & String & $x$ & $x \bmod 2^{3}$ & String  \\
+	\hline
+	$0$ & $0$ & $000$ & $-4$ &$4$ & $100$ \\
+	$1$ & $ 1$ & $ 001$ & $-3$ & $5$ & $101$ \\
+	$2$ & $2$ & $010$ & $-2$ & $6$ & $110$ \\
+	$3$ & $3$ & $ 011$ & $-1$ & $7$& $111$ \\
+	\hline
+	\end{tabular}
+\end{table}
+\end{tcolorbox}
+\subsection{Real Numbers}
+Real numbers consist of every possible numbers that are not complex. There are an infinite amount of real numbers in the interval $[0,1]$. See CS $130$ for this.
+\subsection{Rational Numbers}
+A rational number has the form $\frac{m}{n}$ where $m,n \in \mathbb{Z}$ and $n \neq 0$. We can always choose $ m$ and $n$ s.t. $n \ge 1$ and $gd(m,n)=1$.
+\subsection{Irrational Numbers}
+An algebraic number is a real number such as  $\sqrt{2}$ and $-\sqrt{2}  $. It is a solution of a polynomial equation with rational coefficients
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Transcendental numbers \label{Transcendental numbers}\end{defn}]
+Transcendental numbers are real numbers which cannot be solutions of polynomial equations with rational coefficients. Examples include $\pi$ and $e$.
+\end{tcolorbox}
+\section{Axioms}
+\subsection{Algebraic Axioms}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{axiom}Commutativity \label{Commutativity}\end{axiom}]
+        It follows that
+                \begin{align}
+                x+y = y+x \land x \times  y = y \times x
+                \end{align}
+\end{tcolorbox}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{axiom}Associativity \label{Associativity}\end{axiom}]
+        It follows that
+                \begin{align}
+			x+(y+z) = (x+y)+z \land x \times  (y \times z ) = (x \times y) \times z
+                \end{align}
+\end{tcolorbox}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{axiom}Distrubitivity of $\times$ over + \label{Distrubitivity of * over +}\end{axiom}]
+It follows that
+                \begin{align}
+                x \times  ( y+z) = x \times y +x \times z
+                \end{align}
+\end{tcolorbox}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{axiom}Additive Identity \label{Additive Identity}\end{axiom}]
+        $\exists x . y+x=y$
+                \begin{align}
+                \text{In particular, }x=0
+                \end{align}
+\end{tcolorbox}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{axiom}Multiplicative Identity \label{Multiplicative Identity}\end{axiom}]
+        $\exists x . yx=y$
+                \begin{align}
+                \text{In particular, } $x=1$		
+                \end{align}
+\end{tcolorbox}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{axiom}Distinction \label{Distinction}\end{axiom}]
+        Multiplicative and additive identities are distinct. That is,
+                \begin{align}
+                1 \neq 0
+                \end{align}
+\end{tcolorbox}
+So far, all the above axioms hold for $\mathbb{N}$. However, once we add the following axiom:
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{axiom}Additive Inverse \label{Additive Inverse}\end{axiom}]
+                \begin{align}
+                
+        \exists -x.x+(-x)=0
+                \end{align}
+\end{tcolorbox}
+So far, all above axioms hold for $\mathbb{Z}$. However, once we add the following axiom:
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{axiom}Multiplicative Inverse \label{Multiplicative Inverse}\end{axiom}]
+        If $x \neq 0$, then $\exists x^{-1}.x \times x^{-1}=1$
+\end{tcolorbox}
+\subsection{Ordering Axioms}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{axiom}Transitivity of ordering \label{Transitivity of ordering}\end{axiom}]
+                \begin{align}
+        x<y \land y<z \implies x<z
+                \end{align}
+\end{tcolorbox}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{axiom}The trichotomy law \label{The trichotomy law}\end{axiom}]
+        Exactly one of the following is true:
+                \begin{align}
+                x<y \lor y<x \lor x=y
+                \end{align}
+\end{tcolorbox}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{axiom}Preservation of ordering under addition \label{Preservation of ordering under addition}\end{axiom}]
+        If $x<y$, then
+                \begin{align}
+                x+z < y +z
+                \end{align}
+\end{tcolorbox}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{axiom}Preservation of ordering under multiplication \label{Preservation of ordering under multiplication}\end{axiom}]
+        If $0<z$ and $x<y$ then 
+                \begin{align}
+                x \times z < y \times z
+                \end{align}
+\end{tcolorbox}
+So far, all the above axioms hold for $\mathbb{Q}$. However, once we add the following axiom:
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{axiom}Completeness \label{Completeness}\end{axiom}]
+        Every non-empty subset that is bounded above has a least upper bound.
+\end{tcolorbox}
+\subsection{Ordering}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Upper bound \label{Upper bound}\end{defn}]
+A real number $u$ is an upper bound of $S$ if $u \ge x \; \forall x \in S$
+\end{tcolorbox}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Lower bound \label{Lower bound}\end{defn}]
+A real number $u$ is a lower bound of $S$ if $l \ge x \; \forall x \in S$
+\end{tcolorbox}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Supremum \label{Supremum}\end{defn}]
+A real number $U$ is supremum of $S$ if $ U$ is an upper bound of $S$ and $U\le u$ for every upper bound $u$ of $S$. That is, it is the first upper bound.
+\end{tcolorbox}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Infimum \label{Infimum}\end{defn}]
+A real number $L$ is the infimum of $S$ if $L$ is a lower bound of $S$ and $L \ge l$ for every lower bound $l$ of $S$. That is, it is the first lower bound.
+\end{tcolorbox}
+\subsection{Archimedes Property of Real}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{thm}Archimedes Property of Reals \label{Archimedes Property of Reals}\end{thm}]
+	Given any $\varepsilon \in \mathbb{R}^{+}$, $\exists n \in \mathbb{N} . n \varepsilon >1$ 
+	\begin{proof}
+		Assume $n \varepsilon \le 1$. Then,
+		\begin{align}
+			&\forall n \text{ that } \{ n \varepsilon | n \in \mathbb{N}\} \text{ has an upper bound} \\
+			&\text{By completeness it has a least upper bound $l$} \\
+			\implies& \forall n, n \varepsilon \le l \\
+			\implies& (n+1) \varepsilon \le l \\
+			\iff &(n+1)\varepsilon - \varepsilon \le l - \varepsilon\\
+			\iff &n \varepsilon \le  l - \varepsilon \\
+			\implies &l - \varepsilon \text{ is also an upper bound}
+		\end{align}
+		However, this is a contradiction since we already assumed that $l$ is the least upper bound when clearly $ l - \varepsilon < l$
+	\end{proof}
+\end{tcolorbox}
 \end{document}

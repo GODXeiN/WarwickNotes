@@ -336,4 +336,83 @@ f x
 			| x == 0 				= 1
 			| otherwise 		= x * f(x-1)
 \end{lstlisting}
+\section{Data Types}
+\subsection{Compiler}
+The GHCi is an interpreter and runs a REPL loop, that is
+\begin{itemize}
+	\item Read
+	\item Evaluate
+	\item Print
+	\item Loop
+\end{itemize}
+Cabal is a program that manages Haskell packages. The Haskell package repository, Hackage, contains a bunch of packages. It downloads the package and then connects it to GHC. However, instead, we will be using Stack. It is a wrapper around cabal and ghc. It makes them both easier to use and helps with sharing programs across different systems. 
+\subsubsection{Compiling}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Compiling \label{Compiling}\end{defn}]
+Compiling is the process of turning raw source code into a format the computer can run.
+\end{tcolorbox}
+In Haskell, GHC has three main compilation stages:
+\[
+\text{(Raw source)} \implies \text{Parser} \implies \text{Type Checker} \implies \text{Code Generator} \implies \text{(Binary code)}
+\] 
+\subsubsection{Types}
+In Java, we have types e.g.
+\begin{lstlisting}[language = Java , caption={Java data type} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+int x = 5;
+\end{lstlisting}
+In Haskell, every expression has a type. For example,
+\begin{lstlisting}[language = Haskell , caption={Boolean Type} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+someBoolean = True && False || True
+\end{lstlisting}
+In this case, someBoolean has the type true.
+\begin{lstlisting}[language = Haskell , caption={Integer} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+five = min 5 6
+\end{lstlisting}
+Five has type Integer. Integer does not have an upper bound unlike in other languages.
+\begin{lstlisting}[language = Haskell , caption={String} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+string = "Hello, world!"
+\end{lstlisting}
+In this case, string has the type string.
+You can also use GHCi to find the type that a function has. You can
+\subsubsection{Type Declarations}
+You can declare the type of a function just above it using
+\begin{lstlisting}[language = Haskell , caption={Declaration of Data} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+five :: Integer
+five = min 5 6
+\end{lstlisting}
+$::$ is a special piece of notation that declares the data type of a function. However, if every expression has a type, how did we get away without writing them? The answer is, Haskell figures out what types to use. This is called \textit{type inference}. In fact, in Haskell, even if we declare the type, Haskell checks that for us regardless. And if it checks and it does not line up, we get a type error. The benefit of declaring types is to pinpoint any possible errors that occur when compiling. Some errors include but are not limited to:
+\begin{itemize}
+	\item Giving a function too many arguments
+	\item Forgetting arguments
+	\item Trying to use a value where it does not make sense
+\end{itemize}\\
+Types only exist at compile time. The type checker has guaranteed that all types Lin up, so it does not need to keep that information any more, meaning that we cannot check the type of a value at run time. It is also important to note that Haskell is a \textit{strongly typed} language which means that the types are correct before it runs the program. For example, in Python, it is weakly typed and thus it make take you hours to find the error.
+\subsubsection{Function types}
+In mathematics, the succ function is a function s.t.
+\[
+succ(n) = n+1
+\] 
+We might say that $succ$ is a function from integers to integers, otherwise
+\[
+succ: \mathbb{Z} \to \mathbb{Z}
+\] 
+In Haskell, it is written the same.
+\begin{lstlisting}[language = Haskell , caption={Mapping in Haskell} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+succ :: Integer -> Integer
+succ n = n + 1
+\end{lstlisting}
+\subsubsection{Polymorphism}
+In Haskell, we need to find a method to make sure that we can parse a function with a different types. For example, 
+\begin{lstlisting}[language = Haskell , caption={Identity Function} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+id x = x
+\end{lstlisting}
+To give a general type here, we need to use a type variable. We write these with lowercase letters. In particular,
+\begin{lstlisting}[language = Haskell , caption={Example} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+id :: a -> a
+id x = x
+\end{lstlisting}
+The compiler will specialise the type for us when we use the function. We can also ignore arguments using
+\begin{lstlisting}[language = Haskell , caption={Ignore argument} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+ignoreSecondArgument x y = x
+\end{lstlisting}
+This function takes two arguments and throws away the second one. Since it doesn't use any specific details about either argument, we can treat both arguments as being polymorphic.
 \end{document}

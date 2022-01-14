@@ -16,3 +16,10 @@
 \contentsline {subsection}{\numberline {2.6}Smooth Operator}{5}{subsection.2.6}%
 \contentsline {subsection}{\numberline {2.7}Difference between a function and an operator}{6}{subsection.2.7}%
 \contentsline {subsection}{\numberline {2.8}Pattern Matching}{6}{subsection.2.8}%
+\contentsline {section}{\numberline {3}Data Types}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Compiler}{6}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Compiling}{7}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Types}{7}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Type Declarations}{7}{subsubsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.4}Function types}{8}{subsubsection.3.1.4}%
+\contentsline {subsubsection}{\numberline {3.1.5}Polymorphism}{8}{subsubsection.3.1.5}%

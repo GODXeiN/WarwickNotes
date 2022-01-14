@@ -1,0 +1,255 @@
+\documentclass[a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{listings}
+\usepackage{lmodern}
+\usepackage{amsfonts}
+\usepackage{titling}
+\usepackage{lipsum}
+\usepackage[left=1in, right=1in, bottom=1in, top=1in]{geometry}
+\usepackage{amsthm}
+\usepackage{tcolorbox}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{makeidx}
+\usepackage{tikz}
+\usepackage{cases}
+\usepackage{apacite}
+\usepackage{tkz-berge}
+\usepackage{url}
+\usepackage{tgtermes}
+\usepackage{sectsty}
+\usepackage{subcaption}
+\usepackage{setspace}
+\usepackage{float}
+\usepackage{amsmath, amssymb}
+
+
+% figure support
+\usepackage{import}
+\usepackage{xifthen}
+\pdfminorversion=7
+\usepackage{pdfpages}
+\usepackage{transparent}
+\usepackage{color}
+\newcommand{\incfig}[2][1]{%
+    \def\svgwidth{#1\columnwidth}
+    \import{./figures/}{#2.pdf_tex}
+}
+
+%mathstyling
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem*{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}[section]
+\newtheorem{conj}{Conjecture}[section]
+\newtheorem{exmp}{Example}[section]
+\newtheorem{axiom}{Axiom}
+\theoremstyle{remark}
+\newtheorem*{rem}{Remark}
+\newtheorem*{note}{Note}
+
+\definecolor{darkgreen}{rgb}{0.0, 0.5, 0.0}
+
+\pdfsuppresswarningpagegroup=1
+\lstset{
+tabsize = 4, %% set tab space width
+showstringspaces = false, %% prevent space marking in strings, string is defined as the text that is generally printed directly to the console
+numbers = left, %% display line numbers on the left
+commentstyle = \color{darkgreen}, %% set comment color
+keywordstyle = \color{blue}, %% set keyword color
+stringstyle = \color{red}, %% set string color
+rulecolor = \color{black}, %% set frame color to avoid being affected by text color
+basicstyle = \small \ttfamily , %% set listing font and size
+breaklines = true, %% enable line breaking
+numberstyle = \tiny,
+  frame=none,
+  xleftmargin=2pt,
+  stepnumber=1,
+  belowcaptionskip=\bigskipamount,
+  captionpos=b,
+  escapeinside={*'}{'*},
+  language=haskell,
+  tabsize=2,
+  emphstyle={\bf},
+  showspaces=false,
+  columns=flexible,
+  showstringspaces=false,
+  morecomment=[l]\%,
+}
+\begin{document}
+	\begin{titlepage}
+	\begin{center}
+	\large
+	University of Warwick \\
+	Department of Computer Science \\
+	\huge
+	\vspace{50mm}
+	\rule{\linewidth}{0.5pt} \\
+	CS139 \\
+	\vspace{5mm}
+	\Large
+	Web Development Technologies
+	\rule{\linewidth}{0.5pt}
+	\vspace{5mm}
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{crest.eps}
+	\end{figure}
+	\vspace{37mm}
+	Cem Yilmaz \\
+	\today
+	\end{center}
+	\end{titlepage}
+	\newpage
+\section{HTML}
+\subsection{Syntax}
+HTML stands for HyperText Markup Language and is semantic. This means that it describes the structure of the document and not the content. It is intended to modify the appearance of HTML elements and can be in fact frustrating to use for page layouts.
+
+A lot of HTML is done with the $<>$ brackets. For example,
+\begin{lstlisting}[language = HTML , caption={Heading} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+<h1>Welcome to CS139</h1>
+\end{lstlisting}
+This would set the header tag to the text "Welcome to CS139". For this module, we will be using JSFiddle, that is available online.
+\subsubsection{Doctypes}
+Every HTML documents should have a doctype definition on top. In particular, HTML5 uses
+\begin{lstlisting}[language = HTML , caption={DOCTYPE} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+<!DOCTYPE html>
+\end{lstlisting}
+It helps the browser to know what to expect.
+\subsubsection{Example HTML5 Document}
+\begin{lstlisting}[language = HTML , caption={Example Document} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Title for Hello World </title> // Title that is seen at the top of the browser
+	</head>
+	<body>
+		<h1>Hello world</h1> // Biggest header for the website
+	</body>
+</html>
+\end{lstlisting}
+\subsubsection{Head tag}
+This tag is used by the browser, web-crawlers and bots. IT includes meta-tags required by these applications and includes location of supporting documents e.g. JavaScript and CSS.
+\subsubsection{Text-encoding}
+Familiar with ASCII, but that is only $128$ characters. In particular, UTF-8 has 107000 characters and is denoted with
+\begin{lstlisting}[language = HTML , caption={Text-encoding} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+<meta>
+\end{lstlisting}
+\subsubsection{Body tag}
+This is the tag where main information goes into that the user gets to read. Its syntax is 
+\begin{lstlisting}[language = HTML , caption={Body} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+<body>
+</body>
+\end{lstlisting}
+\subsubsection{Syntax}
+\begin{lstlisting}[language = HTML , caption={Syntax} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+<a href="google.com">Google search</a>
+\end{lstlisting}
+In the code above, $a$ is the element name. The hyperlink in href is called the \textit{Attribute}. The content is the \textit{Google search} text.
+However, there are also empty tags e.g.
+ \begin{lstlisting}[language = HTML , caption={Empty Tag} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+<meta charset="utf-8">
+\end{lstlisting}
+\subsubsection{Nesting Definitions}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Child and parent \label{Child}\end{defn}]
+A syntax is a child if and only if there exists a tag that is at a lower level than the upper tag.
+\begin{lstlisting}[language = HTML , caption={Parent Child} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+<body>
+	<p>
+	This is some text
+	</p>
+</body>
+\end{lstlisting}
+In particular, $<body>$ is the parent of $<p>$ and $<p>$ is the child of $<body>$.
+\end{tcolorbox}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Sibling \label{Sibling}\end{defn}]
+Sibling is when the tag is on the same level. For example,
+\begin{lstlisting}[language = HTML , caption={Sibling} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+<body>
+	<p>
+	This is some text
+	</p>
+	<p>
+	Another text
+	</p>
+</body>
+\end{lstlisting}
+In here, the $p$ are siblings.
+\end{tcolorbox}
+Similarly, the term descendants would be group of tags of in comparison to a tag that is a parent of all.
+\subsubsection{Lists}
+There are 3 types of lists:
+\begin{itemize}
+	\item Ordered lists denoted with $<ol>$ and then listed items with $<li>$ 
+	\item Unordered lists denoted with $<ul>$ and then listed items with $<li>$ 
+	\item Description list would list terms and then list descriptions. In particular, the tags that are used are $<dl>$, $<dt>$ and $<dd>$ which are list, item and description respectively.You can also created nested list if you simply begin another list inside a list.
+		
+\end{itemize}
+For example
+\begin{lstlisting}[language = HTML , caption={Lists} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+<ul>
+	<li> shopping </li>
+	<ol>
+		<li> eggs </li>
+		<li> bread </li>
+	</ol>
+	<li> cooking </li>
+</ul>
+\end{lstlisting}
+\subsubsection{Hyperlinks}
+\begin{flushleft}
+Hyperlinks are listing websites to a specific piece of text. For example
+\begin{lstlisting}[language = HTML , caption={Hyperlink} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+<a href="www.google.com"> This is google hyperlink </a>
+\end{lstlisting}
+You can also hyperlink inside the website using ids. For example,
+\begin{lstlisting}[language = HTML , caption={IDs} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+<body>
+<h1> Links </h1>
+<p id = "#top">
+	This is some paragraph text
+</p>
+<a href="#top"> Go to top </a>
+\end{lstlisting}
+\subsubsection{Images}
+You can also include images with a singular tag that use the $src$ and $alt$ attributes.
+For example,
+\begin{lstlisting}[language = HTML , caption={Image embed} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+<img src="http://warwick.ac.uk/logo.gif" alt="Warwick Logo" title="Warwick Logo" width=200 height=60 />
+\end{lstlisting}
+\subsubsection{Character entities}
+\begin{lstlisting}[language = HTML , caption={Character entities} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+&nbsp; //Nonbreakable space
+&lt; //<
+&gt; //>
+&copy; //Copyright symbol
+&trade; //Trademark symbol
+\end{lstlisting}
+\subsubsection{Break Line}
+You can get a new line or break a line using the tag
+\begin{lstlisting}[language = HTML , caption={Break} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+<br>
+\end{lstlisting}
+\subsection{Semantic Mark-up}
+Some semantics include but are not limited to
+\begin{lstlisting}[language = HTML , caption={Semantics} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+<abbr>
+<cite>
+<time>
+<span>
+<div>
+\end{lstlisting}
+That is, these do not change the looks but are important regardless.
+\subsection{Validation}
+You can make sure that your HTML is valid using a validation tool provided by W3C. The website is \link{http://validator.w3.org}
+\end{document}
