@@ -87,97 +87,16 @@ Cem Yilmaz\\
 \today
 \end{center}
 \end{titlepage}
-\section{Linux}
-\subsection{What is Linux?}
-Linux is a free version of UNIX developed by a developer called Linus. They're compose of three components:
-\begin{enumerate}
-	\item Kernel;
-	\item Shell: interface to kernel;
-	\item Utilities: word editors etc.
-\end{enumerate}
-\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Shell \label{Shell}\end{defn}]
-A shell can be seen as different things:
-\begin{enumerate}
-	\item Command interpreter;
-	\item Friendly hooks to kernel;
-	\item Programming language
-\end{enumerate}
-Some examples of shells include bash, Gnome, csh etc.
-\end{tcolorbox}
-\section{Linux Concepts}
-\subsection{Files}
-Files are used to store data, it can contain anything. Data are sequences of bytes. \\
-These files can be classified as:
-\begin{enumerate}
-	\item Regular: text, binary code, HTML, Java, etc\ldots;
-	\item Director;
-	\item Device
-\end{enumerate}
-Each "file" has a unique ID, called inode. This is usually a number. All fires are in fact tree hierarchies. However, it is possible that directories can lead to the same files. This is when the also share inodes.
-\subsection{Basic commands}
-\subsubsection{Terminal Commands}
+\section{Law}
+\subsection{UK Law}
 
-\begin{lstlisting}[language = Shell]
-cd \\ current directory
-pwd \\ print working director
-mkdir \\ make a directory
-rm \\ remove. Can also be used to do -d and -R to delete dir or recursively.
-rmdir \\ same as rm -d but only works on empty dirs
-cp \\ copy, can be also be used to do -R.
-mv \\ move, moves a fily. Can be used to rename
-ls \\ list, lists all files. You can use it to view vermissions with -l. Secret files with -a.
-\end{lstlisting}
-\subsubsection{Symbols}
-\begin{lstlisting}[language = Shell]
-. \\ current working directory
-.. \\ parent directory
-~ \\ home directory
-/ \\ root
-\end{lstlisting}
-\subsection{Permissions}
-Permissions are set up with binary code, specifically $111$.
-\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Permissions \label{Permissions}\end{defn}]
-A permission is defined by
-\begin{align}
-	\underbrace{-}_{\text{Type}}\underbrace{---}_{\text{User}}\underbrace{---}_{\text{Group}}\underbrace{---}_{\text{Other}}
-\end{align}
-where $---$ represents permissions, listing from $rwx$, where $r$ is read, $w$ is write, $x$ is execute. 
-\end{tcolorbox}
-The command $chmod$ is then used to change permissions. $u$ represents user, $g$ represents group, $o$ represents others and $a$ represents all. So, for example, one can run the command
-\begin{lstlisting}[language = Shell]
-chmod u+rwx,g-r,o+x ~/example.txt
-\end{lstlisting}
-And for this, would add $rwx$ for user, remove $r$ for group and add $x$ for others. Alternative ways of using chmod including converting $111,111,111$ system (without the $,$ ) to base $10$, e.g or instead of doing $\pm$, you can use $=$.\\
-A tip is to use the man command, which lists a list of commands that you can use in the terminal.
-\subsection{Process}
-Every process has a special id number (PID, process ID) and are divided into streams. The process is entered through a standard input stream, and the result is then given by a standard output stream. The streams are:
-\begin{enumerate}
-	\item Standard Input stream - stdin, no.0\\
-	\item Standard Output stream - stdout, no.1 \\
-	\item Standard Error stream - stderr, no.2 \\
-	\item Other streams and I/Os\ldots
-\end{enumerate}
-\subsection{Input}
-Suppose we have a command called $myScript$ and the file $f$. We can redirect input to $myScript$ from $f$ using
-\begin{lstlisting}[language = Shell]
-myScript < f
-myScript 0< f
-\end{lstlisting}
-You can create more streams by assigning more numbers to them like done above.
-\subsection{Output}
-Files are created implicitly as and when required.\\
-We can overwrite the file
-\begin{lstlisting}[language = Shell]
-myScript > f
-myScript 1> f
-myScript 2> f
-\end{lstlisting}
-We can append to the end of the file
-\begin{lstlisting}[language = Shell]
-myScript >> f
-myScript 1>> f
-\end{lstlisting}
-Current processes can be checked using the $ps$ command. You can also use the command $top$ to sort processes by system usage of CPU. You can use the command $kill$ to kill a process.
-\subsection{Path}
+\begin{itemize}
+	\item Adversarial not inquisitorial and is similar to US and commonwealth laws.
+	\item Criminal law and justice by the state
+	\item Civil law relationships between individuals
+	\item common law court decisions form precedence
+	\item Canon, maritime..
+\end{itemize}
+\subsection{Data Protection}
 
 \end{document}

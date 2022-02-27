@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.1.10)  14 JAN 2022 03:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.1.10)  24 FEB 2022 01:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -695,26 +695,45 @@ Package: transparent 2019/11/29 v1.4 Transparency via pdfTeX's color stack (HO)
 \c@conj=\count331
 \c@exmp=\count332
 \c@axiom=\count333
- (./notes.aux)
+ (./notes.aux
+
+LaTeX Warning: Label `Example 1' multiply defined.
+
+
+LaTeX Warning: Label `Example 1' multiply defined.
+
+
+LaTeX Warning: Label `Example 1' multiply defined.
+
+
+LaTeX Warning: Label `Example 1' multiply defined.
+
+
+LaTeX Warning: Label `Example 1' multiply defined.
+
+
+LaTeX Warning: Label `Example 1' multiply defined.
+
+)
 \openout1 = `notes.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Trying to load font information for T1+qtm on input line 60.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Trying to load font information for T1+qtm on input line 59.
  (/usr/share/texmf/tex/latex/tex-gyre/t1qtm.fd
 File: t1qtm.fd 2009/09/25 v1.2 font definition file for T1/qtm
 )
@@ -774,7 +793,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 \AtBeginShipoutBox=\box74
-Package hyperref Info: Link coloring OFF on input line 60.
+Package hyperref Info: Link coloring OFF on input line 59.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -784,9 +803,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count341
 )
-LaTeX Info: Redefining \ref on input line 60.
-LaTeX Info: Redefining \pageref on input line 60.
-LaTeX Info: Redefining \nameref on input line 60.
+LaTeX Info: Redefining \ref on input line 59.
+LaTeX Info: Redefining \pageref on input line 59.
+LaTeX Info: Redefining \nameref on input line 59.
  (./notes.out) (./notes.out)
 \@outlinefile=\write6
 \openout6 = `notes.out'.
@@ -814,12 +833,12 @@ Package epstopdf Info: Source file: <crest_black.eps>
 (epstopdf)                    date: 2022-01-10 14:00:45
 (epstopdf)                    size: 21274 bytes
 (epstopdf)             Command: <repstopdf --outfile=crest_black-eps-converted-to.pdf crest_black.eps>
-(epstopdf)             \includegraphics on input line 77.
+(epstopdf)             \includegraphics on input line 76.
 Package epstopdf Info: Output file is already uptodate.
-<crest_black-eps-converted-to.pdf, id=67, 64.24pt x 80.3pt>
+<crest_black-eps-converted-to.pdf, id=220, 64.24pt x 80.3pt>
 File: crest_black-eps-converted-to.pdf Graphic file (type pdf)
 <use crest_black-eps-converted-to.pdf>
-Package pdftex.def Info: crest_black-eps-converted-to.pdf  used on input line 77.
+Package pdftex.def Info: crest_black-eps-converted-to.pdf  used on input line 76.
 (pdftex.def)             Requested size: 181.18439pt x 226.49867pt.
  [1
 
@@ -860,106 +879,63 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.86 	\newpage
+l.85 	\newpage
                [1]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 96.
+(Font)              <12> on input line 87.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 96.
+(Font)              <8> on input line 87.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 96.
+(Font)              <6> on input line 87.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 96.
+(hyperref)                removing `math shift' on input line 87.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 96.
+(hyperref)                removing `math shift' on input line 87.
 
-[2] [3]
-./notes.tex:206: Missing } inserted.
-<inserted text> 
-                }
-l.206                 \end{align}
-                                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./notes.tex:206: Missing { inserted.
-<inserted text> 
-                {
-l.206                 \end{align}
-                                 
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-./notes.tex:206: Missing } inserted.
-<inserted text> 
-                }
-l.206                 \end{align}
-                                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./notes.tex:206: Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.206                 \end{align}
-                                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./notes.tex:206: Misplaced \omit.
-\math@cr@@@ ...@ \@ne \add@amps \maxfields@ \omit 
-                                                  \kern -\alignsep@ \iftag@ ...
-l.206                 \end{align}
-                                 
-I expect to see \omit only after tab marks or the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-./notes.tex:206: Missing { inserted.
-<inserted text> 
-                {
-l.206                 \end{align}
-                                 
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
+[2] [3] (./figures/argrand.pdf_tex
+<./figures/argrand.pdf, id=328, page=1, 682.86612pt x 341.43306pt>
+File: ./figures/argrand.pdf Graphic file (type pdf)
+<use ./figures/argrand.pdf, page 1>
+Package pdftex.def Info: ./figures/argrand.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 452.9679pt x 226.48746pt.
+<./figures/argrand.pdf, id=329, page=2, 682.86612pt x 341.43306pt>
+File: ./figures/argrand.pdf Graphic file (type pdf)
+<use ./figures/argrand.pdf, page 2>
+Package pdftex.def Info: ./figures/argrand.pdf , page2 used on input line 59.
+(pdftex.def)             Requested size: 452.9679pt x 226.48746pt.
+<./figures/argrand.pdf, id=330, page=3, 682.86612pt x 341.43306pt>
+File: ./figures/argrand.pdf Graphic file (type pdf)
+<use ./figures/argrand.pdf, page 3>
+Package pdftex.def Info: ./figures/argrand.pdf , page3 used on input line 62.
+(pdftex.def)             Requested size: 452.9679pt x 226.48746pt.
+) [4 <./figures/argrand.pdf> <./figures/argrand.pdf> <./figures/argrand.pdf>] [5]
 Runaway argument?
  
-./notes.tex:217: Paragraph ended before \align was complete.
+./notes.tex:303: Paragraph ended before \align was complete.
 <to be read again> 
                    \par 
-l.217 
+l.303 
       
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-./notes.tex:217: Missing $ inserted.
+./notes.tex:303: Missing $ inserted.
 <inserted text> 
                 $
-l.217 
+l.303 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./notes.tex:217: Missing \endgroup inserted.
+./notes.tex:303: Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.217 
+l.303 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -967,26 +943,26 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./notes.tex:217: Display math should end with $$.
+./notes.tex:303: Display math should end with $$.
 <to be read again> 
                    \par 
-l.217 
+l.303 
       
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
-./notes.tex:218: Missing $ inserted.
+./notes.tex:304: Missing $ inserted.
 <inserted text> 
                 $
-l.218         \exists
+l.304         \exists
                       -x.x+(-x)=0
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./notes.tex:219: Misplaced \cr.
+./notes.tex:305: Misplaced \cr.
 \math@cr@@@ ->\cr 
                   
-l.219                 \end{align}
+l.305                 \end{align}
                                  
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -994,26 +970,26 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./notes.tex:219: Misplaced \noalign.
+./notes.tex:305: Misplaced \noalign.
 \math@cr@@ ... \iffalse }\fi \math@cr@@@ \noalign 
                                                   {\vskip #1\relax }
-l.219                 \end{align}
+l.305                 \end{align}
                                  
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
-./notes.tex:219: Missing $ inserted.
+./notes.tex:305: Missing $ inserted.
 <inserted text> 
                 $
-l.219                 \end{align}
+l.305                 \end{align}
                                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./notes.tex:219: Missing } inserted.
+./notes.tex:305: Missing } inserted.
 <inserted text> 
                 }
-l.219                 \end{align}
+l.305                 \end{align}
                                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1021,10 +997,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./notes.tex:219: Extra }, or forgotten \endgroup.
+./notes.tex:305: Extra }, or forgotten \endgroup.
 \math@cr@@ ...th@cr@@@ \noalign {\vskip #1\relax }
                                                   
-l.219                 \end{align}
+l.305                 \end{align}
                                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1032,23 +1008,23 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./notes.tex:219: Misplaced \noalign.
+./notes.tex:305: Misplaced \noalign.
 \black@ #1->\noalign 
                      {\ifdim #1>\displaywidth \dimen@ \prevdepth \nointerlin...
-l.219                 \end{align}
+l.305                 \end{align}
                                  
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 
-Overfull \hbox (23.3334pt too wide) detected at line 219
+Overfull \hbox (23.3334pt too wide) detected at line 305
 []
  []
 
-./notes.tex:219: Extra }, or forgotten \endgroup.
+./notes.tex:305: Extra }, or forgotten \endgroup.
 \endalign ->\math@cr \black@ \totwidth@ \egroup 
                                                 \ifingather@ \restorealignst...
-l.219                 \end{align}
+l.305                 \end{align}
                                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1056,10 +1032,10 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./notes.tex:219: Missing $ inserted.
+./notes.tex:305: Missing $ inserted.
 <inserted text> 
                 $
-l.219                 \end{align}
+l.305                 \end{align}
                                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1067,40 +1043,650 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./notes.tex:219: Display math should end with $$.
+./notes.tex:305: Display math should end with $$.
 <to be read again> 
                    \endgroup 
-l.219                 \end{align}
+l.305                 \end{align}
                                  
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
-[4] [5] [6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 283.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 283.
+[6] [7] (./figures/scalar.pdf_tex
+<./figures/scalar.pdf, id=389, page=1, 682.86612pt x 341.43306pt>
+File: ./figures/scalar.pdf Graphic file (type pdf)
+<use ./figures/scalar.pdf, page 1>
+Package pdftex.def Info: ./figures/scalar.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 421.66995pt x 210.83708pt.
+<./figures/scalar.pdf, id=390, page=2, 682.86612pt x 341.43306pt>
+File: ./figures/scalar.pdf Graphic file (type pdf)
+<use ./figures/scalar.pdf, page 2>
+Package pdftex.def Info: ./figures/scalar.pdf , page2 used on input line 59.
+(pdftex.def)             Requested size: 421.66995pt x 210.83708pt.
+<./figures/scalar.pdf, id=391, page=3, 682.86612pt x 341.43306pt>
+File: ./figures/scalar.pdf Graphic file (type pdf)
+<use ./figures/scalar.pdf, page 3>
+Package pdftex.def Info: ./figures/scalar.pdf , page3 used on input line 62.
+(pdftex.def)             Requested size: 421.66995pt x 210.83708pt.
+) [8] [9 <./figures/scalar.pdf> <./figures/scalar.pdf> <./figures/scalar.pdf>]
+./notes.tex:458: Double subscript.
+<argument>  \underline {u}_i = (u_i_
+                                    1,u_i_2,\ldots ,u_i_n) 
+l.458 	\end{align}
+                  $\mathbb{R}^{n}$ is linearly dependent if there are number...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:458: Double subscript.
+<argument>  \underline {u}_i = (u_i_1,u_i_
+                                          2,\ldots ,u_i_n) 
+l.458 	\end{align}
+                  $\mathbb{R}^{n}$ is linearly dependent if there are number...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:458: Double subscript.
+<argument> ...ne {u}_i = (u_i_1,u_i_2,\ldots ,u_i_
+                                                  n) 
+l.458 	\end{align}
+                  $\mathbb{R}^{n}$ is linearly dependent if there are number...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:458: Double subscript.
+<argument>  \underline {u}_i = (u_i_
+                                    1,u_i_2,\ldots ,u_i_n) 
+l.458 	\end{align}
+                  $\mathbb{R}^{n}$ is linearly dependent if there are number...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:458: Double subscript.
+<argument>  \underline {u}_i = (u_i_1,u_i_
+                                          2,\ldots ,u_i_n) 
+l.458 	\end{align}
+                  $\mathbb{R}^{n}$ is linearly dependent if there are number...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:458: Double subscript.
+<argument> ...ne {u}_i = (u_i_1,u_i_2,\ldots ,u_i_
+                                                  n) 
+l.458 	\end{align}
+                  $\mathbb{R}^{n}$ is linearly dependent if there are number...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+[10] [11]
+LaTeX Font Info:    Trying to load font information for TS1+qtm on input line 546.
+ (/usr/share/texmf/tex/latex/tex-gyre/ts1qtm.fd
+File: ts1qtm.fd 2009/09/25 v1.2 font definition file for TS1/qtm
+) [12] [13]
+./notes.tex:633: Double subscript.
+<argument>  A_{ij} = (-1)^{i+j}M_i_
+                                   j 
+l.633 \end{align}
+                 
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:633: Double subscript.
+<argument>  A_{ij} = (-1)^{i+j}M_i_
+                                   j 
+l.633 \end{align}
+                 
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+[14] [15] [16] [17] [18] [19]
+./notes.tex:941: Double subscript.
+l.941 ...each $j$ there are $n$ numbers $\alpha_1_
+                                                  j, \alpha_2_j,\ldots,\alph...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:941: Double subscript.
+l.941 ...re are $n$ numbers $\alpha_1_j, \alpha_2_
+                                                  j,\ldots,\alpha_n_j \in \m...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:941: Double subscript.
+l.941 ... $\alpha_1_j, \alpha_2_j,\ldots,\alpha_n_
+                                                  j \in \mathbb{R}$ with
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:944: Double subscript.
+<argument>  T(\underline {v}_j) = \alpha _1_
+                                            j\underline {w}_1 + \alpha _2_j\...
+l.944 \end{align}
+                 
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:944: Double subscript.
+<argument> ...ha _1_j\underline {w}_1 + \alpha _2_
+                                                  j\underline {w}_2+\ldots +...
+l.944 \end{align}
+                 
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:944: Double subscript.
+<argument> ...j\underline {w}_2+\ldots +\alpha _n_
+                                                  j\underline {w}_n 
+l.944 \end{align}
+                 
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:944: Double subscript.
+<argument>  T(\underline {v}_j) = \alpha _1_
+                                            j\underline {w}_1 + \alpha _2_j\...
+l.944 \end{align}
+                 
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:944: Double subscript.
+<argument> ...ha _1_j\underline {w}_1 + \alpha _2_
+                                                  j\underline {w}_2+\ldots +...
+l.944 \end{align}
+                 
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:944: Double subscript.
+<argument> ...j\underline {w}_2+\ldots +\alpha _n_
+                                                  j\underline {w}_n 
+l.944 \end{align}
+                 
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:948: Double subscript.
+<argument> ...x} \alpha _{11}& \ldots & \alpha _1_
+                                                  j & \ldots & \alpha _1_m \...
+l.948 \end{align*}
+                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:948: Double subscript.
+<argument> ... & \alpha _1_j & \ldots & \alpha _1_
+                                                  m \\ \alpha _{21} & \ldots...
+l.948 \end{align*}
+                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:948: Double subscript.
+<argument> ...\ \alpha _{21} & \ldots & \alpha _2_
+                                                  j & \ldots & \alpha _2_m \...
+l.948 \end{align*}
+                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:948: Double subscript.
+<argument> ... & \alpha _2_j & \ldots & \alpha _2_
+                                                  m \\ \vdots & & & & \vdots...
+l.948 \end{align*}
+                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:948: Double subscript.
+<argument> ... \vdots & & & & \vdots \\ \alpha _n_
+                                                  1 & \ldots & \alpha _n_j &...
+l.948 \end{align*}
+                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:948: Double subscript.
+<argument> ...\\ \alpha _n_1 & \ldots & \alpha _n_
+                                                  j & \ldots &\alpha _n_m \e...
+l.948 \end{align*}
+                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:948: Double subscript.
+<argument> ...s & \alpha _n_j & \ldots &\alpha _n_
+                                                  m \end {bmatrix} 
+l.948 \end{align*}
+                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:948: Double subscript.
+<argument> ...x} \alpha _{11}& \ldots & \alpha _1_
+                                                  j & \ldots & \alpha _1_m \...
+l.948 \end{align*}
+                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:948: Double subscript.
+<argument> ... & \alpha _1_j & \ldots & \alpha _1_
+                                                  m \\ \alpha _{21} & \ldots...
+l.948 \end{align*}
+                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:948: Double subscript.
+<argument> ...\ \alpha _{21} & \ldots & \alpha _2_
+                                                  j & \ldots & \alpha _2_m \...
+l.948 \end{align*}
+                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:948: Double subscript.
+<argument> ... & \alpha _2_j & \ldots & \alpha _2_
+                                                  m \\ \vdots & & & & \vdots...
+l.948 \end{align*}
+                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:948: Double subscript.
+<argument> ... \vdots & & & & \vdots \\ \alpha _n_
+                                                  1 & \ldots & \alpha _n_j &...
+l.948 \end{align*}
+                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:948: Double subscript.
+<argument> ...\\ \alpha _n_1 & \ldots & \alpha _n_
+                                                  j & \ldots &\alpha _n_m \e...
+l.948 \end{align*}
+                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:948: Double subscript.
+<argument> ...s & \alpha _n_j & \ldots &\alpha _n_
+                                                  m \end {bmatrix} 
+l.948 \end{align*}
+                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:956: Undefined control sequence.
+<argument> ...(\underline {v}_1)+x_2T(\unuderline 
+                                                  {v}_2) + \ldots + x_m T(\u...
+l.956 \end{align*}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./notes.tex:956: Double subscript.
+<argument> ...nderline {w}_2 + \ldots + \alpha _n_
+                                                  1 \underline {w}_n) + x_2(...
+l.956 \end{align*}
+                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:956: Double subscript.
+<argument> ... {w}_n)\\ &+ \ldots + x_m(\alpha _1_
+                                                  m \underline {w}_1 + \alph...
+l.956 \end{align*}
+                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:956: Double subscript.
+<argument> ...a _1_m \underline {w}_1 + \alpha _2_
+                                                  m \underline {w}_2 + \ldot...
+l.956 \end{align*}
+                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:956: Double subscript.
+<argument> ...nderline {w}_2 + \ldots + \alpha _n_
+                                                  m \underline {w}_n) \\ =& ...
+l.956 \end{align*}
+                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:956: Double subscript.
+<argument> ..._2\alpha _{n2}+\ldots +x_m\alpha _n_
+                                                  m)\underline {w}_n 
+l.956 \end{align*}
+                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:956: Undefined control sequence.
+<argument> ...(\underline {v}_1)+x_2T(\unuderline 
+                                                  {v}_2) + \ldots + x_m T(\u...
+l.956 \end{align*}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./notes.tex:956: Double subscript.
+<argument> ...nderline {w}_2 + \ldots + \alpha _n_
+                                                  1 \underline {w}_n) + x_2(...
+l.956 \end{align*}
+                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:956: Double subscript.
+<argument> ... {w}_n)\\ &+ \ldots + x_m(\alpha _1_
+                                                  m \underline {w}_1 + \alph...
+l.956 \end{align*}
+                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:956: Double subscript.
+<argument> ...a _1_m \underline {w}_1 + \alpha _2_
+                                                  m \underline {w}_2 + \ldot...
+l.956 \end{align*}
+                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:956: Double subscript.
+<argument> ...nderline {w}_2 + \ldots + \alpha _n_
+                                                  m \underline {w}_n) \\ =& ...
+l.956 \end{align*}
+                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:956: Double subscript.
+<argument> ..._2\alpha _{n2}+\ldots +x_m\alpha _n_
+                                                  m)\underline {w}_n 
+l.956 \end{align*}
+                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:968: Double subscript.
+<argument> ..._2\alpha _{12}+\ldots +x_m\alpha _1_
+                                                  m \\ x_1\alpha _{21}+x_2\a...
+l.968 \end{align*}
+                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:968: Double subscript.
+<argument> ..._2\alpha _{22}+\ldots +x_m\alpha _2_
+                                                  m \\ \vdots \\ x_1\alpha _...
+l.968 \end{align*}
+                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:968: Double subscript.
+<argument> ...lpha _2_m \\ \vdots \\ x_1\alpha _n_
+                                                  1 + x_2\alpha _n_2 + \ldot...
+l.968 \end{align*}
+                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:968: Double subscript.
+<argument> ...ts \\ x_1\alpha _n_1 + x_2\alpha _n_
+                                                  2 + \ldots + x_m \alpha _{...
+l.968 \end{align*}
+                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:968: Double subscript.
+<argument> ...\\ \vdots & & & \vdots \\ \alpha _n_
+                                                  1 & \alpha _n_2 & \ldots &...
+l.968 \end{align*}
+                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:968: Double subscript.
+<argument> ...& \vdots \\ \alpha _n_1 & \alpha _n_
+                                                  2 & \ldots & \alpha _{nm}\...
+l.968 \end{align*}
+                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:968: Double subscript.
+<argument> ..._2\alpha _{12}+\ldots +x_m\alpha _1_
+                                                  m \\ x_1\alpha _{21}+x_2\a...
+l.968 \end{align*}
+                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:968: Double subscript.
+<argument> ..._2\alpha _{22}+\ldots +x_m\alpha _2_
+                                                  m \\ \vdots \\ x_1\alpha _...
+l.968 \end{align*}
+                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:968: Double subscript.
+<argument> ...lpha _2_m \\ \vdots \\ x_1\alpha _n_
+                                                  1 + x_2\alpha _n_2 + \ldot...
+l.968 \end{align*}
+                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:968: Double subscript.
+<argument> ...ts \\ x_1\alpha _n_1 + x_2\alpha _n_
+                                                  2 + \ldots + x_m \alpha _{...
+l.968 \end{align*}
+                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:968: Double subscript.
+<argument> ...\\ \vdots & & & \vdots \\ \alpha _n_
+                                                  1 & \alpha _n_2 & \ldots &...
+l.968 \end{align*}
+                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./notes.tex:968: Double subscript.
+<argument> ...& \vdots \\ \alpha _n_1 & \alpha _n_
+                                                  2 & \ldots & \alpha _{nm}\...
+l.968 \end{align*}
+                  
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+[20] [21]
+Runaway argument?
+ P_{\underline {u}}(\underline {x}) = \left ( \frac {\underline {x} \cdot \ETC.
+./notes.tex:1025: Paragraph ended before \align* was complete.
+<to be read again> 
+                   \par 
+l.1025 
+       
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+./notes.tex:1025: Missing $ inserted.
+<inserted text> 
+                $
+l.1025 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./notes.tex:1025: Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.1025 
+       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./notes.tex:1025: Display math should end with $$.
+<to be read again> 
+                   \par 
+l.1025 
+       
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+[22]
+./notes.tex:1026: Misplaced \cr.
+\math@cr@@@ ->\cr 
+                  
+l.1026 \end{align*}
+                   
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./notes.tex:1026: Misplaced \noalign.
+\math@cr@@ ... \iffalse }\fi \math@cr@@@ \noalign 
+                                                  {\vskip #1\relax }
+l.1026 \end{align*}
+                   
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+./notes.tex:1026: Misplaced \noalign.
+\black@ #1->\noalign 
+                     {\ifdim #1>\displaywidth \dimen@ \prevdepth \nointerlin...
+l.1026 \end{align*}
+                   
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+
+Overfull \hbox (103.8038pt too wide) detected at line 1026
+[]
+ []
+
+./notes.tex:1026: Extra }, or forgotten \endgroup.
+\endalign ->\math@cr \black@ \totwidth@ \egroup 
+                                                \ifingather@ \restorealignst...
+l.1026 \end{align*}
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./notes.tex:1026: Missing $ inserted.
+<inserted text> 
+                $
+l.1026 \end{align*}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./notes.tex:1026: Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.1026 \end{align*}
+                   
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+(./figures/rotation.pdf_tex
+<./figures/rotation.pdf, id=580, page=1, 682.86612pt x 341.43306pt>
+File: ./figures/rotation.pdf Graphic file (type pdf)
+<use ./figures/rotation.pdf, page 1>
+Package pdftex.def Info: ./figures/rotation.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 421.66995pt x 210.83708pt.
+<./figures/rotation.pdf, id=581, page=2, 682.86612pt x 341.43306pt>
+File: ./figures/rotation.pdf Graphic file (type pdf)
+<use ./figures/rotation.pdf, page 2>
+Package pdftex.def Info: ./figures/rotation.pdf , page2 used on input line 59.
+(pdftex.def)             Requested size: 421.66995pt x 210.83708pt.
+)
+./notes.tex:1072: Undefined control sequence.
+<argument>  (1,2) = 1(1,0)+2(0,1)\\ \therfore 
+                                              [1,2] \text { for $E$} \\ 
+l.1072                 \end{align}
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./notes.tex:1072: Undefined control sequence.
+<argument>  (1,2) = 1(1,0)+2(0,1)\\ \therfore 
+                                              [1,2] \text { for $E$} \\ 
+l.1072                 \end{align}
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[23 <./figures/rotation.pdf> <./figures/rotation.pdf>] [24]
+./notes.tex:1112: Undefined control sequence.
+<argument> ...rline {v}$} \\ & \iff |A - \lambdaI 
+                                                  | = 0 
+l.1112 	\end{align}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./notes.tex:1112: Undefined control sequence.
+<argument> ...rline {v}$} \\ & \iff |A - \lambdaI 
+                                                  | = 0 
+l.1112 	\end{align}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1100--1114
+
+ []
+
+[25]
+./notes.tex:1173: Undefined control sequence.
+l.1173 ...e characteristic equation $|A - \lambdaI
+                                                  | = 0$ we obtain
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[26] [27] (./figures/seqconvergece.pdf_tex
+<./figures/seqconvergece.pdf, id=630, page=1, 682.86612pt x 341.43306pt>
+File: ./figures/seqconvergece.pdf Graphic file (type pdf)
+<use ./figures/seqconvergece.pdf, page 1>
+Package pdftex.def Info: ./figures/seqconvergece.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 421.66995pt x 210.83708pt.
+<./figures/seqconvergece.pdf, id=631, page=2, 682.86612pt x 341.43306pt>
+File: ./figures/seqconvergece.pdf Graphic file (type pdf)
+<use ./figures/seqconvergece.pdf, page 2>
+Package pdftex.def Info: ./figures/seqconvergece.pdf , page2 used on input line 59.
+(pdftex.def)             Requested size: 421.66995pt x 210.83708pt.
+) [28]
+Underfull \hbox (badness 10000) in paragraph at lines 1233--1234
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1234--1235
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1235--1236
+
+ []
+
+[29 <./figures/seqconvergece.pdf> <./figures/seqconvergece.pdf>] [30]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1239.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1239.
  (./notes.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 283.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 283.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1239.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1239.
 Package rerunfilecheck Info: File `notes.out' has not changed.
-(rerunfilecheck)             Checksum: 81B515BF910E72DA7CA8ABA82767954F;958.
+(rerunfilecheck)             Checksum: 3EB354100E4052A308E6D493340AC9A1;3525.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 25653 strings out of 481239
- 479157 string characters out of 5920377
- 838196 words of memory out of 5000000
- 40305 multiletter control sequences out of 15000+600000
- 585860 words of font info for 66 fonts, out of 8000000 for 9000
+ 26111 strings out of 481239
+ 486318 string characters out of 5920377
+ 851745 words of memory out of 5000000
+ 40521 multiletter control sequences out of 15000+600000
+ 586236 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,15n,100p,829b,547s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmri.pfb>
-Output written on notes.pdf (7 pages, 196387 bytes).
+ 62i,23n,100p,829b,652s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi5.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmri.pfb>
+Output written on notes.pdf (31 pages, 312344 bytes).
 PDF statistics:
- 253 PDF objects out of 1000 (max. 8388607)
- 227 compressed objects within 3 object streams
- 80 named destinations out of 1000 (max. 500000)
- 138 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 786 PDF objects out of 1000 (max. 8388607)
+ 719 compressed objects within 8 object streams
+ 304 named destinations out of 1000 (max. 500000)
+ 492 words of extra memory for PDF output out of 10000 (max. 10000000)
 

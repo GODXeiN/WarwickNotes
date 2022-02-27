@@ -1,15 +1,53 @@
 \BOOKMARK [1][-]{section.1}{Number System}{}% 1
-\BOOKMARK [2][-]{subsection.1.1}{Binary}{section.1}% 2
-\BOOKMARK [2][-]{subsection.1.2}{Converting to base n}{section.1}% 3
-\BOOKMARK [2][-]{subsection.1.3}{The division algorithm}{section.1}% 4
-\BOOKMARK [2][-]{subsection.1.4}{The Euclidean algorithm}{section.1}% 5
-\BOOKMARK [2][-]{subsection.1.5}{Modular Arithmetic}{section.1}% 6
-\BOOKMARK [2][-]{subsection.1.6}{Use of Modular Arithmetic}{section.1}% 7
-\BOOKMARK [2][-]{subsection.1.7}{Real Numbers}{section.1}% 8
-\BOOKMARK [2][-]{subsection.1.8}{Rational Numbers}{section.1}% 9
-\BOOKMARK [2][-]{subsection.1.9}{Irrational Numbers}{section.1}% 10
-\BOOKMARK [1][-]{section.2}{Axioms}{}% 11
-\BOOKMARK [2][-]{subsection.2.1}{Algebraic Axioms}{section.2}% 12
-\BOOKMARK [2][-]{subsection.2.2}{Ordering Axioms}{section.2}% 13
-\BOOKMARK [2][-]{subsection.2.3}{Ordering}{section.2}% 14
-\BOOKMARK [2][-]{subsection.2.4}{Archimedes Property of Real}{section.2}% 15
+\BOOKMARK [2][-]{subsection.1.1}{Converting to base n}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{The division algorithm}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{The Euclidean algorithm}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.4}{Modular Arithmetic}{section.1}% 5
+\BOOKMARK [3][-]{subsubsection.1.4.1}{Use of Modular Arithmetic}{subsection.1.4}% 6
+\BOOKMARK [2][-]{subsection.1.5}{Real Numbers}{section.1}% 7
+\BOOKMARK [2][-]{subsection.1.6}{Rational Numbers}{section.1}% 8
+\BOOKMARK [2][-]{subsection.1.7}{Irrational Numbers}{section.1}% 9
+\BOOKMARK [2][-]{subsection.1.8}{Complex Numbers}{section.1}% 10
+\BOOKMARK [3][-]{subsubsection.1.8.1}{Argrand Diagram}{subsection.1.8}% 11
+\BOOKMARK [3][-]{subsubsection.1.8.2}{The Triangle Inequaliy}{subsection.1.8}% 12
+\BOOKMARK [3][-]{subsubsection.1.8.3}{Polar representation}{subsection.1.8}% 13
+\BOOKMARK [3][-]{subsubsection.1.8.4}{Fundamental Theorem of Algebra}{subsection.1.8}% 14
+\BOOKMARK [1][-]{section.2}{Axioms}{}% 15
+\BOOKMARK [2][-]{subsection.2.1}{Algebraic Axioms}{section.2}% 16
+\BOOKMARK [2][-]{subsection.2.2}{Ordering Axioms}{section.2}% 17
+\BOOKMARK [2][-]{subsection.2.3}{Ordering}{section.2}% 18
+\BOOKMARK [2][-]{subsection.2.4}{Archimedes Property of Real}{section.2}% 19
+\BOOKMARK [1][-]{section.3}{Vectors}{}% 20
+\BOOKMARK [2][-]{subsection.3.1}{Addition}{section.3}% 21
+\BOOKMARK [2][-]{subsection.3.2}{Geometric Interpretation}{section.3}% 22
+\BOOKMARK [2][-]{subsection.3.3}{Scalar Product}{section.3}% 23
+\BOOKMARK [2][-]{subsection.3.4}{Linear Combination}{section.3}% 24
+\BOOKMARK [2][-]{subsection.3.5}{Span}{section.3}% 25
+\BOOKMARK [2][-]{subsection.3.6}{Subspaces}{section.3}% 26
+\BOOKMARK [2][-]{subsection.3.7}{Linear Independence}{section.3}% 27
+\BOOKMARK [2][-]{subsection.3.8}{Basis}{section.3}% 28
+\BOOKMARK [2][-]{subsection.3.9}{Dimension}{section.3}% 29
+\BOOKMARK [1][-]{section.4}{Matrices}{}% 30
+\BOOKMARK [2][-]{subsection.4.1}{Addition}{section.4}% 31
+\BOOKMARK [2][-]{subsection.4.2}{Multiplication}{section.4}% 32
+\BOOKMARK [2][-]{subsection.4.3}{Matrix Inverse}{section.4}% 33
+\BOOKMARK [2][-]{subsection.4.4}{Matrix Transposition}{section.4}% 34
+\BOOKMARK [2][-]{subsection.4.5}{Identity Matrices}{section.4}% 35
+\BOOKMARK [2][-]{subsection.4.6}{Determinant}{section.4}% 36
+\BOOKMARK [2][-]{subsection.4.7}{Linear Equations}{section.4}% 37
+\BOOKMARK [2][-]{subsection.4.8}{Row Equivalence}{section.4}% 38
+\BOOKMARK [2][-]{subsection.4.9}{Row Echelon form}{section.4}% 39
+\BOOKMARK [2][-]{subsection.4.10}{Elementary Matrices}{section.4}% 40
+\BOOKMARK [2][-]{subsection.4.11}{Adjoint Of A Matrix}{section.4}% 41
+\BOOKMARK [2][-]{subsection.4.12}{Finding The Inverse}{section.4}% 42
+\BOOKMARK [2][-]{subsection.4.13}{Linear Independence of Matrices}{section.4}% 43
+\BOOKMARK [2][-]{subsection.4.14}{Linear Transformations}{section.4}% 44
+\BOOKMARK [2][-]{subsection.4.15}{Projection}{section.4}% 45
+\BOOKMARK [2][-]{subsection.4.16}{Rotation through origin}{section.4}% 46
+\BOOKMARK [2][-]{subsection.4.17}{Coordinates through basis}{section.4}% 47
+\BOOKMARK [2][-]{subsection.4.18}{Change of basis}{section.4}% 48
+\BOOKMARK [2][-]{subsection.4.19}{Eigenvalues and Eigenvectors}{section.4}% 49
+\BOOKMARK [2][-]{subsection.4.20}{Diagonalisation of a matrix}{section.4}% 50
+\BOOKMARK [1][-]{section.5}{Sequences}{}% 51
+\BOOKMARK [2][-]{subsection.5.1}{Limit of a Sequence}{section.5}% 52
+\BOOKMARK [2][-]{subsection.5.2}{Rules for Convergent Sequences}{section.5}% 53

@@ -56,7 +56,6 @@
 \newtheorem*{note}{Note}
 
 \pdfsuppresswarningpagegroup=1
-
 \begin{document}
 	\begin{titlepage}
 	\begin{center}
@@ -85,14 +84,6 @@
 	\tableofcontents
 	\newpage
 \section{Number System}
-\subsection{Binary}
-\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Binary number system \label{Binary number system}\end{defn}]
-The binary number system uses the digits $0,1$ to express itself. In particular the positive integers are represented as:
-\begin{align}
-\sum_{i=0}^{n} a2^{i}
-\end{align}
-where $a \in \mathbb{B}$ and $\mathbb{B} = \{0,1\}$. Different number systems are usually expressed with subscripts. E.g. $100101_{two}$. 
-\end{tcolorbox}
 \subsection{Converting to base $n$}
 We can utilise the division algorithm to achieve this. That is, for some base $n$ to convert from  base $10$ we divide by $n$ to get remainders.
 \begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{exmp}Division of binary \label{Division of binary}\end{exmp}]
@@ -144,7 +135,7 @@ Because of these properties, indeed
                 \end{align}
 		also holds.
 \end{tcolorbox}
-\subsection{Use of Modular Arithmetic}
+\subsubsection{Use of Modular Arithmetic}
 Let $N$ represent the number of bits used in a system. Then, there are $2^{N}$ bits of string length $N$ can be used to represent the numbers in the integer range $[-2^{N-1},2^{N-1}-1]$. In modular arithmetic, the integer $x$ can be then represented as $x \bmod 2^{N}$. This is two's complement. For example,
 \begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{exmp}Two's Complement \label{}\end{exmp}]
         
@@ -173,6 +164,101 @@ An algebraic number is a real number such as  $\sqrt{2}$ and $-\sqrt{2}  $. It i
 \begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Transcendental numbers \label{Transcendental numbers}\end{defn}]
 Transcendental numbers are real numbers which cannot be solutions of polynomial equations with rational coefficients. Examples include $\pi$ and $e$.
 \end{tcolorbox}
+\subsection{Complex Numbers}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Complex Number \label{Complex Number}\end{defn}]
+The complex number $i$ is defined as
+\begin{align}
+i = \sqrt{-1} 
+\end{align}
+And helps us expand our artillery in mathematics for further algebra. Complex numbers are usually denoted in the form
+\begin{align*}
+	z=a+bi
+\end{align*}
+where $a,b \in \mathbb{R}$. Furthermore, in the notation above, we follow the general notation
+\begin{align*}
+	Im(z) = a \\
+	Re(z) = b
+\end{align*}
+\end{tcolorbox}
+The set of complex numbers is denoted as $\mathbb{C}$
+\subsubsection{Argrand Diagram}
+The Argrand diagram is a plane of complex numbers where $y$ axis is the $Im(z)$ and $x$ axis is the $Re(z)$. In particular,
+\begin{figure}[H]
+    \centering
+    \incfig{argrand}
+    \caption{Argrand diagram of $a+bi$}
+    \label{fig:argrand}
+\end{figure}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Comlex Conjugate \label{Comlex Conjugate}\end{defn}]
+The complex conjugate of $z=a+bi$ is denoted as $\overline{z}$ and is defined as
+\begin{align}
+\overline{z} = a-bi
+\end{align}
+Another notation for this is $z^{*}$.
+\end{tcolorbox}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Modulus of Complex Numbers \label{Modulus of Complex Numbers}\end{defn}]
+The modulus of complex nmber $|z|$ is defined as
+\begin{align}
+|z| = \sqrt{a^2+b^2} 
+\end{align}
+This shows the length of the red line in figure \ref{fig:argrand}.
+\end{tcolorbox}
+\subsubsection{The Triangle Inequaliy}
+The triangle inequality is given as
+\begin{align*}
+	|z+w| \le  |z| + |w|
+\end{align*}
+A corollary of this is
+\begin{align*}
+	||z|  |w|| \ge |z-w|
+\end{align*}
+That is, if we consider
+\begin{align*}
+	&|z|\le |w| + |z-w| \\
+	\implies& |z| - |w| \le  |z-w| 
+\end{align*}
+We similarly obtain for $w$ 
+\begin{align*}
+	&|w| \le |z| + |w-z| \\
+	\implies& |w| - |z| \le |w-z|
+\end{align*}
+However
+\begin{align*}
+	|w-z| = |z-w|
+\end{align*}
+and therefore
+\begin{align*}
+	||z| - |w|| \le  |z - w|
+\end{align*}
+\subsubsection{Polar representation}
+The polar representation of the number $a+bi$ can be written as $r(\cos\theta + i\sin \theta)$, where $r$ is the modulus. In particular, $a=r \cos \theta$ and $b = \sin \theta$. 
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{thm}De Moivre's Theorem \label{De Moivre's Theorem}\end{thm}]
+	De Moivre'sT Theorem states that from the consequence of what is below
+		\begin{align}
+		cis \phi \times cis \theta = cis \phi + \theta
+		\end{align}
+	We obtain the theorem
+	\begin{align}
+		(	cis \theta )^{n} = cis n \theta
+	\end{align}
+	\begin{proof}
+		The proof of this theorem is left as an exercise to the reader. \\
+		\textit{Hint: Begin with induction}
+	\end{proof}
+\end{tcolorbox}
+\subsubsection{Fundamental Theorem of Algebra}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{thm}Fundamental Theorem of Algebra \label{Fundamental Theorem of Algebra}\end{thm}]
+	Every polynomial of degree $n$ with complex coefficients has exactly $n$ not necessarily distinct solutions in $\mathbb{C}$.
+\end{tcolorbox}
+And indeed, we can use this theorem for quadratics. In particular, recall that for the quadratic
+\begin{align*}
+	az^2+bz+c=0
+\end{align*}
+We have discriminant $\Delta$. That is,
+\begin{align*}
+	\Delta = b^2-4ac
+\end{align*}
+And if $\Delta \ge 0$, we have real solution(s). If we have $\Delta < 0$, then we have complex solutions.
 \section{Axioms}
 \subsection{Algebraic Axioms}
 \begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{axiom}Commutativity \label{Commutativity}\end{axiom}]
@@ -202,7 +288,7 @@ It follows that
 \begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{axiom}Multiplicative Identity \label{Multiplicative Identity}\end{axiom}]
         $\exists x . yx=y$
                 \begin{align}
-                \text{In particular, } $x=1$		
+                \text{In particular, } x=1		
                 \end{align}
 \end{tcolorbox}
 \begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{axiom}Distinction \label{Distinction}\end{axiom}]
@@ -280,4 +366,874 @@ A real number $L$ is the infimum of $S$ if $L$ is a lower bound of $S$ and $L \g
 		However, this is a contradiction since we already assumed that $l$ is the least upper bound when clearly $ l - \varepsilon < l$
 	\end{proof}
 \end{tcolorbox}
+\section{Vectors}
+\subsection{Addition}
+In 2 dimensional space, if $\underline{a} = (a_1,a_2)$ and $\underline{b} = (b_1,b_2)$ where $a,b \in \mathbb{R}^2$ and $\lambda \in \mathbb{R}$, then
+\begin{align*}
+	\underline{a} + \underline{b} = (a_1+b_1, a_2+b_2) \\
+	\lambda \underline{a} = (\lambda a_1, \lambda a_2)
+\end{align*}
+Similar principle follow in $n$ dimensional spaces. 
+\subsection{Geometric Interpretation}
+A vector $\underline{p} = (p_1,p_2) \in \mathbb{R}^2$ with notation $\overline{OP}$ is seen as travelling from origin $O = (0,0)$ to $(p_1,p_2)$.
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Unit Vector \label{Unit Vector}\end{defn}]
+A vector is called a unit vector if and only if its length is $1$.
+\end{tcolorbox}
+The distance between two vectors $\underline{ a}$ and $\underline{b}$ is given by $| \underline{a} - \underline{b}|$.
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{exmp}Example 1 \label{Example 1}\end{exmp}]
+        Find the unit vector in $\mathbb{R}^2$ which has the same direction as $(2,-1)$.\\
+	We begin with finding the magnitude:
+                \begin{align}
+                \sqrt{2^2 + 1 ^2} = \sqrt{5} 
+                \end{align} Then, we just have to scale it such that
+		\begin{align*}
+			(\frac{2}{\sqrt{5} , -\frac{1}{\sqrt{5} }}
+		\end{align*}
+\end{tcolorbox}
+\subsection{Scalar Product}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Scalar Product \label{Scalar Product}\end{defn}]
+The scalar product, also known as dot product, of vectors $\underline{a}=(a_1,a_2)$ and $\underline{b}=(b_1,b_2)$ in $\mathbb{R}^2$ is defined as follows:
+\begin{align*}
+	a \cdot b = a_1b_1+a_2b_2 = |\underline{a}| |\underline{b}| \cos \theta
+\end{align*}
+Where $\theta$ is the angle between $\underline{a}$ and $\underline{b}$. Note that if $\theta = \frac{\pi}{2}$, then the result is $0$.
+\begin{proof}
+	Write
+	\begin{align*}
+		\cos \theta = \cos \left( \beta - \alpha \right)  = \cos \beta \cos \alpha + \sin \beta \sin \alpha
+	\end{align*}
+	However, we can rewrite
+	\begin{align*}
+		&\sin \alpha = \frac{a_2}{|\underline{a}|} &\sin \beta = \frac{b_2}{|\underline{b}|} \\
+		&\cos \alpha = \frac{a_1}{|\underline{a}|} &\cos \beta = \frac{b_1}{ | \underline{b} |}
+	\end{align*}
+Intuitively, in a graph:
+\begin{figure}[H]
+    \centering
+    \incfig{scalar}
+    \caption{Dot Product Graph}
+    \label{fig:scalar}
+\end{figure}
+\end{proof}
+\end{tcolorbox}
+Indeed, such rules can be generalised for $n$ dimensions, if one continues to follow the patterns.
+\subsection{Linear Combination}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Linear Combination \label{Linear Combination}\end{defn}]
+If $\underline{u},\underline{v} \in \mathbb{R}^2$ and $\alpha,\beta \in \mathbb{R}$, then a vector of the form is
+\begin{align}
+\alpha \underline{u} + \beta \underline{v}
+\end{align}
+is called a linear combination of $\underline{u}$ and $\underline{v}$
+\end{tcolorbox}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{exmp}Example 1: Linear Combination \label{Example 1: Linear Combination}\end{exmp}]
+        In $\mathbb{R}^2$ the vector $(5,3)$ can be written in the form
+	\begin{align*}
+		  (5,3) = 5(1,0) + 3(0,1)
+	\end{align*}
+	Indeed, many combinations can exist.
+\end{tcolorbox}
+The linear combinations can be extended to multiple dimensions. In fact, given non parallel vectors $\underline{u},\underline{v} \in \mathbb{R}^2$, the vector $ \alpha \underline{u}+ \beta \underline{v}$ represents the diagonal of a parallelogram with sides $\alpha \underline{u}$ and $\beta \underline{v}$.
+\subsection{Span}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Span \label{Span}\end{defn}]
+If $U = \{\underline{u}_1, \underline{u}_2,\ldots,\underline{u}_m \}$ is a finite set of vectors in $\mathbb{R}^{n}$, then the span of $U$ is the set of all linear combinations of $\underline{u}_1, \underline{u}_2,\ldots,\underline{u}_m $
+\begin{align}
+\text{Span } U = \{ \alpha_1 \underline{u}_1+\alpha_2\underline{u}_2 + \ldots + \alpha_m \underline{u}_m | \alpha_1, \alpha_2,\ldots,\alpha_m \in \mathbb{R} \}
+\end{align}
+\end{tcolorbox}
+\subsection{Subspaces}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Subspaces \label{Subspaces}\end{defn}]
+A subspace of $\mathbb{R}^{n}$ is a nonemtpy set $S$ of $\mathbb{R}^{n}$ with the properties
+\begin{align}
+	\underline{u}, \underline{v} \in S &\implies \underline{u} + \underline{v} \in S \\
+\underline{u} \in S, \lambda \in \mathbb{R} &\implies \lambda \underline{u} \in S
+\end{align}
+That is, there is closure under addition and closer under scalar multiplication.
+\end{tcolorbox}
+If $S$ is a subspace and $\underline{u}_1, \underline{u}_2,\ldots,\underline{u}_m \in S$, then any linear combination of $\underline{u}_1, \underline{u}_2, \ldots,\underline{u}_m$ also belongs to $S$. This follows from under addition and scalar multiplication by induction on $m$.
+\subsection{Linear Independence}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Linear Dependence \label{Linear Dependence}\end{defn}]
+Linear independence is when some set $S$ with pairs of numbers have the property that none of the pair of numbers can be expressed as a linear combination of other two. In particular, a set $\{ \underline{u}_1, \underline{u}_3,\ldots,\underline{u}_3\}$ of vectors, where
+	\begin{align}
+		\underline{u}_i = (u_i_1,u_i_2,\ldots,u_i_n)
+	\end{align}$\mathbb{R}^{n}$ is linearly dependent if there are numbers $a_1,a_2,\ldots,a_n \in \mathbb{R}$, not all zero, such that $a_1\underline{u}_1 + a_2 \underline{u}_2 + \ldots+a_m \underline{u}_m = \underline{0}$. That is, each ordered pair for the sum of $u_i$ becomes $(0,0,\ldots,0) = O$
+\end{tcolorbox}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Linear Independence \label{ind}\end{defn}]
+Linear dependence is when only the solution $\forall a_i = 0$ where $i \in \{1,2,\ldots,m\}$ is the only solution to $a_1\underline{u}_1 + a_2 \underline{u}_2 + \ldots+a_m \underline{u}_m = \underline{0}$.
+\end{tcolorbox}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{thm}Linear Independence \label{Linearly Independence}\end{thm}]
+	A set $S = \{ \underline{u}_1, \underline{u}_2, \ldots , \underline{u}_m\}$ of nonzero vectors is linearly independent iff some $\underline{u}_r$ is a linear combination of its predecessors $\underline{u}_1, \ldots, \underline{u}_{m}$ 
+\end{tcolorbox}
+\subsection{Basis}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Basis \label{Basis}\end{defn}]
+Given subspace $S$ of $\mathbb{R}^{n}$ (recall a non empty subset closed under addition and scalar multiplication), a set of vectors is called a basis of $S$ if it is linearly independent set which spans $S$.
+\end{tcolorbox}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{exmp}Basis of R3 \label{Basis of R3}\end{exmp}]
+        The set
+                \begin{align}
+               S = \{(1,0,0),(0,1,0),(0,0,1) \} 
+                \end{align}
+		is a basis of $\mathbb{R}^{3}$. 
+\end{tcolorbox}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Standard Basis \label{Standard Basis}\end{defn}]
+In $\mathbb{R}^{n}$, the standard basis is the set $\{ \underline{e}_1, \underline{e}_2, \ldots, \underline{e}_n \}$ where $\underline{e}_r$ is the vector with $r$ th component $1$ and all other components $0$. In particular, the example above is a standard basis for $\mathbb{R}^{3}$.
+\end{tcolorbox}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{thm}At most m vectors \label{At most m vectors}\end{thm}]
+	If the set $\{ \underline{v}_1, \underline{v}_2, \ldots , \underline{v}_m \}$ spans $S$, a subspace of $\mathbb{R}^{n}$, then any linearly independent subset of $S$ contains at most $m$ vectors.
+	\begin{proof}
+		Suppose $\{ \underline{w}_1, \underline{w}_2, \ldots , \underline{w} _p \}$ is a linearly independent subset of $S$. We wish to show that $p \le  m$. \\
+		We can express $\underline{w}_1 \in S$ as a linear combination $\{\underline{v}_1, \underline{v}_2, \ldots, \underline{v}_m \}$ since the $v$ span $S$. \\
+		Thus the set $\{\underline{w}_1, \underline{v}_1, \ldots , \underline{v}_m \}$ is linearly dependent.
+		Therefore, by the linear independent theorem, some vector $\underline{v}_i$ is a linear combination of its predecessors $\underline{w}_1,\underline{v}_1, \ldots, \underline{v}_{i-1}$ \\
+		It follows that $\{ \underline{w}_1, \underline{v}_1, \ldots , \underline{v}_{i-1}, \underline{v}_{i+1},\ldots,\underline{v}_m \}$. I.e, we replace $ \underline{v}_i$ with $\underline{w}_1$.
+		We continue to iterate the same steps and thus we can get at most $m$ amount of $\underline{w}_i$.
+	\end{proof}
+\end{tcolorbox}
+\subsection{Dimension}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Dimension \label{Dimension}\end{defn}]
+The dimension of a subspace $\mathbb{R}^{n}$ is the number of vectors in a bases for the subspace. In other words, it is the cardinality of the basis after being reduced.
+\end{tcolorbox}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{exmp}Example 1 \label{Example 1}\end{exmp}]
+        Consider the set
+                \begin{align}
+                S = \{ (x,y,z) | x+2y-z=0 \}
+                \end{align}
+		That is a subspace of $\mathbb{R}^{3}$. Find the basis and dimension of $S$. \\
+		To solve this problem, we can write
+		\begin{align}
+			S &= \{(x,y,+2y) | x,y \in \mathbb{R} \}\\
+			  &= \{ x(1,0,1) + y(0,1,2) | x,y \in \mathbb{R} \} \\
+			  &= span \{(1,0,1),(0,1,2) \}
+		\end{align}
+		Thus, the dimension is $2$.
+\end{tcolorbox}
+\section{Matrices}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Matrix \label{Matrix}\end{defn}]
+A matrix can be seen as a table of information and is denoted as
+\begin{align}
+	A = [a_{ij}]_{m \times n}
+\end{align}
+shows a matrix of the form
+\begin{align} \left[
+	\begin{array}{cccc}
+		a_{11} & a_{12} & \ldots & a_{1n} \\
+		a_{21} & a_{22} & \ldots & a_{2n} \\
+		\vdots & & & \vdots \\
+		a_{m1} & \ldots & \ldots & a_{mn}
+	\end{array}\right]
+\end{align}
+\end{tcolorbox}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Zero Matrix \label{Zero Matrix}\end{defn}]
+The zero matrix, denoted as $O_{m \times n}$ is a $m \times n$ matrix whose all elements are $0$.
+\end{tcolorbox}
+\subsection{Addition}
+The addition of matrices is defined in an easy manner. For two matrices $A=[a_{ij}]_{m\times n}$ and $B = [b_{ij}]_{m \times n}$, The addition $A+B = [a_{ij}+b_{ij}]_{m \times n}$
+\subsection{Multiplication}
+The multiplication of matrices way more complexly defined. For two matrices $A = [ij]_{m\times p}$ and $B = [b_{ij}]_{p\times n}$, the multiplication $A \times B = C$ is defined as
+\begin{align}
+	c_{ij} = \sum_{r=1}^{p} a_{ir}b_{rj}
+\end{align}
+In other words, the $ij$ th element of $AB$ is the scalar product of the $i$ th row vector of $A$ with the $j$ th column of $B$.
+\subsection{Matrix Inverse}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Inverse \label{Inverse}\end{defn}]
+Matrix $B$ is the inverse of matrix $A$ if $A$ and $B$ are square matrices of the same order and if
+\begin{align}
+AB = I = BA
+\end{align}
+However, note that not all square matrices have an inverse. We will see how to check whether it exists and compute it using determinants.
+\end{tcolorbox}
+There are some rules to the inverse:
+\begin{itemize}
+	\item If $A$ has an inverse, then it is unique.
+	\item If $A$ is the inverse of $B$ then $B$ is the inverse of $A$.
+	\item The inverse is denoted by $A ^{-1}$.
+\end{itemize}
+\subsection{Matrix Transposition}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Matrix Transposition \label{Matrix Transposition}\end{defn}]
+The matrix transposition of some matrix $A=[a_{ij}]_{m \times n}$ denoted as $A^{T}$ is the matrix $A^{T}=[a_{ji}]_{n \times m}$
+\end{tcolorbox}
+\subsection{Identity Matrices}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Identity Matrices \label{Identity Matrices}\end{defn}]
+The identity matrix of diagonal matrices is denoted as $I$ and are square matrices which take the form such as
+\begin{align}
+	I &= [1] \\
+	I &= \begin{bmatrix} 1 & 0 \\
+0 & 1\end{bmatrix} \\
+		I &= \begin{bmatrix} 1 & 0 & 0\\
+0 & 1 & 0 \\
+0 & 0 & 1\end{bmatrix} \\
+\ldots
+\end{align}
+These have the property that $A \times A^{-1}= I$. In particular, $BI = B$.
+\end{tcolorbox}
+\subsection{Determinant}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Determinant \label{Determinant}\end{defn}]
+The determinant, denoted as for some matrix $A = [a_{ij}]_{m \times n}$
+\begin{align}
+det(A) \\
+|A| \\
+\left|
+\begin{array}{cc}
+	a & b \\
+	c & d
+\end{array}\right|
+\end{align}
+Determinants for this module only extended to $2\times 2$ matrices. For $2\times 2$ matrix, it is defined to be
+\begin{align}
+	ad-bc
+\end{align}
+\end{tcolorbox}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{cor}A matrix is invertible if its determinan is non-zero \label{A matrix is invertible if its determinan is non-zero}\end{cor}]
+        We know that
+	\begin{align*}
+		det(A)det(A^{-1}) = det(AA^{-1}) = det(I) = 1
+	\end{align*}
+	Meaning that $det(A) \neq 0$. Indeed, with this, it is easy to verify that a  $2\times 2$ matrix $A$ is invertible if and only if its determinant is nonzero. 
+\end{tcolorbox}
+Let $\alpha = [a_{ij}]_{3\times 3}$ be a matrix. Then the determinant
+\begin{align*}\left|
+	\begin{array}{ccc}
+		a_{11} & a_{12} & a_{13} \\
+		a_{21} & a_{22} & a_{23} \\
+		a_{31} & a_{32} & a_{33}
+	\end{array}\right|
+\end{align*}
+is defined by
+\begin{align*}
+	a_{11} \left| \begin{array}{cc}
+	a_{22} & a_{23} \\
+		a_{32} & a_{33}
+		\end{array} \right| - a_{12} \left| \begin{array}{cc}
+		a_{21} & a_{23} \\
+		a_{31} & a_{33}
+		\end{array}\right| + a_{13} \left| \begin{array}{cc}
+		a_{21} & a_{22} \\
+		a_{31} & a_{32}
+		\end{array}\right|
+\end{align*}
+And expanding these $2\times 2$ matrices obtains us
+\begin{align*}
+	|A| = a_{11}(a_{22}a_{33}-a_{23}a_{32})-a_{12}(a_{21}a_{33}-a_{23}a_{31})+a_{13}(a_{21}a_{32}-a_{22}a_{31})
+\end{align*}
+Indeed, we can do some algebraic manipulation to give it a slightly different definitions:
+\begin{align*}
+	|A| &= -a_{21}(a_{12}a_{33}-a_{13}a_{32})+a_{22}(a_{11}a_{33}-a_{13}a_{31})-a_{23}(a_{11}a_{32}-a_{12}a_{31})\\
+	|A| &= a_{31}(a_{12}a_{23}-a_{22}a_{13})-a_{32}(a_{11}a_{23}-a_{21}a_{13})+a_{33}(a_{11}a_{22}-a_{21}a_{12})
+\end{align*}
+And with this, notice that the coefficients alternate in these different forms, i.e.
+\begin{align*}
+	\begin{bmatrix} + & - & + \\
+	- & + & - \\
++ & - & +\end{bmatrix} 
+\end{align*}
+As such, we can see a pattern:
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Determinants of n matrices \label{Determinants of n matrices}\end{defn}]
+If $A = [a_{ij}]$ is an $n \times n$ matrix, then the $ij$ th minor $M_{ij}$ of $A$ is defined to be the determinant of the $(n-1)\times (n-1)$ matrix obtained from $A$ by deleting the $i$ th row and $j$ th column. In other words, the $ij$ th cofactor $A_{ij}$ of $A$ is defined by
+\begin{align}
+A_{ij} =  (-1)^{i+j}M_i_j
+\end{align}
+For which, then, we can create
+\begin{align}
+	|A| &= a_{i1}A_{i1}+a_{i2}A_{i2}+\ldots+a_{in}A_{in} &\text{ expansion by $i$ th row}\\
+	|A| &= a_{1j}A_{1j}+a_{2j}A_{2j}+\ldots+a_{nj}A_{nj} & \text{ expansion by the $j$ th column}
+\end{align}
+\end{tcolorbox}
+This obtains us the following interesting properties:
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{cor}Elementary Row Operations \label{Elementary Row Operations}\end{cor}]
+If $B$ is the matrix obtained from $A$ by
+        \begin{enumerate}
+        	\item Multiplying a row of $A$ by a number $\lambda$, then $|B|=\lambda|A|$ 
+		\item Interchanging two rows of $A$, then $|B| = -|A|$ 
+		\item Adding a multiple of one row of $A$ to another, then $|B|=|A|$
+        \end{enumerate}
+	\begin{proof}
+              		Proofs of $1$ and $2$ are left as an exercise to the reader.\\
+			We use the fact that any determinant with two equal rows is $0$. This easily seen by number $2$, where if we were to swap these rows, we would obtain $|M| = -|M|$ hence $|M| = 0$ Now, we consider adding a multiple to obtain
+			\begin{align}
+				(a_{i1}+\lambda a_{k1})A_{i1}+(a_{i2}+\lambda a_{k2})A_{i2}+\ldots+(a_{in}+\lambda a_{kn})A_{kn} \\
+			\implies |A| + \lambda(a_{k1}A_{i1}+a_{k2}A_{i2} + \ldots + a_{kn}A_in)
+			\end{align}
+	But the right side is equal to $0$ from property $2$ as one of the $A_{ij}$ contains $a_k$ already, therefore this is just equal to $|A|$.
+	\end{proof}
+\end{tcolorbox}
+\subsection{Linear Equations}
+You can express linear equations in matrices. For example, if we consider the equations
+\begin{align*}
+	a_{11}x_1+a_{12}x_2=b_1 \\
+	a_{21}x_1+a_{22}x_2=b_2
+\end{align*}
+The equivalent matrix form is
+\begin{align*}
+	\begin{bmatrix} 
+		a_{11} & a_{12} \\
+		a_{21} & a_{22}
+	\end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \end{bmatrix}  = \begin{bmatrix} b_1 \\ b_2 \end{bmatrix} 
+\end{align*}
+And to solve such linear equations using row operations we
+\begin{enumerate}
+	\item Swap (interchange) two equations
+	\item Multiply both sides of an equation by a nonzero number 
+	\item Add a multiple of one equation to another equation
+\end{enumerate}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{exmp}Example \label{Example}\end{exmp}]
+        Consider the equation
+                \begin{align}
+                x_1-x_2+x_3=1 \\
+		x_1+x_2+2x_3=0 \\
+		2x_1-x_2+3x_3 = 2
+                \end{align}
+		Then, we can create an augment matrix such that
+		\begin{align}\left[
+			\begin{array}{ccc|c}
+				1& -1 & 1 & 1 \\
+				1 & 1 & 2 & 0 \\
+				2 & -1 & 3 & 2
+			\end{array}\right]
+		\end{align}
+\end{tcolorbox}
+\subsection{Row Equivalence}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Row Equivalence \label{Row Equivalence}\end{defn}]
+Matrices $A$ and $B$ are row equivalent ($A \sim B)$ if $A$ can be transformed to $B$ using a finite (possibly $0$ ) number of elementary row operations.
+\end{tcolorbox}
+\subsection{Row Echelon form}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Row Echelon Form \label{Row Echelon Form}\end{defn}]
+A matrix is in row echelon form if the first nonzero entry in each row is further to the right than the first nonzero entry in the previous row.
+\end{tcolorbox}
+\subsection{Elementary Matrices}
+Elementary row operations can be performed by multiplying a matrix on the left by a suitable "elementary matrix". These are matrices that can be used to, for example, interchange rows.
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{exmp}Elementary Matrix \label{Elementary Matrix}\end{exmp}]
+        \begin{align}
+		\begin{bmatrix} 0 & 1 & 0 \\
+		1 & 0 & 0 \\
+		0 & 0 & 1\end{bmatrix}  \begin{bmatrix} a & b & c \\ d & e & f \\ g & h & i \end{bmatrix} = \begin{bmatrix} d & e & f \\ a & b & c \\ g & h & i \end{bmatrix} 
+        \end{align}
+	In this case, the left matrix is an elementary matrix.
+\end{tcolorbox}
+More generally we define $n \times n$ elementary matrices as follows:
+
+\begin{itemize}
+	\item $E_{ij}$ is obtained from identity matrix $I$ by swapping rows $i$ and $j$.
+	\item $E_i(\lambda)$ for $\lambda \neq 0$ is obtained from $ I$ by multiplying the entries in the $i$ th row by $\lambda$.
+	\item $E_{ij}(\mu)$ is obtained from $I$ by adding $\mu$ times row $j$ and to row $i$.
+\end{itemize}
+	It is easy to verify that every elementary matrix is invertible and that its inverse is in fact another elementary matrix. In fact,
+	\begin{align*}
+		E_{ij}^{-1} = E_{ij} \text{ from } E_{ij}E_{ij}=I \\
+		E_i\left( \lambda \right) = E_i\left( \frac{1}{\lambda} \right) \text{ since } E_i\left( \lambda \right) E\left(\frac{1}{\lambda}\right) = I \\
+		E(\mu)E(-\mu) \text{ since } E \left( -\mu \right)(\mu) = I
+	\end{align*}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{thm}Sequences of elementary rows \label{Sequences of elementary rows}\end{thm}]
+	If a sequence of elementary row operation transforms a square matrix $A$ into $I$, then $A$ is invertible and the same sequence transforms $I$ into $A^{-1}$.
+	\begin{proof}
+		Suppose that the row operations applied to $A$ correspond to elementary matrices $E_1, E_2, \ldots, E_n$ where $E_1$ is applied first, $E_2$ next and so on. Then,
+		\begin{align*}
+			E_nE_{n-1}\ldots E_2E_1A = I
+		\end{align*}
+		Let $E = E_n E_{n-1}\ldots E_2 E_1$, then $EA = I$. However, $AE = 1$ as since $E$ is a product of invertible matrices, it can shown to have an inverse $E^{-1}$. \\
+		Now,
+		\begin{align*}
+			AE=IAE=(E^{-1}E)AE = E^{-1}(EA)E = E^{-1}IE=E^{-1}E = I
+		\end{align*}
+		Therefore $A$ is invertible and
+		\begin{align*}
+			A ^{-1} = E = E_n E_{n-1}\ldots E_2E_1 = E_n E_{n-1}\ldots E_2 E_1 I.
+		\end{align*}
+	\end{proof}
+\end{tcolorbox}
+\subsection{Adjoint Of A Matrix}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Adjoint of a matrix \label{Adjoint of a matrix}\end{defn}]
+The adjoint of a matrix $A = [a_{ij}]_{n \times n}$ is given by cofactors $A_{ij}$ where
+\begin{align}
+	\begin{bmatrix} A_{11} & A_{12} & \ldots & A_{1n} \\
+	A_{21} & A_{22} & \ldots & A_{2n} \\
+\vdots & & & \vdots \\
+A_{n1} & A_{n2} & \ldots & A_{nn}
+\end{bmatrix}^{T}
+\end{align}
+\end{tcolorbox}
+\subsection{Finding The Inverse}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{exmp}Finding inverse \label{Finding inverse}\end{exmp}]
+        Find the inverse of
+                \begin{align}
+			\begin{bmatrix} 2 & -1 & 4 \\
+			4 & 0 & 2 \\
+		3 & -2 & 7\end{bmatrix} 
+                \end{align}
+		We create the formation
+		\begin{align}\left[
+		\begin{array}{ccc|ccc}
+			2 & -1 & 4 & 1 & 0 & 0 \\
+			4 & 0 & 2 & 0 & 1 & 0 \\
+			3 & -2 & 7 & 0 & 0 & 1
+		\end{array}\right]
+		\end{align}
+		Then, we do algebra. In particular, we try to get the left hand side in identity matrix form. By doing so, we also change the identity matrix on the right, and as such, obtain the inverse. In particular, after the operations
+		\begin{align*}
+			\frac{1}{2}\text{row}1 \implies \text{row}2-4\text{row}1 \implies \text{row}3-3\text{row}1 \implies \text{row}\frac{2}{2} \\
+			\implies \text{row}3+\frac{1}{2}\text{row}2 \implies -2\text{row}3 \implies \text{row}1 - 2\text{row}3 \implies \text{row}2+3\text{row}3 \\
+			\implies\text{row}1 + \frac{1}{2}\text{row}2
+		\end{align*}
+		Obtains us
+		\begin{align}
+			\left[
+		\begin{array}{ccc|ccc}
+			1 & 0 & 0 & -2 & \frac{1}{2} & 1 \\
+			0 & 1 & 0 & 11 & -1 & -6 \\
+			0 & 0 & 1 & 4 & -\frac{1}{2} & -2
+		\end{array}\right]
+		\end{align}
+\end{tcolorbox}
+Another way to find the inverse is to use the definitions of our determinants and adjoints. That is,
+\begin{align*}
+	A^{-1} = \frac{1}{|A|}adj(A)
+\end{align*}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{exmp}Finding inverse using adjoint \label{Finding inverse using adjoint}\end{exmp}]
+       Find the inverse of the matrix $A$ and hence solve the system of equations 
+                \begin{align}
+			A = \begin{bmatrix} 2 & 1 & 4 \\
+				1 & 0 & 2 \\
+				2 & 3 & 1
+			\end{bmatrix}  \\
+			2x +y +4z = 2 \\
+			x+2z = 3 \\
+			2x+3y+z=-6
+                \end{align}
+		The determinant is given by, where we choose the middle row for ease as there exists a $0$,
+		\begin{align}&-\left|
+			\begin{array}{cc}
+				1 & 4 \\
+				3 & 1
+			\end{array}\right| + 0 -2\left| \begin{array}{cc}
+				2 & 1 \\
+				2 & 3
+			\end{array}\right| \\
+			=& -(1-12) -2(6-2) \\
+			=& 3
+		\end{align}
+		Finally computing the adjoint matrix
+		\begin{align}
+			Adj(A) &=
+			\left[ \begin{array}{ccc}
+			\left|	\begin{array}{cc}
+				0 & 2 \\
+				3 & 1
+				\end{array}\right| -
+			\left|	\begin{array}{cc}
+				1 & 2 \\
+				2 & 1
+				\end{array}\right|
+			\left|	\begin{array}{cc}
+				1 & 0 \\
+				2 & 3
+				\end{array}\right| \\
+		-	\left|	\begin{array}{cc}
+				1 & 4 \\
+				3 & 1
+				\end{array}\right|
+			\left|	\begin{array}{cc}
+				2 & 4 \\
+				2 & 1
+				\end{array}\right|
+		-	\left|	\begin{array}{cc}
+				2 & 1 \\
+				2 & 3
+				\end{array}\right|\\
+			\left|	\begin{array}{cc}
+				1 & 4 \\
+				0 & 2
+				\end{array}\right|
+		-	\left|	\begin{array}{cc}
+				2 & 4 \\
+				1 & 2
+				\end{array}\right|
+			\left|	\begin{array}{cc}
+				2 & 1 \\
+				1 & 0
+				\end{array}\right|
+				\end{array}\right]^{T} \\
+			       &= \begin{bmatrix} -6 & 3 & 3 \\
+			       11 & -6 & -4 \\
+		       2 & 0 & -1\end{bmatrix} ^{T}\\
+			       &= \begin{bmatrix} 
+				-6 & 11 & 2 \\
+				3 & -6 & 0 \\
+				3 & -4 & -1
+			\end{bmatrix} 
+		\end{align}
+		Then, we can write the system of equations as
+		\begin{align}
+			A \begin{bmatrix} x \\
+			y \\
+		z\end{bmatrix}  = \begin{bmatrix} 2 \\ 3 \\ -6 \end{bmatrix} 
+		\end{align}
+		Multiplying both sides by $A^{-1}$
+		\begin{align}
+			&\begin{bmatrix} x \\ y \\ z \end{bmatrix} = A^{-1} \begin{bmatrix} 2 \\ 3 \\ -6 \end{bmatrix}  \\
+			=& \frac{1}{3} \begin{bmatrix} -6 & 11 & 2 \\ 3 & -6 & 0 \\ 3 & -4 & -1 \end{bmatrix} \begin{bmatrix} 2 \\ 3 \\ -6 \end{bmatrix}  \\
+			=& \begin{bmatrix} 3 \\ -4 \\ 0 \end{bmatrix} 
+		\end{align}
+\end{tcolorbox}
+\subsection{Linear Independence of Matrices}
+Following the definition of linear independence from \ref{ind}, we can further extend it in the use of matrices. For some matrix $A = [a_{ij}]_{m \times n}$ where
+\begin{align}
+	A = \begin{bmatrix} a_{11} & a_{12} & \ldots & a_{1n}\\
+	a_{21} & a_{22} & \ldots & a_{2n}\\ 
+\vdots & & & \vdots \\
+a_{m1} & a_{m2} & \ldots & a_{mn}\end{bmatrix} 
+\end{align}
+The column vectors of $A$ is defined as the ordered pairs where
+\begin{align}
+	(a_{11},a_{21},\ldots,a_{m1}),(a_{12},a_{22},\ldots,a_{m2},\ldots,(a_{1n},a_{2n},\ldots,a_{mn})
+\end{align}
+Similarly, the column vectors of $A$ is defined as
+\begin{align}
+	(a_{11},a_{12},\ldots,a_{1n}),(a_{21},a_{22},\ldots,a_{2n}),\ldots,(a_{m1}, a_{m2},\ldots,a_{mn})
+\end{align}
+Then, the following theorem holds:
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{thm}Linear Independence using Determinant \label{Linear Independence using Determinant}\end{thm}]
+	A set of $n$ vectors in $\mathbb{R}^{n}$ is linearly independent and as a corollary a basis if and only if it is the set of column vectors of a matrix with non-zero determinant.
+	\begin{proof}
+		Consider the set of vectors $\{  \underline{u}_1, \underline{u}_2, \ldots , \underline{u}_n\}$ and let $\underline{u}_j = (u_{1j}, u_{2j}, \ldots , u_{nj})$ for $1 \le j \le n$. Now consider the equation what defines dependence/independence:
+		\begin{align}
+			\alpha_1 \underline{u}_1 + \alpha_2\underline{u}_2 + \ldots + \alpha_n \underline{u}_n = \underline{0} \text{ i.e. the origin $O$ vector}
+		\end{align}
+		If we expand each ordered pair vector we obtain (noting the range of $j$ )
+		\begin{align}
+			\alpha_1u_{11} + \alpha_2u_{12} + \ldots + \alpha_j u_{1j} + \ldots + \alpha_n u_{1n}= 0 \\
+			\alpha_1 u_{21} + \alpha_2 u_{22} + \ldots + \alpha_j u_{2j} + \ldots + \alpha_n u_{2n} = 0 \\
+			\vdots \\
+			\alpha_1 u_{n1} + \alpha_2 u_{n2} + \ldots + \alpha_j u_{nj} + \ldots + \alpha_n u_{nn}= 0
+		\end{align}
+		Then, using the property of matrix multiplication we can write this as
+		\begin{align}
+			\begin{bmatrix} u_{11} & u_{12} &\ldots & u_{1j} & \ldots & u_{1n} \\
+			u_{21} & u_{22} & \ldots & u_{2j} & \ldots & u_{2n} \\
+			\vdots & & & & & \vdots \\
+			u_{n1} & u_{n2} & \ldots & u_{nj} & \ldots & u_{nn}
+		\end{bmatrix} \begin{bmatrix} \alpha_1 \\ \alpha_2 \\ \vdots \\ \alpha_n \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ \vdots \\ 0 \end{bmatrix} 
+		\end{align} Let us define the vector matrix above to be $U = [u_{ij}]_{n \times n}$.
+		Consider two cases:
+		\begin{itemize}
+			\item $|U| \neq  0 $ - the matrix is invertible and its inverse exists. If we multiply both sides by $U^{-1}$ we obtain that all coefficients of $\alpha$ are $0$. As such, it is linearly independent.
+			\item $|U| = 0$, then, the inverse does not exist. Furthermore, using the property of this specific matrix that $|U| = |U^{T}|$, we know that $|U^{T}| = 0$ and as such it cannot be reduced to $I$ by elementary row operations and can instead be reducible to a matrix with a row of zeroes. We can apply elementary column operations to produce a column of zeroes, and as such, we can obtain $\underline{0}$, meaning these vectors are linearly dependent.
+
+		\end{itemize}
+	\end{proof}
+\end{tcolorbox}
+\subsection{Linear Transformations}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Linear Transformation \label{Linear Transformation}\end{defn}]
+A function $T : \mathbb{R}^{n}\to \mathbb{R}^{n}$ is a linear transformation if $\forall \underline{u},\underline{v} \in \mathbb{R}^{m} $ and all $\lambda \in \mathbb{R}$ we obtain
+\begin{align}
+T(\underline{u} + \underline{v}) = T(\underline{u} + T(\underline{v}) \land T(\lambda \underline{u}) = \lambda T (\underline{u})
+\end{align}
+\end{tcolorbox}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{cor}Zero vector \label{Zero vector}\end{cor}]
+        If $T : \mathbb{R}^{n}\to \mathbb{R}^{n}$ is a linear transformation then $T(\underline{0}) = \underline{0}$.
+\end{tcolorbox}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{cor}Every matrix defines a linear transformation \label{Every matrix defines a linear transformation}\end{cor}]
+        By definition. In particular, let $M = [m_{ij}]_{m \times n}$, then the function $T:\mathbb{R}^{m} \to \mathbb{R}^{n}$ defined by $T(\underline{x}) = M \underline{x}$ for every $\underline{x} \in \mathbb{R}^{m}$ is a linear transformation. In this particular example, we regard $\mathbb{R}^{m}$ and $\mathbb{R}^{n}$ as column vectors so that $M\underline{x}$ is the product of an $n \times m$ matrix and an $m \times 1$ matrix which yields us an $n \times 1$ matrix. The linearity instantly follows from the definition of matrix multiplication: 
+                \begin{align}
+                M(\underline{u} + \underline{v}) = M\underline{u} + M \underline{v} \\
+		M(\lambda\underline{u}) = \lambda M (\underline{u})
+                \end{align}
+\end{tcolorbox}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Matrix of linear transformation \label{Matrix of linear transformation}\end{defn}]
+Let $T: \mathbb{R}^{m} \to \mathbb{R}^{n}$ be a linear transformation, we define the matrix of a linear transformation and show that it relates coordinates in $\mathbb{R}^{m}$ to coordinates in $\mathbb{R}^{n}$. \\
+Let $V=\{\underline{v}_1,\underline{v}_2,\ldots,\underline{v}_m\}$ be a basis for $\mathbb{R}^{m}$ and $W = \{ \underline{w}_1, \underline{w}_2, \ldots, \underline{w}_n \}$ be a basis for $\mathbb{R}^{n}$. Then each of the vectors $T(\underline{v}_j)$ belongs to $\mathbb{R}^{n}$ and so is a linear combination of $\underline{w}_1, \underline{w}_2, \ldots,\underline{w}_n$. Hence for each $j$ there are $n$ numbers $\alpha_1_j, \alpha_2_j,\ldots,\alpha_n_j \in \mathbb{R}$ with
+\begin{align}
+T(\underline{v}_j) = \alpha_1_j\underline{w}_1 + \alpha_2_j\underline{w}_2+\ldots+\alpha_n_j\underline{w}_n
+\end{align}
+The matrix of $T$ with respect to bases $V$ and $W$ is defined to be the $n \times m$ whose $j$ th column contains the coefficients in the expansion of $T(\underline{v}_j)$, i.e. the matrix
+\begin{align*}
+	\begin{bmatrix} \alpha_{11}& \ldots & \alpha_1_j & \ldots & \alpha_1_m \\ \alpha_{21} & \ldots & \alpha_2_j & \ldots & \alpha_2_m \\ \vdots & & & &  \vdots \\ \alpha_n_1 & \ldots & \alpha_n_j & \ldots &\alpha_n_m \end{bmatrix} 
+\end{align*}
+\end{tcolorbox}
+In the special case where $m=n$ and $V=W$ we talk about the matrix of $T$ with respect at basis $V$. Now, if $\underline{x} \in \mathbb{R}^{m}$ has coordinates $[x_1,x_2,\ldots,x_m]$ with respect to $V$, then 
+\begin{align*}
+	\underline{x} =& x_1\underline{v}_1+x_2\underline{v}_2+\ldots+x_m\underline{v}_m \\
+	T(\underline{x}) =& x_1T(\underline{v}_1)+x_2T(\unuderline{v}_2) + \ldots + x_m T(\underline{v}_m) \\
+	=& x_1(\alpha_{11}\underline{w}_1+\alpha_{21}\underline{w}_2 + \ldots + \alpha_n_1 \underline{w}_n) + x_2(a_{12} \underline{w}_1 + \alpha_{22}\underline{w}_2 + \ldots+\alpha_{n2} \underline{w}_n)\\ &+ \ldots + x_m(\alpha_1_m \underline{w}_1 + \alpha_2_m \underline{w}_2 + \ldots + \alpha_n_m \underline{w}_n) \\
+	=& (x_1\alpha_{11}+x_2\alpha_{12}+\ldots+x_m \alpha_{1m})\underline{w}_1 + (x_1\alpha_{21}+x_2\alpha_{22}+\ldots+x_m\alpha_{2m})\underline{w}_2\\ &+ \ldots+(x_1\alpha_{n1}+x_2\alpha_{n2}+\ldots+x_m\alpha_n_m)\underline{w}_n
+\end{align*}
+Having now expressed $T(\underline{x})$ as a linear combination of the vectors in $W$, so the coordinates $[y_1,y_2,\ldots,y_n]$ of $T(\underline{x})$ with respect to $W$ are, by definition, given by:
+\begin{align*}
+	\begin{bmatrix} y_1 \\ y_2 \\ \vdots \\ y_n \end{bmatrix}  &= \begin{bmatrix} x_1\alpha_{11} + x_2\alpha_{12}+\ldots+x_m\alpha_1_m \\
+x_1\alpha_{21}+x_2\alpha_{22}+\ldots+x_m\alpha_2_m \\
+\vdots \\
+x_1\alpha_n_1 + x_2\alpha_n_2 + \ldots + x_m \alpha_{nm}\end{bmatrix}  \\
+&=\begin{bmatrix} \alpha_{11} & \alpha_{12} & \ldots &\alpha_{1m} \\
+\alpha_{21} & \alpha_{22} & \ldots & \alpha_{2m}\\
+	\vdots & & & \vdots \\
+	\alpha_n_1 & \alpha_n_2 & \ldots & \alpha_{nm}\end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ \vdots \\ x_m \end{bmatrix}  \\
+		   &= M \begin{bmatrix} x_1 \\ x_2 \\ \vdots \\ x_m \end{bmatrix} 
+\end{align*}
+Where $M$ is the vector of $T$ which respect to $V$ and $W$. This gives us the corollary:
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{cor}M matrix of bases \label{M matrix of bases}\end{cor}]
+        Let $T : \mathbb{R}^{m} \to \mathbb{R}^{n}$ be a linear transformation and let $M$ be the matrix of $T$ with respect to bases $V$ in $\mathbb{R}^{m} $ and $W$ in $\mathbb{R}^{n}$. Then the columns of $M$ contain the coordinates of the images of the basis vectors in $V$ with respect to the basis $W$. If $\underline{x} \in \mathbb{R}^{m}$ has coordinates $[x_1,x_2,\ldots,x_m]$ with respect to $V$, then the coordinates $[y_1,y_2,\ldots,y_n]$ of $T(\underline{x}) \in \mathbb{R}^{n}$ with respect to $W$ are 
+                \begin{align}
+                \begin{bmatrix} y_1 \\ y_2 \\ \vdots \\ y_n \end{bmatrix} = M \begin{bmatrix} x_1 \\ x_2 \\ \vdots \\ x_m \end{bmatrix} 
+                \end{align}
+\end{tcolorbox}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{exmp}Example 1 \label{Example 1}\end{exmp}]
+        Let $T: \mathbb{R}^2 \to  \mathbb{R}^3$ be the linear transformation given by
+                \begin{align}
+                T(x,y) = (y,x+y,x)
+                \end{align}
+	Find the matrix of $T$ with respect ot the basis $V = \{(1,1),(1,-2)\}$ of $\mathbb{R}^2$ and the basis $W = \{ (1,2,0),(2,1,0),(0,0,1)\}$ of $\mathbb{R}^3$. If a vector $\underline{u}$ has coordinates $[2,3]$ with respect to $V$, then what are the coordinates of $T(\underline{u})$ with respect to $W$? \\
+	We have
+	\begin{align*}
+		T(1,1) = (1,2,1) = (1,2,0) + 0(2,1,0) + (0,0,1) \\
+		T(1,-1) = (-1,0,1) = \alpha(1,2,0) + \beta(2,1,0) + \gamma (0,0,1)
+	\end{align*}
+	Thus we obtain
+	\begin{align*}
+		\alpha = \frac{1}{3}\\
+		\beta = -\frac{2}{3}\\
+		\gamma = 1
+	\end{align*}
+	We now have expressed the images of the vectors in $V$ as a linear combination of vectors in $W$. So the matrix of $T$ with respect to $V$ and $W$ is
+	\begin{align*}
+		\begin{bmatrix} 1 & \frac{1}{3} \\ 0 & - \frac{2}{3} \\ 1 & 1 \end{bmatrix} 
+	\end{align*}
+And if $\underline{u}$ has coordinates $[2,3]$ with respect to $V$ then
+\begin{align*}
+	\begin{bmatrix} 1 & \frac{1}{3}\\ 0 & - \frac{2}{3} \\ 1 & 1 \end{bmatrix} \begin{bmatrix} 2 \\ 3 \end{bmatrix} = \begin{bmatrix} 3 \\ -2 \\ 5 \end{bmatrix} 
+\end{align*}
+So the coordinates of $T(\underline{u})$ with respect to $W$ are $[3,-2,5]$
+\end{tcolorbox}
+\subsection{Projection}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Projection \label{Projection}\end{defn}]
+Let $\underline{u}$ be a non-zero vector in $\mathbb{R}^2$. If $\underline{x} \in \mathbb{R}^2$ we define projection of $\underline{x}$ onto $\underline{u}$ to be the vector $P_{\underline{u}}(\underline{x})$ with the properties
+\begin{align}
+P_{\underline{u}}(\underline{x}) \text{ is a multiple of $\underline{u}$} \\
+\underline{x}-P_{\underline{u}}(\underline{x}) \text{ is perpendicular to $\underline{u}$}
+\end{align}
+\end{tcolorbox}
+Using these properties, we can show that for some $\alpha \in \mathbb{R}$
+\begin{align*}
+	P_{\underline{u}}=\alpha\underline{u}
+\end{align*}
+And using the other property 
+\begin{align*}
+	&0 = (\underline{x}-P_{\underline{u}}(\underline{x})) \cdot \underline{u}\\
+	\implies& 0=(\underline{x} - \alpha \underline{u}) \cdot\underline{u} \\
+	\implies& 0 = \underline{x} \cdot \underline{u} - \alpha |\underline{u}|^2\\
+	\implies& \alpha =\frac{\underline{x} \cdot\underline{u}}{|\underline{u}|^2}
+\end{align*}
+Therefore we can define
+\begin{align*}
+	P_{\underline{u}}(\underline{x}) = \left( \frac{\underline{x} \cdot\underline{u}}{|\underline{u}|^2} \right) \underline{u}
+
+\end{align*}
+With this, it is easy to check that it is a linear transformation. Left as an exercise for the reader.
+\subsection{Rotation through origin}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Rotation through origin \label{Rotation through origin}\end{defn}]
+Let $(x',y') = R_{\theta}(x,y)$, then we can write the rotation in matrix form as
+\begin{align}
+	\begin{bmatrix} x' \\ y' \end{bmatrix} = \begin{bmatrix} \cos \theta & - \sin \theta \\
+\sin \theta & \cos \theta \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} 
+\end{align}
+\begin{proof}
+	Consider $\theta \in [0,2\pi)$, we define $R_{\theta} : \mathbb{R}^2 \to \mathbb{R}^2$ to be the rotation of a point through an angle $\theta$ about the origin. Let us define points
+	\begin{align*}
+		(x,y) = (r\cos\phi , r\sin\phi) \\
+		(x',y') = (r\cos\left( \phi + \theta \right), r\sin\left( \phi + \theta \right)) 
+	\end{align*}
+\begin{figure}[H]
+    \centering
+    \incfig{rotation}
+    \caption{Rotation definitions}
+    \label{fig:rotation}
+\end{figure}
+Then, through identities we have
+\begin{align*}
+	(x',y')&=(r\left( \cos\phi\cos\theta-\sin\phi\sin \theta \right), r\left( \sin\phi\cos\theta + \sin \theta \cos \phi \right) ) \\
+	(x',y')&= \left( x\cos\theta - y \sin \theta, y\cos\theta + x \sin \theta \right) 
+\end{align*}
+For which we can collect like terms and write it in matrix form to obtain
+\begin{align*}
+	\begin{bmatrix} x' \\ y' \end{bmatrix} = \begin{bmatrix} \cos \theta & -\sin \theta \\ \sin \theta & \cos \theta \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} 
+\end{align*}
+\end{proof}
+
+\end{tcolorbox}
+\subsection{Coordinates through basis}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Coordinates \label{Coordinates}\end{defn}]
+Let $V = \{\underline{v}_1, \underline{v}_2, \ldots,\underline{v}_n\}$ be a basis for $\mathbb{R}^{n}$. If $\underline{x} \in \mathbb{R}^{n}$, then $\underline{x}$ has a unique expansion as a linear combination
+\begin{align}
+\underline{x} = \alpha_1\underline{v}_1 + \alpha_2\underline{v}_2 + \alpha_n \underline{v}_n
+\end{align}
+of these basis vectors. The coefficients $\alpha_1,\alpha_2,\ldots,\alpha_n$ are called the coordinates of $\underline{x}$ with respect to the basis $V $.
+\end{tcolorbox}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{exmp}Example 1 \label{Example 1}\end{exmp}]
+        Let $E = \{(1,0),(0,1)\}$ be the standard basis for $\mathbb{R}^2$ and let $V$ be the basis $\{(1,-1),(2,3)\}$. Find the coordinates of $(1,2)$ with respect to $E$ and $V$.
+                \begin{align}
+			(1,2) = 1(1,0)+2(0,1)\\
+			\therfore [1,2] \text{ for $E$} \\
+                \end{align}
+	For $V$:
+	\begin{align}
+		(1,2) = \alpha(1,-1)+\beta(2,3)
+	\end{align}
+	Solving these equations we obtain
+	\begin{align}
+		\alpha = -\frac{1}{5} \\
+		\beta = \frac{3}{5}
+	\end{align}
+	Hence, the coordinates with respect to $V$ are $\left[-\frac{1}{5},\frac{3}{5}\right]$
+\end{tcolorbox}
+\subsection{Change of basis}
+If we have different basis in  $\mathbb{R}^{n}$ then a given vector will have different coordinates with respect to each basis. The change in coordinates can be described by transition matrix
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Transition Matrix \label{Transition Matrix}\end{defn}]
+Let $V = \{\underline{v}_1, \underline{v}_2, \ldots, \underline{v}_n \}$ and $W = \{ \underline{w}_1, \underline{w}_2,\ldots,\underline{w}_n\}$ be two bases in $\mathbb{R}^{n}$. Suppose $\underline{x} \in \mathbb{R}^{n}$ has coordinates $[\alpha_1,\alpha_2,\ldots,\alpha_n]$ with respect to $V$ and coordinates $[\beta_1,\beta_2,\ldots,\beta_n]$ with respect to $W$. We can find the list of two coordinates by using the identity transformation $I : \mathbb{R}^{n}\to \mathbb{R}^{n}$ which is defined by
+\begin{align}
+I(\underline{x}) = \underline{x}, \; \; \forall x \in \mathbb{R}^{n}
+\end{align}
+let $M$ be the matrix of $I$ with respect to the vases $V$ and $W$. Then the coordinates $[\beta_1, \beta_2 , \ldots , \beta_n ]$ of $I(\underline{x})$ i.e. of $\underline{x}$ with respect to $W$ are given by
+\begin{align}
+	\begin{bmatrix} \beta_1\\ \beta_2 \\ \vdots \\ \beta_n \end{bmatrix} = M \begin{bmatrix} \alpha_1 \\ \alpha_2 \\ \vdots \\ \alpha_n \end{bmatrix} 
+\end{align}
+\end{tcolorbox}
+\subsection{Eigenvalues and Eigenvectors}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Eigenvalues and Eigenvectors \label{Eigenvalues}\end{defn}]
+Let $A$ be a square matrix of order $n$. A number $\lambda$ is called an eigenvalue of $A$ if $A \underline{v} = \lambda \underline{v}$ for some non-zero column vector $\underline{v}$. When this is the case we call $ \underline{v}$ an eigenvector of $A$ corresponding to $\lambda$. These must be squares.
+\end{tcolorbox}
+To find eigenvalues and eigenvectors we use the following property: \\
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Characteristic Equation \label{Characteristic Equation}\end{defn}]
+A number $\lambda$ is an eigenvalue of the matrix $A$ if and only if
+\begin{align}
+|A - \lambda I| = det(A - \alpha I) = 0
+\end{align}
+This is also a polynomial of degree $n$ in $\lambda$.
+\begin{proof}
+	\begin{align}
+		\lambda \text{ is an eigenvalue of $A$} &\iff A\underline{v} = \lambda \underline{v} \text{ for some non-zero $\underline{v}$} \\
+							&\iff (A - \lambda I)\underline{v} = \underline{0} \text{ for some $\underline{v}$} \\
+							& \iff |A - \lambdaI | = 0
+	\end{align}
+\end{proof}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{exmp}Example 1 \label{Example 1}\end{exmp}]
+        Find the eigenvalues and eigenvectors of the matrix 
+	\begin{align*}
+		A = \begin{bmatrix} -5 & 3 \\ 6 & -2 \end{bmatrix} 
+	\end{align*}
+	We have 
+	\begin{align*}
+		A - \lambda I = \begin{bmatrix} -5 & 3 \\ 6 & -2 \end{bmatrix} - \lambda \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}  \\
+		= \begin{bmatrix} -5 - \lambda & 3 \\ 6 & -2 - \lambda \end{bmatrix} 
+	\end{align*}
+	We know that determinant must be $0$, hence
+	\begin{align*}
+		(-5-\lambda)(-2-\lambda)-18 = 0 \\
+		\lambda^2 + 7 \lambda - 8 = 0 \\
+		(\lambda-1)(\lambda+8) = 0 \\
+		\lambda = 1,-8
+	\end{align*}
+	Hence the eigenvalues for $A$ are $1 $ and $-8$. To find the eigenvectors we consider each eigenvalue in turn:
+	\begin{align*}
+		\begin{bmatrix} -5 & 3 \\ 6 & -2 \end{bmatrix} \begin{bmatrix} x \\y \end{bmatrix}  = 1 \begin{bmatrix} x \\ y \end{bmatrix} \\
+		-6x+3y=0 \\
+		6x-3y = 0 \\
+		y = 2x
+	\end{align*}
+	Therefore for any nonzero vector of the form $(x,2x)$ is an eigenvector corresponding to value $1$.
+	\begin{align*}
+		\begin{bmatrix} -5 & 3 \\ 6 & -2 \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} = -8 \begin{bmatrix} x \\ y \end{bmatrix} \\
+		3x+3y = 0 \\
+		6x+6y = 0 \\
+		y= -x
+	\end{align*}
+Hence any non-zero vector of the form $(x,-x)$ has is an eigenvector corresponding to the eigenvalue $-8$.
+\end{tcolorbox}
+It is possible for eigenvalues of a real matrix to be complex. This happens due to the quadratic.
+\subsection{Diagonalisation of a matrix}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{thm}Diagonalisation \label{Diagonalisation}\end{thm}]
+	Let $A$ be an $n\times n$ matrix. If
+		\begin{align}
+		V^{-1}AV = D = diag(\lambda_1,\lambda_2,\ldots,\lambda_n)
+		\end{align}
+		where $V$ is the $n \times n$ matrix whose columns are $\begin{bmatrix} \underline{v}_1, \underline{v}_2,\ldots,\underline{v}_n \end{bmatrix} $  then $\begin{bmatrix} \underline{v}_1, \underline{v}_2,\ldots,\underline{v}_n \end{bmatrix} $ are  the eigenvectors of  $A$, and $\lambda_1, \lambda_2, \ldots, \lambda_n$ are the corresponding eigenvalues.
+		\begin{proof}
+			If $V^{-1}AV = D = diag(\lambda_1,\lambda_2,\ldots,\lambda_n)$ holds, then we know that because it is a set of column vectors of a matrix with non-zero determinant, it is linearly independent. That is, because $V$ must be non-singular, its determinant is non-zero. Now let $\underline{e}_j$ be the $n \times 1$ column matrix whose $j$ th element is $1$ but has all other elements zero. Now consider the product $V\underline{e}_j$. From laws of matrix algebra, this must be $\underline{v}_j$, the $j$ th column of $V$. Therefore we have the implications
+			\begin{align*}
+				V^{-1}AV = D \\
+				V^{-1}AV\underline{e}_j = D\underline{e}_j \\
+				V^{-1}A(V\underline{e}_j) = \lambda_j \underline{e}_j \\
+				A\underline{v}_j = V \lambda_j \underline{e}_j = \lambda_j V \underline{e}_j = \lambda_j \underline{v}_j
+			\end{align*}
+		But $A\underline{v}_j = \lambda_j \underline{v}_j$ defines $\underline{v}_j$ and $\lambda_j$ to be the $j$ th eigenvector and associated eigenvalue of $A$, respectively. This completes the proof.
+		\end{proof}
+\end{tcolorbox}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{exmp}Example 1 \label{Example 1}\end{exmp}]
+        Find a diagonal matrix $D$ an invertible matrix $P$ such that $P^{-1}AP = D$ where $A$ is the matrix
+                \begin{align}
+			A = \begin{bmatrix} 4 & 2 & 2 \\ -1 & 1 & -1 \\ 0 & 0 & 2 \end{bmatrix} 
+                \end{align}
+		Using the characteristic equation $|A - \lambdaI| = 0$ we obtain
+		\begin{align}
+			\begin{bmatrix} 4 - \lambda & 2 & 2 \\ -1 & 1 - \lambda & -1 \\ 0 & 0 & 2 - \lambda \end{bmatrix} = 0
+		\end{align}
+		which in turn obtains us
+		\begin{align*}
+			(2-\lambda)(\lambda-2)(\lambda-3) = 0\\
+			\lambda = 2,2,3
+		\end{align*}
+		Now $(x,y,z)$ is an eigenvector corresponding to the eigenvalue $2$ if and only if
+		\begin{align*}
+			\begin{bmatrix}  4 & 2 & 2 \\ -1 & 1 & -1 \\ 0 & 0 & 2 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = 2 \begin{bmatrix} x \\ y \\ z \end{bmatrix} 
+		\end{align*}
+		which leads us to
+		\begin{align*}
+			x+y+z = 0
+		\end{align*}
+		Therefore any vector of the form $(x,y,-x-y)$ where $x$ and $y$ are not both zero is an eigenvector corresponding to the repeated eigenvalue $2 $. Now for 3:
+		\begin{align*}
+			\begin{bmatrix} 4 & 2 & 2 \\ -1 & 1 & -1 \\ 0 & 0 & 2 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = 3 \begin{bmatrix} x \\ y \\ z \end{bmatrix} 
+		\end{align*}
+		We obtain the eigenvector $(-2y,y,0)$ where $y$ is non-zero for the eigenvalue $3$. Hence we obtain
+		\begin{align*}
+			P = \begin{bmatrix} 1 & 0 & -2 \\ 0 & 1 & 1 \\ -1 & -1 & 0 \end{bmatrix} \\ 
+			D = \begin{bmatrix} 2 & 0 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & 3 \end{bmatrix} 
+		\end{align*}
+		The $P$ comes from $x(1,0,-1)$, $y(0,1,-1)$, $y(-2,1,0)$. The diagonals come from their respective eigenvalues.
+\end{tcolorbox}
+\section{Sequences}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Sequence \label{Sequence}\end{defn}]
+A sequence $(a_n)$ is an infinite list of numbers $(a_0,a_1,a_2,a_3,\ldots)$. The index of the first term will usually be $0 $, but sometimes we will start with $a_1$. As an example:
+\begin{align}
+2^{-n} \text{ denotes the sequence } (1,\frac{1}{2},\frac{1}{4},\frac{1}{8},\ldots)
+\end{align}
+\end{tcolorbox}
+\subsection{Limit of a Sequence}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Convergence of a sequence \label{Convergence of a sequence}\end{defn}]
+A sequence $a_n$ of real numbers is convergent to a limit $l \in \mathbb{R}$ if for every $\varepsilon > 0$ there is an integer $N$ (that depends on $\varepsilon$ ) with $|a_n -l | < \varepsilon$ for all $n > N$. When $a_n$ converges to $l$ we write
+\begin{align}
+\lim_{n \to \infty} a_n = l \\
+\end{align}
+\end{tcolorbox}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{exmp}Example 1 \label{Example 1}\end{exmp}]
+        The sequence $\frac{1}{n}$ for $n > 0$ converges to $0$. To see this, let $\varepsilon > 0 $. Then there is an $N$ with $\frac{1}{N}<\varepsilon$ and so for $n > N$ we obtain
+                \begin{align}
+                 \left| \frac{1}{n}-0\right| = \frac{1}{n} < \frac{1}{N} < \varepsilon \\
+		 \therefore \frac{1}{n} \text{ converges to }0
+                \end{align}
+\begin{figure}[H]
+    \centering
+    \incfig{seqconvergece}
+    \caption{seqconvergece}
+    \label{fig:seqconvergece}
+\end{figure}
+\end{tcolorbox}
+\subsection{Rules for Convergent Sequences}
+If $a_n, b_n$ and $c_n$ are convergent sequences with $a_n \to \alpha$, $b_n \to \beta$ and $c_n \to \gamma$, then
+\begin{enumerate}
+	\item Sum - $a_n + b_n \to \alpha + \beta$
+	\item Scalar multiple - $\lambda a_n \to \lambda\alpha$
+	\item Product - $a_nb_n \to \alpha\beta$ \\
+	\item Reciprocal - $\frac{1}{a_n}\to \frac{1}{\alpha}$ \\
+	\item Quotient - $\frac{b_n}{a_n} \to \frac{\alpha}{\beta}$ \\
+	\item Hybrid -  $\frac{b_nc_n}{a_n} \to \frac{\beta\gamma}{\alpha}$
+\end{enumerate}
+
 \end{document}

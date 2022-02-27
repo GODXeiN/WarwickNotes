@@ -23,3 +23,17 @@
 \contentsline {subsubsection}{\numberline {3.1.3}Type Declarations}{7}{subsubsection.3.1.3}%
 \contentsline {subsubsection}{\numberline {3.1.4}Function types}{8}{subsubsection.3.1.4}%
 \contentsline {subsubsection}{\numberline {3.1.5}Polymorphism}{8}{subsubsection.3.1.5}%
+\contentsline {section}{\numberline {4}Tuples and Lists}{9}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Tuples}{9}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Types of Tuples}{9}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Polymorphic Functions}{9}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Currying}{10}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Lists}{10}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Head and Tail}{10}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}List Comprehensions}{11}{subsection.4.7}%
+\contentsline {section}{\numberline {5}Map and Filter}{11}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Filtering}{11}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Mapping}{12}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Ranges}{12}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Type Classes}{12}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Eq class}{12}{subsection.6.1}%

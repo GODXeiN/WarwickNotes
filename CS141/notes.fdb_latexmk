@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1641988539 "notes.tex" "notes.pdf" "notes" 1642042960
+["pdflatex"] 1643546792 "notes.tex" "notes.pdf" "notes" 1643546792
   "/etc/texmf/web2c/texmf.cnf" 1641794307 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm" 1136768653 3584 adb004a0c8e7c46ee66cad73671f37b4 ""
@@ -221,13 +221,13 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1641794341 4770781 1ed1abab22da9c3e2cc82e4db562318b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1641794368 8255628 28febab840e0864e971b6b94d96c32b0 ""
   "crest_black.eps" 1641767766 71748 d584eccc49c4c3082d4eeb9d7fa459cd ""
-  "notes.aux" 1641988540 7518 857ee05c17b71be287d51bfc747f0cdc "pdflatex"
-  "notes.out" 1641988540 1679 b808c5cc7b9b53ede7192a3b31b9b5af "pdflatex"
-  "notes.tex" 1641988539 18934 9a322ef32f3e3eb3980c56b006dee05e ""
-  "notes.toc" 1641988540 2100 0c16b14146f541eafd4bc60c1fbf4bf7 "pdflatex"
+  "notes.aux" 1643546790 11869 cc746bf8e0ef26aad513d9949ea7f5f5 "pdflatex"
+  "notes.out" 1643546790 2496 b6eb9a5d6b238601911c7511362a2bc2 "pdflatex"
+  "notes.tex" 1643546791 27962 fd8578393f1f5dc7886dac18ef69a1ad ""
+  "notes.toc" 1643546790 3163 de89549b9d17951d4fa7540dd99f3ec4 "pdflatex"
   (generated)
-  "notes.pdf"
-  "notes.aux"
-  "notes.toc"
-  "notes.out"
   "notes.log"
+  "notes.toc"
+  "notes.aux"
+  "notes.out"
+  "notes.pdf"

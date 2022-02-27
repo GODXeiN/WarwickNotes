@@ -23,3 +23,17 @@
 \BOOKMARK [3][-]{subsubsection.3.1.3}{Type Declarations}{subsection.3.1}% 23
 \BOOKMARK [3][-]{subsubsection.3.1.4}{Function types}{subsection.3.1}% 24
 \BOOKMARK [3][-]{subsubsection.3.1.5}{Polymorphism}{subsection.3.1}% 25
+\BOOKMARK [1][-]{section.4}{Tuples and Lists}{}% 26
+\BOOKMARK [2][-]{subsection.4.1}{Tuples}{section.4}% 27
+\BOOKMARK [2][-]{subsection.4.2}{Types of Tuples}{section.4}% 28
+\BOOKMARK [2][-]{subsection.4.3}{Polymorphic Functions}{section.4}% 29
+\BOOKMARK [2][-]{subsection.4.4}{Currying}{section.4}% 30
+\BOOKMARK [2][-]{subsection.4.5}{Lists}{section.4}% 31
+\BOOKMARK [2][-]{subsection.4.6}{Head and Tail}{section.4}% 32
+\BOOKMARK [2][-]{subsection.4.7}{List Comprehensions}{section.4}% 33
+\BOOKMARK [1][-]{section.5}{Map and Filter}{}% 34
+\BOOKMARK [2][-]{subsection.5.1}{Filtering}{section.5}% 35
+\BOOKMARK [2][-]{subsection.5.2}{Mapping}{section.5}% 36
+\BOOKMARK [2][-]{subsection.5.3}{Ranges}{section.5}% 37
+\BOOKMARK [1][-]{section.6}{Type Classes}{}% 38
+\BOOKMARK [2][-]{subsection.6.1}{Eq class}{section.6}% 39
