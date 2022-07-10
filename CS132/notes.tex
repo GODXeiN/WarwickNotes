@@ -267,10 +267,10 @@ We know in the number system we go in powers of $2$. Therefore, $0.11_2$ would r
 \subsubsection{Floating Point Representation}
 The floating point representation is similar to the scientific notation, it used the same principles. All numbers are expressed in the form
 \begin{align*}
-	sign \cdot mantissa \cdot b^{\text{biased exponent}}
+	sign \cdot b^{\text{biased exponent}} \cdot mantissa
 \end{align*}
 Where mantissa represents the detail of the value to a certain precision; \\
-The exponent represents the magnitude of the value. Note that the biased component is calculated by $\text{biased exponent}=\text{exponent}-(2^{k-1}-1)$ where $k$ is the amount of digits. This allows for negative numbers. Therefore, it follows that the $\text{biased exponent} \in [-b^{k-1}+1,b^{k-1}] \cap \mathbb{Z}$. and $b$ represents the base. In computers it's almost always $2$.
+The exponent represents the magnitude of the value. Note that the biased component is calculated by $\text{biased exponent}=\text{exponent}+(2^{k-1}-1)$ where $k$ is the amount of bits assigned for exponent. This allows for negative numbers. Therefore, it follows that the $\text{biased exponent} \in [-b^{k-1}+1,b^{k-1}] \cap \mathbb{Z}$. and $b$ represents the base. In computers it's almost always $2$.
 \begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{exmp}Base 10 \label{Base 10}\end{exmp}]
 Given that IEEE $754$ is expressed 1 bit for sign, 23 bits for mantissa and 8 bits for exponent, express $-12345_{10}$ in IEEE $754$ base $2$. $\implies$ Our sign is 1 as it is negative. 
 

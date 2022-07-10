@@ -1,48 +1,185 @@
-\contentsline {section}{\numberline {1}HTML}{2}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Syntax}{2}{subsection.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.1}Doctypes}{2}{subsubsection.1.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.2}Example HTML5 Document}{2}{subsubsection.1.1.2}%
-\contentsline {subsubsection}{\numberline {1.1.3}Head tag}{2}{subsubsection.1.1.3}%
-\contentsline {subsubsection}{\numberline {1.1.4}Text-encoding}{2}{subsubsection.1.1.4}%
-\contentsline {subsubsection}{\numberline {1.1.5}Body tag}{3}{subsubsection.1.1.5}%
-\contentsline {subsubsection}{\numberline {1.1.6}Syntax}{3}{subsubsection.1.1.6}%
-\contentsline {subsubsection}{\numberline {1.1.7}Nesting Definitions}{3}{subsubsection.1.1.7}%
-\contentsline {subsubsection}{\numberline {1.1.8}Lists}{4}{subsubsection.1.1.8}%
-\contentsline {subsubsection}{\numberline {1.1.9}Hyperlinks}{4}{subsubsection.1.1.9}%
-\contentsline {subsubsection}{\numberline {1.1.10}Images}{4}{subsubsection.1.1.10}%
-\contentsline {subsubsection}{\numberline {1.1.11}Character entities}{4}{subsubsection.1.1.11}%
-\contentsline {subsubsection}{\numberline {1.1.12}Break Line}{5}{subsubsection.1.1.12}%
-\contentsline {subsection}{\numberline {1.2}Semantic Mark-up}{5}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Validation}{5}{subsection.1.3}%
-\contentsline {subsection}{\numberline {1.4}Types of Style Sheet}{5}{subsection.1.4}%
-\contentsline {subsection}{\numberline {1.5}Tables}{5}{subsection.1.5}%
-\contentsline {subsection}{\numberline {1.6}Forms}{6}{subsection.1.6}%
-\contentsline {subsubsection}{\numberline {1.6.1}Attributes}{7}{subsubsection.1.6.1}%
-\contentsline {subsubsection}{\numberline {1.6.2}Radio Buttons}{7}{subsubsection.1.6.2}%
-\contentsline {subsubsection}{\numberline {1.6.3}Dropdown menus}{7}{subsubsection.1.6.3}%
-\contentsline {subsubsection}{\numberline {1.6.4}Accessibility}{7}{subsubsection.1.6.4}%
-\contentsline {section}{\numberline {2}Introduction to Python/Flask}{8}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Flask and Python}{8}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}General Architecture}{8}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Flask and Python}{8}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Variable Naming}{8}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Python Data Types}{8}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Python Containers}{9}{subsection.2.6}%
-\contentsline {subsection}{\numberline {2.7}Python Functions}{9}{subsection.2.7}%
-\contentsline {subsection}{\numberline {2.8}Dealing with Forms}{9}{subsection.2.8}%
-\contentsline {subsection}{\numberline {2.9}Templates in Flask}{10}{subsection.2.9}%
-\contentsline {subsection}{\numberline {2.10}Object Oriented Python}{10}{subsection.2.10}%
-\contentsline {section}{\numberline {3}Databases}{11}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Management}{11}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Database table}{11}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Relating data}{11}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}SQL Datatypes}{11}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}SQL Operations}{11}{subsection.3.5}%
-\contentsline {subsubsection}{\numberline {3.5.1}Creating a table}{11}{subsubsection.3.5.1}%
-\contentsline {subsubsection}{\numberline {3.5.2}Deleting a table}{12}{subsubsection.3.5.2}%
-\contentsline {section}{\numberline {4}CSS}{12}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Cascade}{12}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Syntax}{12}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Selectors}{12}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Pseudo-elements}{12}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Box Model}{12}{subsection.4.5}%
+\contentsline {section}{\numberline {1}HTML}{5}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Syntax}{5}{subsection.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1}Doctypes}{5}{subsubsection.1.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.2}Example HTML5 Document}{5}{subsubsection.1.1.2}%
+\contentsline {subsubsection}{\numberline {1.1.3}Head tag}{5}{subsubsection.1.1.3}%
+\contentsline {subsubsection}{\numberline {1.1.4}Text-encoding}{5}{subsubsection.1.1.4}%
+\contentsline {subsubsection}{\numberline {1.1.5}Body tag}{6}{subsubsection.1.1.5}%
+\contentsline {subsubsection}{\numberline {1.1.6}Syntax}{6}{subsubsection.1.1.6}%
+\contentsline {subsubsection}{\numberline {1.1.7}Nesting Definitions}{6}{subsubsection.1.1.7}%
+\contentsline {subsubsection}{\numberline {1.1.8}Lists}{7}{subsubsection.1.1.8}%
+\contentsline {subsubsection}{\numberline {1.1.9}Hyperlinks}{7}{subsubsection.1.1.9}%
+\contentsline {subsubsection}{\numberline {1.1.10}Images}{7}{subsubsection.1.1.10}%
+\contentsline {subsubsection}{\numberline {1.1.11}Character entities}{7}{subsubsection.1.1.11}%
+\contentsline {subsubsection}{\numberline {1.1.12}Break Line}{8}{subsubsection.1.1.12}%
+\contentsline {subsection}{\numberline {1.2}Semantic Mark-up}{8}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Validation}{8}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Types of Style Sheet}{8}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Tables}{8}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}Forms}{9}{subsection.1.6}%
+\contentsline {subsubsection}{\numberline {1.6.1}Attributes}{10}{subsubsection.1.6.1}%
+\contentsline {subsubsection}{\numberline {1.6.2}Radio Buttons}{10}{subsubsection.1.6.2}%
+\contentsline {subsubsection}{\numberline {1.6.3}Dropdown menus}{10}{subsubsection.1.6.3}%
+\contentsline {subsubsection}{\numberline {1.6.4}Accessibility}{10}{subsubsection.1.6.4}%
+\contentsline {section}{\numberline {2}Introduction to Python/Flask}{11}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Flask and Python}{11}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}General Architecture}{11}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Flask and Python}{11}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Variable Naming}{11}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Python Data Types}{11}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Python Containers}{12}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Python Functions}{12}{subsection.2.7}%
+\contentsline {subsection}{\numberline {2.8}Dealing with Forms}{12}{subsection.2.8}%
+\contentsline {subsection}{\numberline {2.9}Templates in Flask}{13}{subsection.2.9}%
+\contentsline {subsection}{\numberline {2.10}Object Oriented Python}{13}{subsection.2.10}%
+\contentsline {section}{\numberline {3}Databases}{14}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Management}{14}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Database table}{14}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Relating data}{14}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}SQL Datatypes}{15}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Unique Rows}{15}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}SQL Operations}{15}{subsection.3.6}%
+\contentsline {subsubsection}{\numberline {3.6.1}Creating a table}{15}{subsubsection.3.6.1}%
+\contentsline {subsubsection}{\numberline {3.6.2}Inserting data}{15}{subsubsection.3.6.2}%
+\contentsline {subsubsection}{\numberline {3.6.3}Updating data}{16}{subsubsection.3.6.3}%
+\contentsline {subsubsection}{\numberline {3.6.4}Deleting data}{16}{subsubsection.3.6.4}%
+\contentsline {subsubsection}{\numberline {3.6.5}Selecting data}{16}{subsubsection.3.6.5}%
+\contentsline {subsubsection}{\numberline {3.6.6}Joining tables}{17}{subsubsection.3.6.6}%
+\contentsline {subsection}{\numberline {3.7}Flask - SQLAlchemy}{17}{subsection.3.7}%
+\contentsline {subsubsection}{\numberline {3.7.1}Advantages and Disadvantages of SQLite3}{17}{subsubsection.3.7.1}%
+\contentsline {subsubsection}{\numberline {3.7.2}Connecting to a SQLite database}{17}{subsubsection.3.7.2}%
+\contentsline {subsubsection}{\numberline {3.7.3}Populating the database}{17}{subsubsection.3.7.3}%
+\contentsline {subsubsection}{\numberline {3.7.4}Differences between SQL and SQLAlchemy}{18}{subsubsection.3.7.4}%
+\contentsline {subsubsection}{\numberline {3.7.5}Executing Queries}{19}{subsubsection.3.7.5}%
+\contentsline {subsubsection}{\numberline {3.7.6}Database Example (Adding data, linking)}{19}{subsubsection.3.7.6}%
+\contentsline {subsubsection}{\numberline {3.7.7}Add data to the forum}{20}{subsubsection.3.7.7}%
+\contentsline {subsubsection}{\numberline {3.7.8}Serialisation in Python}{20}{subsubsection.3.7.8}%
+\contentsline {subsection}{\numberline {3.8}GET request and response}{20}{subsection.3.8}%
+\contentsline {subsubsection}{\numberline {3.8.1}Response Codes}{21}{subsubsection.3.8.1}%
+\contentsline {section}{\numberline {4}Internet Protocols}{21}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Layers of protocol}{21}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}IP Address}{21}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}IPv4}{21}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}IPv6}{21}{subsubsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.3}Network Address Translation (NAT)}{21}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Domain Name System (DNS)}{22}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Resolving a domain name}{22}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Domain Name Caching}{22}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Uniform Resource Locators}{22}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.8}IP Address, Domain Name and URL}{22}{subsection.4.8}%
+\contentsline {subsection}{\numberline {4.9}Path}{22}{subsection.4.9}%
+\contentsline {subsection}{\numberline {4.10}Query string}{23}{subsection.4.10}%
+\contentsline {subsection}{\numberline {4.11}Fragment}{23}{subsection.4.11}%
+\contentsline {subsection}{\numberline {4.12}Hypertext Transfer Protocol}{23}{subsection.4.12}%
+\contentsline {subsection}{\numberline {4.13}Web browser}{23}{subsection.4.13}%
+\contentsline {subsection}{\numberline {4.14}Stateless-ness}{23}{subsection.4.14}%
+\contentsline {subsubsection}{\numberline {4.14.1}Query String}{24}{subsubsection.4.14.1}%
+\contentsline {subsubsection}{\numberline {4.14.2}Cookies}{24}{subsubsection.4.14.2}%
+\contentsline {subsubsection}{\numberline {4.14.3}Sessions}{24}{subsubsection.4.14.3}%
+\contentsline {section}{\numberline {5}CSS}{26}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Cascade}{26}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Syntax}{26}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Selectors}{26}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Pseudo-elements}{26}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Box Model}{26}{subsection.5.5}%
+\contentsline {section}{\numberline {6}Security}{27}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Login}{27}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Sanitising Query Strings}{27}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}HTTPS}{27}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}Disadvantages}{27}{subsubsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.4}The role of certificates}{27}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Man-in-the-middle attacks}{28}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}SQL Injection}{28}{subsection.6.6}%
+\contentsline {subsubsection}{\numberline {6.6.1}Solution: Escape SQL Characters}{28}{subsubsection.6.6.1}%
+\contentsline {subsubsection}{\numberline {6.6.2}Solution: Parameterised statements}{28}{subsubsection.6.6.2}%
+\contentsline {subsection}{\numberline {6.7}Database permissions}{28}{subsection.6.7}%
+\contentsline {subsection}{\numberline {6.8}Session Hijacking}{28}{subsection.6.8}%
+\contentsline {subsection}{\numberline {6.9}Cross Site Scripting (XSS)}{29}{subsection.6.9}%
+\contentsline {subsubsection}{\numberline {6.9.1}Solution: Filtering the input using jinja2 markup}{29}{subsubsection.6.9.1}%
+\contentsline {subsection}{\numberline {6.10}Convert special characters to HTML}{29}{subsection.6.10}%
+\contentsline {subsection}{\numberline {6.11}Persistent XSS}{30}{subsection.6.11}%
+\contentsline {section}{\numberline {7}JavaScript}{30}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Javascript}{30}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7.1.1}Variables}{30}{subsubsection.7.1.1}%
+\contentsline {subsubsection}{\numberline {7.1.2}Datatypes}{30}{subsubsection.7.1.2}%
+\contentsline {subsubsection}{\numberline {7.1.3}Javascript Arrays}{31}{subsubsection.7.1.3}%
+\contentsline {subsubsection}{\numberline {7.1.4}Javascript objects}{31}{subsubsection.7.1.4}%
+\contentsline {subsubsection}{\numberline {7.1.5}Javascript functions}{32}{subsubsection.7.1.5}%
+\contentsline {subsubsection}{\numberline {7.1.6}Control Flow}{32}{subsubsection.7.1.6}%
+\contentsline {subsubsection}{\numberline {7.1.7}Finding an element in Javascript}{33}{subsubsection.7.1.7}%
+\contentsline {subsubsection}{\numberline {7.1.8}Changing HTML content}{33}{subsubsection.7.1.8}%
+\contentsline {subsubsection}{\numberline {7.1.9}Changing attributes of an element}{33}{subsubsection.7.1.9}%
+\contentsline {subsubsection}{\numberline {7.1.10}Changing Styling of an Element}{34}{subsubsection.7.1.10}%
+\contentsline {subsubsection}{\numberline {7.1.11}Responding to events}{34}{subsubsection.7.1.11}%
+\contentsline {subsubsection}{\numberline {7.1.12}Event Handling Code}{34}{subsubsection.7.1.12}%
+\contentsline {subsubsection}{\numberline {7.1.13}Form Validation}{35}{subsubsection.7.1.13}%
+\contentsline {subsection}{\numberline {7.2}The HTML DOM}{35}{subsection.7.2}%
+\contentsline {section}{\numberline {8}jQuery}{35}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Objects}{36}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Adding/removing from the DOM}{36}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}DOM traversal}{37}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}jQuery Styling}{37}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}jQuery objects are not live}{37}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.6}Events in jQuery}{38}{subsection.8.6}%
+\contentsline {subsection}{\numberline {8.7}Event Bubbling in JS}{39}{subsection.8.7}%
+\contentsline {subsection}{\numberline {8.8}Event Capturing}{39}{subsection.8.8}%
+\contentsline {subsection}{\numberline {8.9}Animation}{39}{subsection.8.9}%
+\contentsline {section}{\numberline {9}AJAX (Json and XML)}{39}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Extensible Markup Language (XML)}{39}{subsection.9.1}%
+\contentsline {subsubsection}{\numberline {9.1.1}Attributes}{40}{subsubsection.9.1.1}%
+\contentsline {subsubsection}{\numberline {9.1.2}XML Sample}{40}{subsubsection.9.1.2}%
+\contentsline {subsubsection}{\numberline {9.1.3}Well-formed XML}{40}{subsubsection.9.1.3}%
+\contentsline {subsubsection}{\numberline {9.1.4}Defining data in XML}{41}{subsubsection.9.1.4}%
+\contentsline {subsection}{\numberline {9.2}JavaScript Object Notation (JSON)}{41}{subsection.9.2}%
+\contentsline {subsubsection}{\numberline {9.2.1}Datatypes}{41}{subsubsection.9.2.1}%
+\contentsline {subsubsection}{\numberline {9.2.2}Syntax Rules}{41}{subsubsection.9.2.2}%
+\contentsline {subsubsection}{\numberline {9.2.3}Example}{41}{subsubsection.9.2.3}%
+\contentsline {subsubsection}{\numberline {9.2.4}How AJAX Works}{42}{subsubsection.9.2.4}%
+\contentsline {subsubsection}{\numberline {9.2.5}The XMLHttpRequest Object}{42}{subsubsection.9.2.5}%
+\contentsline {subsubsection}{\numberline {9.2.6}Sending an XMLHttpRequest to the server}{42}{subsubsection.9.2.6}%
+\contentsline {subsubsection}{\numberline {9.2.7}Keeping track of the request}{42}{subsubsection.9.2.7}%
+\contentsline {subsubsection}{\numberline {9.2.8}Processing the server response}{43}{subsubsection.9.2.8}%
+\contentsline {subsubsection}{\numberline {9.2.9}Example}{43}{subsubsection.9.2.9}%
+\contentsline {subsubsection}{\numberline {9.2.10}Handling JSON responses}{43}{subsubsection.9.2.10}%
+\contentsline {subsubsection}{\numberline {9.2.11}What about jQuery}{43}{subsubsection.9.2.11}%
+\contentsline {section}{\numberline {10}Web Development Hardware and Design}{44}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Usability and Accessibility}{44}{subsection.10.1}%
+\contentsline {subsubsection}{\numberline {10.1.1}Golden rules of Interaction design}{44}{subsubsection.10.1.1}%
+\contentsline {subsubsection}{\numberline {10.1.2}Software development lifecycle}{45}{subsubsection.10.1.2}%
+\contentsline {subsubsection}{\numberline {10.1.3}Requirements capture}{45}{subsubsection.10.1.3}%
+\contentsline {subsubsection}{\numberline {10.1.4}Types of requirements}{45}{subsubsection.10.1.4}%
+\contentsline {subsubsection}{\numberline {10.1.5}Specification}{45}{subsubsection.10.1.5}%
+\contentsline {subsubsection}{\numberline {10.1.6}Usability}{45}{subsubsection.10.1.6}%
+\contentsline {subsubsection}{\numberline {10.1.7}Usability Concepts}{46}{subsubsection.10.1.7}%
+\contentsline {subsubsection}{\numberline {10.1.8}Feedback}{46}{subsubsection.10.1.8}%
+\contentsline {subsubsection}{\numberline {10.1.9}Mapping}{46}{subsubsection.10.1.9}%
+\contentsline {subsubsection}{\numberline {10.1.10}Consistency}{46}{subsubsection.10.1.10}%
+\contentsline {subsubsection}{\numberline {10.1.11}Usability Heuristics}{46}{subsubsection.10.1.11}%
+\contentsline {subsubsection}{\numberline {10.1.12}Accessibility}{47}{subsubsection.10.1.12}%
+\contentsline {subsubsection}{\numberline {10.1.13}Accessibility Needs }{47}{subsubsection.10.1.13}%
+\contentsline {subsubsection}{\numberline {10.1.14}Assistive technologies}{47}{subsubsection.10.1.14}%
+\contentsline {subsubsection}{\numberline {10.1.15}WCAG 2.1}{47}{subsubsection.10.1.15}%
+\contentsline {subsection}{\numberline {10.2}Evaluation and Testing}{48}{subsection.10.2}%
+\contentsline {subsubsection}{\numberline {10.2.1}Formative vs Summative Evaluation}{48}{subsubsection.10.2.1}%
+\contentsline {subsubsection}{\numberline {10.2.2}Measuring usability}{48}{subsubsection.10.2.2}%
+\contentsline {subsection}{\numberline {10.3}Web architecture and performance}{48}{subsection.10.3}%
+\contentsline {subsubsection}{\numberline {10.3.1}Software Stack}{48}{subsubsection.10.3.1}%
+\contentsline {subsubsection}{\numberline {10.3.2}Servers}{48}{subsubsection.10.3.2}%
+\contentsline {subsubsection}{\numberline {10.3.3}Cloud based infrastructure}{49}{subsubsection.10.3.3}%
+\contentsline {subsubsection}{\numberline {10.3.4}Additional software components}{49}{subsubsection.10.3.4}%
+\contentsline {subsubsection}{\numberline {10.3.5}Performance}{49}{subsubsection.10.3.5}%
+\contentsline {subsubsection}{\numberline {10.3.6}Typical application growth path}{50}{subsubsection.10.3.6}%
+\contentsline {section}{\numberline {11}Supporting Mobile}{50}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Responsive web design}{50}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}CSS Layout and Flexbox}{51}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.3}Creating a separate mobile layout}{51}{subsection.11.3}%
+\contentsline {subsubsection}{\numberline {11.3.1}Pros}{51}{subsubsection.11.3.1}%
+\contentsline {subsubsection}{\numberline {11.3.2}Cons}{51}{subsubsection.11.3.2}%
+\contentsline {section}{\numberline {12}Being a web developer}{52}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Testing}{52}{subsection.12.1}%
+\contentsline {subsubsection}{\numberline {12.1.1}Functional Testing}{52}{subsubsection.12.1.1}%
+\contentsline {subsubsection}{\numberline {12.1.2}Usability Testing}{52}{subsubsection.12.1.2}%
+\contentsline {subsubsection}{\numberline {12.1.3}Compatibility Testing}{52}{subsubsection.12.1.3}%
+\contentsline {subsubsection}{\numberline {12.1.4}Performance Testing}{52}{subsubsection.12.1.4}%
+\contentsline {subsubsection}{\numberline {12.1.5}Security Testing}{52}{subsubsection.12.1.5}%
+\contentsline {subsubsection}{\numberline {12.1.6}When to run tests}{52}{subsubsection.12.1.6}%

@@ -10,20 +10,99 @@
 \BOOKMARK [1][-]{section.2}{Asymptotic Notation}{}% 10
 \BOOKMARK [2][-]{subsection.2.1}{Big-O notation}{section.2}% 11
 \BOOKMARK [3][-]{subsubsection.2.1.1}{General Rules}{subsection.2.1}% 12
-\BOOKMARK [1][-]{section.3}{Relatives of Big-O}{}% 13
-\BOOKMARK [2][-]{subsection.3.1}{Big Omega}{section.3}% 14
-\BOOKMARK [2][-]{subsection.3.2}{Big Theta}{section.3}% 15
-\BOOKMARK [2][-]{subsection.3.3}{Summary}{section.3}% 16
-\BOOKMARK [2][-]{subsection.3.4}{Examples}{section.3}% 17
-\BOOKMARK [1][-]{section.4}{Data Structures}{}% 18
-\BOOKMARK [2][-]{subsection.4.1}{Arrays}{section.4}% 19
-\BOOKMARK [3][-]{subsubsection.4.1.1}{Strengths}{subsection.4.1}% 20
-\BOOKMARK [3][-]{subsubsection.4.1.2}{Limitations}{subsection.4.1}% 21
-\BOOKMARK [3][-]{subsubsection.4.1.3}{Declaring arrays in Java}{subsection.4.1}% 22
-\BOOKMARK [3][-]{subsubsection.4.1.4}{Examples}{subsection.4.1}% 23
-\BOOKMARK [3][-]{subsubsection.4.1.5}{Adding an entry}{subsection.4.1}% 24
-\BOOKMARK [3][-]{subsubsection.4.1.6}{Concluding Remarks}{subsection.4.1}% 25
-\BOOKMARK [2][-]{subsection.4.2}{Linked Lists}{section.4}% 26
-\BOOKMARK [3][-]{subsubsection.4.2.1}{Singly Linked List}{subsection.4.2}% 27
-\BOOKMARK [3][-]{subsubsection.4.2.2}{Time required for Singly Linked List}{subsection.4.2}% 28
-\BOOKMARK [3][-]{subsubsection.4.2.3}{Insertion - Operations}{subsection.4.2}% 29
+\BOOKMARK [2][-]{subsection.2.2}{Relatives of Big-O}{section.2}% 13
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Big Omega}{subsection.2.2}% 14
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Big Theta}{subsection.2.2}% 15
+\BOOKMARK [3][-]{subsubsection.2.2.3}{Summary}{subsection.2.2}% 16
+\BOOKMARK [2][-]{subsection.2.3}{Examples}{section.2}% 17
+\BOOKMARK [1][-]{section.3}{Abstract Data Types \(ADT\)}{}% 18
+\BOOKMARK [2][-]{subsection.3.1}{The Stack ADT}{section.3}% 19
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Fundamental Operations}{subsection.3.1}% 20
+\BOOKMARK [3][-]{subsubsection.3.1.2}{Main operations}{subsection.3.1}% 21
+\BOOKMARK [3][-]{subsubsection.3.1.3}{Auxiliary operations}{subsection.3.1}% 22
+\BOOKMARK [3][-]{subsubsection.3.1.4}{Application}{subsection.3.1}% 23
+\BOOKMARK [3][-]{subsubsection.3.1.5}{Implementation}{subsection.3.1}% 24
+\BOOKMARK [2][-]{subsection.3.2}{Queue ADT}{section.3}% 25
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Main and fundamental operations}{subsection.3.2}% 26
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Auxiliary operations}{subsection.3.2}% 27
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Application}{subsection.3.2}% 28
+\BOOKMARK [3][-]{subsubsection.3.2.4}{Implementation}{subsection.3.2}% 29
+\BOOKMARK [3][-]{subsubsection.3.2.5}{Performances and Limitations}{subsection.3.2}% 30
+\BOOKMARK [2][-]{subsection.3.3}{List ADT}{section.3}% 31
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Main, fundamental and auxiliary operations}{subsection.3.3}% 32
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Implementation}{subsection.3.3}% 33
+\BOOKMARK [3][-]{subsubsection.3.3.3}{Performance}{subsection.3.3}% 34
+\BOOKMARK [2][-]{subsection.3.4}{ArrayList ADT}{section.3}% 35
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Incremental strategy - analysis}{subsection.3.4}% 36
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Doubling strategy - analysis}{subsection.3.4}% 37
+\BOOKMARK [3][-]{subsubsection.3.4.3}{Remarks on strategies}{subsection.3.4}% 38
+\BOOKMARK [2][-]{subsection.3.5}{Positional List ADT}{section.3}% 39
+\BOOKMARK [3][-]{subsubsection.3.5.1}{Main, fundamental and auxiliary operations}{subsection.3.5}% 40
+\BOOKMARK [2][-]{subsection.3.6}{Maps ADT}{section.3}% 41
+\BOOKMARK [3][-]{subsubsection.3.6.1}{Main, fundamental and auxiliary operations}{subsection.3.6}% 42
+\BOOKMARK [3][-]{subsubsection.3.6.2}{Implementation}{subsection.3.6}% 43
+\BOOKMARK [3][-]{subsubsection.3.6.3}{Applications}{subsection.3.6}% 44
+\BOOKMARK [3][-]{subsubsection.3.6.4}{Performance}{subsection.3.6}% 45
+\BOOKMARK [3][-]{subsubsection.3.6.5}{Hashing}{subsection.3.6}% 46
+\BOOKMARK [3][-]{subsubsection.3.6.6}{Methods of reducing collision \(Collision Handling\)}{subsection.3.6}% 47
+\BOOKMARK [3][-]{subsubsection.3.6.7}{Performance}{subsection.3.6}% 48
+\BOOKMARK [2][-]{subsection.3.7}{Priority Queue ADT}{section.3}% 49
+\BOOKMARK [3][-]{subsubsection.3.7.1}{Main, fundamental and auxiliary operators}{subsection.3.7}% 50
+\BOOKMARK [3][-]{subsubsection.3.7.2}{Implementation}{subsection.3.7}% 51
+\BOOKMARK [2][-]{subsection.3.8}{Entry ADT}{section.3}% 52
+\BOOKMARK [3][-]{subsubsection.3.8.1}{Main, fundamental and auxiliary operators}{subsection.3.8}% 53
+\BOOKMARK [2][-]{subsection.3.9}{Tree ADT}{section.3}% 54
+\BOOKMARK [3][-]{subsubsection.3.9.1}{Main, fundamental and auxiliary operators}{subsection.3.9}% 55
+\BOOKMARK [3][-]{subsubsection.3.9.2}{Traversal}{subsection.3.9}% 56
+\BOOKMARK [2][-]{subsection.3.10}{Set ADT}{section.3}% 57
+\BOOKMARK [3][-]{subsubsection.3.10.1}{Main, fundamental and auxiliary operators}{subsection.3.10}% 58
+\BOOKMARK [3][-]{subsubsection.3.10.2}{Implementation}{subsection.3.10}% 59
+\BOOKMARK [1][-]{section.4}{Data Structures}{}% 60
+\BOOKMARK [2][-]{subsection.4.1}{Arrays}{section.4}% 61
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Strengths}{subsection.4.1}% 62
+\BOOKMARK [3][-]{subsubsection.4.1.2}{Limitations}{subsection.4.1}% 63
+\BOOKMARK [3][-]{subsubsection.4.1.3}{Declaring arrays in Java}{subsection.4.1}% 64
+\BOOKMARK [3][-]{subsubsection.4.1.4}{Examples}{subsection.4.1}% 65
+\BOOKMARK [3][-]{subsubsection.4.1.5}{Adding an entry}{subsection.4.1}% 66
+\BOOKMARK [3][-]{subsubsection.4.1.6}{Concluding Remarks}{subsection.4.1}% 67
+\BOOKMARK [2][-]{subsection.4.2}{Linked Lists }{section.4}% 68
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Singly Linked List}{subsection.4.2}% 69
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Time required for Singly Linked List}{subsection.4.2}% 70
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Insertion of head}{subsection.4.2}% 71
+\BOOKMARK [3][-]{subsubsection.4.2.4}{Insertion of tail}{subsection.4.2}% 72
+\BOOKMARK [3][-]{subsubsection.4.2.5}{Remarks}{subsection.4.2}% 73
+\BOOKMARK [3][-]{subsubsection.4.2.6}{Removing from head}{subsection.4.2}% 74
+\BOOKMARK [3][-]{subsubsection.4.2.7}{Removing from tail}{subsection.4.2}% 75
+\BOOKMARK [3][-]{subsubsection.4.2.8}{Doubly linked list}{subsection.4.2}% 76
+\BOOKMARK [3][-]{subsubsection.4.2.9}{Insertions in a doubly linked list}{subsection.4.2}% 77
+\BOOKMARK [3][-]{subsubsection.4.2.10}{Deletion in a doubly linked list}{subsection.4.2}% 78
+\BOOKMARK [3][-]{subsubsection.4.2.11}{List VS Array}{subsection.4.2}% 79
+\BOOKMARK [1][-]{section.5}{Java Fundamentals}{}% 80
+\BOOKMARK [2][-]{subsection.5.1}{Recursion}{section.5}% 81
+\BOOKMARK [3][-]{subsubsection.5.1.1}{Factorial}{subsection.5.1}% 82
+\BOOKMARK [3][-]{subsubsection.5.1.2}{Content of a recursive method}{subsection.5.1}% 83
+\BOOKMARK [3][-]{subsubsection.5.1.3}{Linear recursion}{subsection.5.1}% 84
+\BOOKMARK [3][-]{subsubsection.5.1.4}{Binary recursion}{subsection.5.1}% 85
+\BOOKMARK [3][-]{subsubsection.5.1.5}{Multiple recursion}{subsection.5.1}% 86
+\BOOKMARK [2][-]{subsection.5.2}{Iterators}{section.5}% 87
+\BOOKMARK [1][-]{section.6}{Sorting}{}% 88
+\BOOKMARK [2][-]{subsection.6.1}{Sorting Problem}{section.6}% 89
+\BOOKMARK [2][-]{subsection.6.2}{Generic Merge }{section.6}% 90
+\BOOKMARK [2][-]{subsection.6.3}{Divide and Conquer}{section.6}% 91
+\BOOKMARK [2][-]{subsection.6.4}{Merge Sort}{section.6}% 92
+\BOOKMARK [3][-]{subsubsection.6.4.1}{Method}{subsection.6.4}% 93
+\BOOKMARK [3][-]{subsubsection.6.4.2}{Running time}{subsection.6.4}% 94
+\BOOKMARK [2][-]{subsection.6.5}{Sorting with Priority Queue}{section.6}% 95
+\BOOKMARK [2][-]{subsection.6.6}{Quicksort}{section.6}% 96
+\BOOKMARK [3][-]{subsubsection.6.6.1}{Method}{subsection.6.6}% 97
+\BOOKMARK [3][-]{subsubsection.6.6.2}{Running time}{subsection.6.6}% 98
+\BOOKMARK [1][-]{section.7}{Search}{}% 99
+\BOOKMARK [2][-]{subsection.7.1}{Binary search}{section.7}% 100
+\BOOKMARK [3][-]{subsubsection.7.1.1}{Introduction}{subsection.7.1}% 101
+\BOOKMARK [3][-]{subsubsection.7.1.2}{Example}{subsection.7.1}% 102
+\BOOKMARK [3][-]{subsubsection.7.1.3}{Analysis}{subsection.7.1}% 103
+\BOOKMARK [1][-]{section.8}{Heap}{}% 104
+\BOOKMARK [1][-]{section.9}{Skip-list}{}% 105
+\BOOKMARK [1][-]{section.10}{Binary Search Tree}{}% 106
+\BOOKMARK [2][-]{subsection.10.1}{Performance}{section.10}% 107
+\BOOKMARK [2][-]{subsection.10.2}{AVL Tree}{section.10}% 108

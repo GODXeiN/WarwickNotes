@@ -1,29 +1,108 @@
-\contentsline {section}{\numberline {1}Analysis of Algorithms}{2}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Classification of a good algorithm}{2}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Running Time}{2}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Finding the running time}{2}{subsection.1.3}%
-\contentsline {subsubsection}{\numberline {1.3.1}Experimental Analysis}{2}{subsubsection.1.3.1}%
-\contentsline {subsubsection}{\numberline {1.3.2}Theoretical Analysis}{2}{subsubsection.1.3.2}%
-\contentsline {subsection}{\numberline {1.4}Random Access Machine (RAM) Model}{2}{subsection.1.4}%
-\contentsline {subsection}{\numberline {1.5}Primitive Operations}{3}{subsection.1.5}%
-\contentsline {subsection}{\numberline {1.6}Sorting algorithms}{3}{subsection.1.6}%
-\contentsline {section}{\numberline {2}Asymptotic Notation}{4}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Big-O notation}{4}{subsection.2.1}%
-\contentsline {subsubsection}{\numberline {2.1.1}General Rules}{5}{subsubsection.2.1.1}%
-\contentsline {section}{\numberline {3}Relatives of Big-O}{5}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Big Omega}{5}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Big Theta}{5}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Summary}{5}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Examples}{6}{subsection.3.4}%
-\contentsline {section}{\numberline {4}Data Structures}{6}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Arrays}{6}{subsection.4.1}%
-\contentsline {subsubsection}{\numberline {4.1.1}Strengths}{6}{subsubsection.4.1.1}%
-\contentsline {subsubsection}{\numberline {4.1.2}Limitations}{6}{subsubsection.4.1.2}%
-\contentsline {subsubsection}{\numberline {4.1.3}Declaring arrays in Java}{7}{subsubsection.4.1.3}%
-\contentsline {subsubsection}{\numberline {4.1.4}Examples}{7}{subsubsection.4.1.4}%
-\contentsline {subsubsection}{\numberline {4.1.5}Adding an entry}{7}{subsubsection.4.1.5}%
-\contentsline {subsubsection}{\numberline {4.1.6}Concluding Remarks}{7}{subsubsection.4.1.6}%
-\contentsline {subsection}{\numberline {4.2}Linked Lists}{7}{subsection.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}Singly Linked List}{7}{subsubsection.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2}Time required for Singly Linked List}{8}{subsubsection.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.2.3}Insertion - Operations}{8}{subsubsection.4.2.3}%
+\contentsline {section}{\numberline {1}Analysis of Algorithms}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Classification of a good algorithm}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Running Time}{4}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Finding the running time}{4}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}Experimental Analysis}{4}{subsubsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.2}Theoretical Analysis}{4}{subsubsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.4}Random Access Machine (RAM) Model}{4}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Primitive Operations}{5}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}Sorting algorithms}{5}{subsection.1.6}%
+\contentsline {section}{\numberline {2}Asymptotic Notation}{6}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Big-O notation}{6}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}General Rules}{7}{subsubsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.2}Relatives of Big-O}{7}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Big Omega}{7}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Big Theta}{7}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Summary}{7}{subsubsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.3}Examples}{8}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Abstract Data Types (ADT)}{10}{section.3}%
+\contentsline {subsection}{\numberline {3.1}The Stack ADT}{10}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Fundamental Operations}{10}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Main operations}{10}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Auxiliary operations}{10}{subsubsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.4}Application}{11}{subsubsection.3.1.4}%
+\contentsline {subsubsection}{\numberline {3.1.5}Implementation}{11}{subsubsection.3.1.5}%
+\contentsline {subsection}{\numberline {3.2}Queue ADT}{11}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Main and fundamental operations}{12}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Auxiliary operations}{12}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Application}{12}{subsubsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.4}Implementation}{12}{subsubsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.5}Performances and Limitations}{13}{subsubsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.3}List ADT}{13}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Main, fundamental and auxiliary operations}{13}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Implementation}{13}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Performance}{14}{subsubsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.4}ArrayList ADT}{14}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Incremental strategy - analysis}{14}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Doubling strategy - analysis}{14}{subsubsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.3}Remarks on strategies}{15}{subsubsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.5}Positional List ADT}{15}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}Main, fundamental and auxiliary operations}{15}{subsubsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.6}Maps ADT}{15}{subsection.3.6}%
+\contentsline {subsubsection}{\numberline {3.6.1}Main, fundamental and auxiliary operations}{16}{subsubsection.3.6.1}%
+\contentsline {subsubsection}{\numberline {3.6.2}Implementation}{16}{subsubsection.3.6.2}%
+\contentsline {subsubsection}{\numberline {3.6.3}Applications}{17}{subsubsection.3.6.3}%
+\contentsline {subsubsection}{\numberline {3.6.4}Performance}{17}{subsubsection.3.6.4}%
+\contentsline {subsubsection}{\numberline {3.6.5}Hashing}{17}{subsubsection.3.6.5}%
+\contentsline {subsubsection}{\numberline {3.6.6}Methods of reducing collision (Collision Handling)}{18}{subsubsection.3.6.6}%
+\contentsline {subsubsection}{\numberline {3.6.7}Performance}{18}{subsubsection.3.6.7}%
+\contentsline {subsection}{\numberline {3.7}Priority Queue ADT}{19}{subsection.3.7}%
+\contentsline {subsubsection}{\numberline {3.7.1}Main, fundamental and auxiliary operators}{19}{subsubsection.3.7.1}%
+\contentsline {subsubsection}{\numberline {3.7.2}Implementation}{19}{subsubsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.8}Entry ADT}{19}{subsection.3.8}%
+\contentsline {subsubsection}{\numberline {3.8.1}Main, fundamental and auxiliary operators}{19}{subsubsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.9}Tree ADT}{19}{subsection.3.9}%
+\contentsline {subsubsection}{\numberline {3.9.1}Main, fundamental and auxiliary operators}{19}{subsubsection.3.9.1}%
+\contentsline {subsubsection}{\numberline {3.9.2}Traversal}{19}{subsubsection.3.9.2}%
+\contentsline {subsection}{\numberline {3.10}Set ADT}{20}{subsection.3.10}%
+\contentsline {subsubsection}{\numberline {3.10.1}Main, fundamental and auxiliary operators}{20}{subsubsection.3.10.1}%
+\contentsline {subsubsection}{\numberline {3.10.2}Implementation}{20}{subsubsection.3.10.2}%
+\contentsline {section}{\numberline {4}Data Structures}{20}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Arrays}{20}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Strengths}{20}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Limitations}{20}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}Declaring arrays in Java}{21}{subsubsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.4}Examples}{21}{subsubsection.4.1.4}%
+\contentsline {subsubsection}{\numberline {4.1.5}Adding an entry}{21}{subsubsection.4.1.5}%
+\contentsline {subsubsection}{\numberline {4.1.6}Concluding Remarks}{21}{subsubsection.4.1.6}%
+\contentsline {subsection}{\numberline {4.2}Linked Lists }{21}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Singly Linked List}{21}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Time required for Singly Linked List}{22}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}Insertion of head}{22}{subsubsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.4}Insertion of tail}{22}{subsubsection.4.2.4}%
+\contentsline {subsubsection}{\numberline {4.2.5}Remarks}{22}{subsubsection.4.2.5}%
+\contentsline {subsubsection}{\numberline {4.2.6}Removing from head}{23}{subsubsection.4.2.6}%
+\contentsline {subsubsection}{\numberline {4.2.7}Removing from tail}{23}{subsubsection.4.2.7}%
+\contentsline {subsubsection}{\numberline {4.2.8}Doubly linked list}{23}{subsubsection.4.2.8}%
+\contentsline {subsubsection}{\numberline {4.2.9}Insertions in a doubly linked list}{23}{subsubsection.4.2.9}%
+\contentsline {subsubsection}{\numberline {4.2.10}Deletion in a doubly linked list}{23}{subsubsection.4.2.10}%
+\contentsline {subsubsection}{\numberline {4.2.11}List VS Array}{23}{subsubsection.4.2.11}%
+\contentsline {section}{\numberline {5}Java Fundamentals}{23}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Recursion}{23}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Factorial}{23}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Content of a recursive method}{24}{subsubsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.3}Linear recursion}{24}{subsubsection.5.1.3}%
+\contentsline {subsubsection}{\numberline {5.1.4}Binary recursion}{24}{subsubsection.5.1.4}%
+\contentsline {subsubsection}{\numberline {5.1.5}Multiple recursion}{25}{subsubsection.5.1.5}%
+\contentsline {subsection}{\numberline {5.2}Iterators}{25}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Sorting}{26}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Sorting Problem}{26}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Generic Merge }{26}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Divide and Conquer}{27}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Merge Sort}{27}{subsection.6.4}%
+\contentsline {subsubsection}{\numberline {6.4.1}Method}{27}{subsubsection.6.4.1}%
+\contentsline {subsubsection}{\numberline {6.4.2}Running time}{27}{subsubsection.6.4.2}%
+\contentsline {subsection}{\numberline {6.5}Sorting with Priority Queue}{28}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Quicksort}{28}{subsection.6.6}%
+\contentsline {subsubsection}{\numberline {6.6.1}Method}{28}{subsubsection.6.6.1}%
+\contentsline {subsubsection}{\numberline {6.6.2}Running time}{28}{subsubsection.6.6.2}%
+\contentsline {section}{\numberline {7}Search}{29}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Binary search}{29}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7.1.1}Introduction}{29}{subsubsection.7.1.1}%
+\contentsline {subsubsection}{\numberline {7.1.2}Example}{29}{subsubsection.7.1.2}%
+\contentsline {subsubsection}{\numberline {7.1.3}Analysis}{29}{subsubsection.7.1.3}%
+\contentsline {section}{\numberline {8}Heap}{30}{section.8}%
+\contentsline {section}{\numberline {9}Skip-list}{31}{section.9}%
+\contentsline {section}{\numberline {10}Binary Search Tree}{31}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Performance}{31}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}AVL Tree}{31}{subsection.10.2}%

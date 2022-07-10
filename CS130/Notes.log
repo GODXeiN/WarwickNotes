@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.15)  22 DEC 2021 18:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.1.10)  25 APR 2022 21:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -861,15 +861,15 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 Package epstopdf Info: Source file: <crest_black.eps>
-(epstopdf)                    date: 2021-12-17 11:21:01
+(epstopdf)                    date: 2022-01-09 22:36:06
 (epstopdf)                    size: 71748 bytes
 (epstopdf)             Output file: <crest_black-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-12-17 11:31:14
+(epstopdf)                    date: 2022-01-09 22:36:06
 (epstopdf)                    size: 21274 bytes
 (epstopdf)             Command: <repstopdf --outfile=crest_black-eps-converted-to.pdf crest_black.eps>
 (epstopdf)             \includegraphics on input line 84.
 Package epstopdf Info: Output file is already uptodate.
-<crest_black-eps-converted-to.pdf, id=360, 64.24pt x 80.3pt>
+<crest_black-eps-converted-to.pdf, id=372, 64.24pt x 80.3pt>
 File: crest_black-eps-converted-to.pdf Graphic file (type pdf)
 <use crest_black-eps-converted-to.pdf>
 Package pdftex.def Info: crest_black-eps-converted-to.pdf  used on input line 84.
@@ -914,7 +914,7 @@ LaTeX Font Warning: Font shape `T1/qtm/m/sl' in size <10> not available
 ./Notes.toc:55: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.55 ...s of Quantifiers}{17}{subsubsection.5.5.1}
+l.55 ...king with Quantifiers}{18}{subsection.5.5}
                                                   %
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -922,7 +922,7 @@ an alignment. Proceed, and I'll ignore this case.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.55 ...s of Quantifiers}{17}{subsubsection.5.5.1}
+l.55 ...king with Quantifiers}{18}{subsection.5.5}
                                                   % [1])
 \tf@toc=\write7
 \openout7 = `Notes.toc'.
@@ -942,7 +942,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 102--102
  []
 
 (./figures/function.pdf_tex
-<./figures/function.pdf, id=476, page=1, 682.86612pt x 341.43306pt>
+<./figures/function.pdf, id=491, page=1, 682.86612pt x 341.43306pt>
 File: ./figures/function.pdf Graphic file (type pdf)
 <use ./figures/function.pdf, page 1>
 Package pdftex.def Info: ./figures/function.pdf , page1 used on input line 57.
@@ -980,12 +980,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 211--213
  []
 
 (./figures/nsquar.pdf_tex
-<./figures/nsquar.pdf, id=526, page=1, 682.86612pt x 341.43306pt>
+<./figures/nsquar.pdf, id=541, page=1, 682.86612pt x 341.43306pt>
 File: ./figures/nsquar.pdf Graphic file (type pdf)
 <use ./figures/nsquar.pdf, page 1>
 Package pdftex.def Info: ./figures/nsquar.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 421.66995pt x 210.83708pt.
-<./figures/nsquar.pdf, id=527, page=2, 682.86612pt x 341.43306pt>
+<./figures/nsquar.pdf, id=542, page=2, 682.86612pt x 341.43306pt>
 File: ./figures/nsquar.pdf Graphic file (type pdf)
 <use ./figures/nsquar.pdf, page 2>
 Package pdftex.def Info: ./figures/nsquar.pdf , page2 used on input line 117.
@@ -1009,7 +1009,7 @@ I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 [7]
-<figures/subsets.png, id=563, 682.55pt x 564.1075pt>
+<figures/subsets.png, id=578, 682.55pt x 564.1075pt>
 File: figures/subsets.png Graphic file (type png)
 <use figures/subsets.png>
 Package pdftex.def Info: figures/subsets.png  used on input line 282.
@@ -1042,170 +1042,144 @@ I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 [10]
-
-./Notes.tex:445: LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.445 	\begin{matrix*}[1]
-                         
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./Notes.tex:445: LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.445 	\begin{matrix*}[1]
-                         
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./Notes.tex:445: LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.445 	\begin{matrix*}[1]
-                         
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./Notes.tex:445: LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.445 	\begin{matrix*}[1]
-                         
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./Notes.tex:445: LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.445 	\begin{matrix*}[1]
-                         
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./Notes.tex:445: LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.445 	\begin{matrix*}[1]
-                         
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./Notes.tex:445: LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.445 	\begin{matrix*}[1]
-                         
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./Notes.tex:445: LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.445 	\begin{matrix*}[1]
-                         
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./Notes.tex:445: LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.445 	\begin{matrix*}[1]
-                         
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./Notes.tex:445: LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.445 	\begin{matrix*}[1]
-                         
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-./Notes.tex:453: Misplaced \noalign.
+./Notes.tex:446: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.453 \]
-        
+l.446 \subsubsection
+                    {Logical Identities}
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 [11]
-./Notes.tex:503: Misplaced \noalign.
+
+./Notes.tex:449: LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.449 	\begin{matrix*}[1]
+                         
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Notes.tex:449: LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.449 	\begin{matrix*}[1]
+                         
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Notes.tex:449: LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.449 	\begin{matrix*}[1]
+                         
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Notes.tex:449: LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.449 	\begin{matrix*}[1]
+                         
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Notes.tex:449: LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.449 	\begin{matrix*}[1]
+                         
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Notes.tex:449: LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.449 	\begin{matrix*}[1]
+                         
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Notes.tex:449: LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.449 	\begin{matrix*}[1]
+                         
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Notes.tex:449: LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.449 	\begin{matrix*}[1]
+                         
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Notes.tex:449: LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.449 	\begin{matrix*}[1]
+                         
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Notes.tex:449: LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.449 	\begin{matrix*}[1]
+                         
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./Notes.tex:502: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.503 \subsubsection
-                    {Inverse}
+l.502 \subsection
+                 {Different Negations}
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 [12]
-
-./Notes.tex:507: Package inputenc Error: Unicode character ⏎ (U+23CE)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.507 Let us consider the following statement: ⏎
-                                                  
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-./Notes.tex:510: Package inputenc Error: Unicode character ⏎ (U+23CE)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.510 \end{center} ⏎
-                      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
 
 ./Notes.tex:511: Package inputenc Error: Unicode character ⏎ (U+23CE)
 (inputenc)                not set up for use with LaTeX.
@@ -1214,21 +1188,21 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.511 ... I get cake, then it is my birthday". ⏎
+l.511 Let us consider the following statement: ⏎
                                                   
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./Notes.tex:513: Package inputenc Error: Unicode character ⏎ (U+23CE)
+./Notes.tex:514: Package inputenc Error: Unicode character ⏎ (U+23CE)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.513 ...ake, then it is not my birthday".     ⏎
-                                                  
+l.514 \end{center} ⏎
+                      
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
@@ -1240,7 +1214,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.515 ...my birthday, then I do not get cake". ⏎
+l.515 ... I get cake, then it is my birthday". ⏎
                                                   
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1253,82 +1227,117 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.517 ...ases when it is not birthday as true. ⏎
+l.517 ...ake, then it is not my birthday".     ⏎
                                                   
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-./Notes.tex:544: Misplaced \noalign.
+
+./Notes.tex:519: Package inputenc Error: Unicode character ⏎ (U+23CE)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.519 ...my birthday, then I do not get cake". ⏎
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Notes.tex:521: Package inputenc Error: Unicode character ⏎ (U+23CE)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.521 ...ases when it is not birthday as true. ⏎
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+./Notes.tex:571: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.544 \subsubsection
-                    {Reflexivity}
+l.571 \subsection
+                 {Relations}
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 [13]
-./Notes.tex:578: Misplaced \noalign.
+./Notes.tex:584: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.578 \subsection
-                 {Equivalence relations}
+l.584 
+      
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 [14]
-./Notes.tex:637: Misplaced \noalign.
+./Notes.tex:621: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.637 \section
-              {Predicates and Quantifiers}
+l.621 \subsubsection
+                    {Total Order}
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 [15]
-./Notes.tex:677: Misplaced \noalign.
+./Notes.tex:684: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.677 \end{tcolorbox}
-                     
+l.684 \section
+              {Predicates and Quantifiers}
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 [16]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 711.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\forall' on input line 711.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 711.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 711.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\exists' on input line 711.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 711.
-
-./Notes.tex:717: Misplaced \noalign.
+./Notes.tex:724: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.717 \end{align*}
-                  
+l.724 \end{tcolorbox}
+                     
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 [17]
-./Notes.tex:730: Undefined control sequence.
-l.730 ...$ and then showing that $A \implies \negB
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 758.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\forall' on input line 758.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 758.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 758.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\exists' on input line 758.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 758.
+
+./Notes.tex:764: Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.764 \end{align*}
+                  
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+[18]
+./Notes.tex:777: Undefined control sequence.
+l.777 ...$ and then showing that $A \implies \negB
                                                   $ is false. We know that $...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1336,231 +1345,46 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./Notes.tex:745: Misplaced \noalign.
+./Notes.tex:792: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.745 \subsection
+l.792 \subsection
                  {Terminology}
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
-[18]
-./Notes.tex:781: Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.781 \end{tcolorbox}
-                     
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
 [19]
-./Notes.tex:813: Misplaced \noalign.
+./Notes.tex:828: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.813 \subsection
-                 {Isomorphism}
+l.828 \end{tcolorbox}
+                     
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 834--836
+./Notes.tex:860: Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.860 \subsection
+                 {Isomorphism}
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 881--883
 
  []
 
-./Notes.tex:851: Misplaced \noalign.
+./Notes.tex:898: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.851 \subsection
+l.898 \subsection
                  {Partial Order Diagrams}
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
-[21] (./figures/hasseexample.pdf_tex
-<./figures/hasseexample.pdf, id=722, page=1, 682.86612pt x 341.43306pt>
+[22] (./figures/hasseexample.pdf_tex
+<./figures/hasseexample.pdf, id=750, page=1, 682.86612pt x 341.43306pt>
 File: ./figures/hasseexample.pdf Graphic file (type pdf)
-<use ./figures/hasseexample.pdf, page 1>
-Package pdftex.def Info: ./figures/hasseexample.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 421.66995pt x 210.83708pt.
-)
-./Notes.tex:880: Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.880 \subsubsection
-                    {Hasse Diagrams}
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-[22] (./figures/hassediagram.pdf_tex
-<./figures/hassediagram.pdf, id=735, page=1, 682.86612pt x 341.43306pt>
-File: ./figures/hassediagram.pdf Graphic file (type pdf)
-<use ./figures/hassediagram.pdf, page 1>
-Package pdftex.def Info: ./figures/hassediagram.pdf , page1 used on input line 57.
-(pdftex.def)             Requested size: 421.66995pt x 210.83708pt.
-<./figures/hassediagram.pdf, id=736, page=2, 682.86612pt x 341.43306pt>
-File: ./figures/hassediagram.pdf Graphic file (type pdf)
-<use ./figures/hassediagram.pdf, page 2>
-Package pdftex.def Info: ./figures/hassediagram.pdf , page2 used on input line 63.
-(pdftex.def)             Requested size: 421.66995pt x 210.83708pt.
-)
-./Notes.tex:895: Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.895 \subsection
-                 {Planar Graphs}
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-[23 <./figures/hasseexample.pdf>]
-./Notes.tex:915: Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.915 \end{tcolorbox}
-                     
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-[24 <./figures/hassediagram.pdf> <./figures/hassediagram.pdf>]
-Underfull \hbox (badness 1112) in paragraph at lines 950--951
-[]$\OML/lmm/m/it/10 G$ \T1/qtm/m/n/10 can be ob-tained from $\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 V; \U/msb/m/n/10 ?\OT1/lmr/m/n/10 )$ \T1/qtm/m/n/10 by adding all the edges in $\OML/lmm/m/it/10 E$\T1/qtm/m/n/10 . Sup-pose these edges are
- []
-
-./Notes.tex:970: Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.970 \end{tcolorbox}
-                     
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-[25]
-./Notes.tex:986: Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.986 F
-       or example, if we consider the toss of a coin twice, then we can eith...
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-[26]
-./Notes.tex:1030: Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.1030 \end{tcolorbox}
-                      
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-[27]
-./Notes.tex:1075: Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.1075 \end{tcolorbox}
-                      
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-[28]
-./Notes.tex:1085: Undefined control sequence.
-<recently read> \Oemega 
-                        
-l.1085 $\Oemega
-                = \{h,t\}$
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Notes.tex:1118: Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.1118 H
-        owever, the notion of 'average' is complicated. Whilst expectation d...
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-[29]
-./Notes.tex:1159: Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.1159 \subsubsection
-                     {Variance and Standard Deviation}
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-[30]
-./Notes.tex:1173: Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.1173 \newpage
-               
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-[31]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 1175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\exists' on input line 1175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\forall' on input line 1175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1175.
-
-
-AED: lastpage setting LastPage
-./Notes.tex:1194: Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.1194 		\end{document}
-                       
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-[32]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1194.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1194.
- (./Notes.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1194.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1194.
-Package rerunfilecheck Info: File `Notes.out' has not changed.
-(rerunfilecheck)             Checksum: 184EBAAD58955196ECBBF254BFDC4BC5;5959.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
-Here is how much of TeX's memory you used:
- 27115 strings out of 481239
- 500662 string characters out of 5920377
- 867852 words of memory out of 5000000
- 41479 multiletter control sequences out of 15000+600000
- 577841 words of font info for 56 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 62i,21n,100p,829b,607s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi5.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr5.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmri.pfb>
-Output written on Notes.pdf (33 pages, 415919 bytes).
-PDF statistics:
- 998 PDF objects out of 1000 (max. 8388607)
- 930 compressed objects within 10 object streams
- 338 named destinations out of 1000 (max. 500000)
- 757 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+<use .

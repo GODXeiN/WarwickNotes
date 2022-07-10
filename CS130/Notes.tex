@@ -268,7 +268,7 @@ For sets $A,B$, $A$ is a subset of $B$ iff every element in $A$ is also an eleme
 Similarly, it is not a subset iff there is at least 1 element that is not shared.
 \end{tcolorbox}
 \begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}$\varnothing \subseteq A$ \label{varnothing subseteq A}\end{defn}]
-For any element $A$, the empty set is always a subset. By definition \ref{Subset}, we know that something is not a subset when there is at least one element of the other subset that is not shared. However, empty set has no elements, and thus it is automatically a subset. 
+For any set $A$, the empty set is always a subset. By definition \ref{Subset}, we know that something is not a subset when there is at least one element of the other subset that is not shared. However, empty set has no elements, and thus it is automatically a subset. 
 \end{tcolorbox}
 \begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{thm}$2^n$ Subsets \label{$2^n$ Subsets}\end{thm}]
 If a finite set has $n$ elements, then it has $2^n$ subsets.
@@ -405,7 +405,7 @@ An "Equivalence" (Otherwise known as biconditional, iff) states that as long as 
 	\end{tabular}
 \end{table}
 Notice that this is actually $\neg\left( A \oplus B \right) $.
-\subsubsection{Material Conditional}
+\subsubsection{Material Conditional \label{mat}}
 A "Material Conditional" states that if $A$, then $ B$. There are many ways looking at this statement, such as $B$ only if $A$. What this implies is that if $B$ is true, we know that $A$ must be true. However, if $B$ is false, then we are given no information on $A$, it could be true or false. This symbol is denoted by $\to $. The truth table is as follows:
 \begin{table}[H]
 	\centering
@@ -439,6 +439,10 @@ Commutativity is defined to show that order does not matter if you switch your v
 	A \land B \iff B \land A \\
 	A \lor B \iff B \lor A
 \end{align*}
+\subsubsection{Tautology}
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Tautology \label{Tautology}\end{defn}]
+Tautology is a statement that is true in all circumstances. That is, it can be done using an either or statement in such way that it cannot be false. For example, the dog is brown or the dog is not brown is a tautology.
+\end{tcolorbox}
 \subsubsection{Logical Identities}
 The following are logical identities:
 \[
@@ -520,6 +524,49 @@ The contrapositive statement, on the other hand, works similarly. We know that f
 \begin{align*}
 	\forall Birthday \subseteq Cake \iff Cake' \cap Birthday = \varnothing
 \end{align*}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{exmp}Riemann Hypothesis Statement \label{Riemann Hypothesis Statement}\end{exmp}]
+If the research student is to prove the Riemann hypothesis he must be either very clever or else have some luck. If he is not very clever he will not be able to understand number theory. He will fail to finish his thesis only if he has no luck. Therefore, if he proves the Riemann hypothesis, either he understand number theory or he will finish his thesis.\\
+The proposition variables here are as follows:
+                \begin{align}
+			r:&\text{ the student proves the Riemann hypothesis} \\
+			c:& \text{ he is very clever,} \\
+			l:& \text{ he has some luck,} \\
+			n:& \text{ he understand number theory,} \\
+			t:& \text{ he finish his thesis,}
+                \end{align}
+	We try to assess the logical form of the argument. From the first sentence we obtain
+	\begin{align*}
+		r \implies (c \lor l)
+	\end{align*}
+	Then, the second sentence gives
+	\begin{align*}
+		\neg c \implies \neg n
+	\end{align*}
+	The third sentence obtains us
+	\begin{align*}
+		\neg t \implies \neg l
+	\end{align*}
+	The conclusion then is that
+	\begin{align*}
+		r \implies (n \lor t)
+	\end{align*}
+	Therefore we get
+	\begin{align*}
+		(r \implies (c \lor l)) \land (\neg c \implies \neg n) \land (\neg t \implies \neg l) \implies (r \implies (n \lor t))
+	\end{align*}
+	But is it a tautology? Let $Q = r \implies ( n \lor t)$ and let $P =
+		(r \implies (c \lor l)) \land (\neg c \implies \neg n) \land (\neg t \implies \neg l)$ For such questions, we know $(P \implies Q) \iff (\neg P \lor Q) \iff\neg (P \land \neg Q)$ from Material Conditional section \ref{mat}. We rewrite each of the small statements using our equivalence relations:
+		\begin{align*}
+			P \land \neg Q &= (\neg r \lor c \lor l) \land (\neg \neg c \lor \neg n) \land (\neg \neg t \lor \neg l) \land \neg (r \lor \neg ( n \lor t))\\
+				       &= (\neg r \lor c \lor l) \land (c \lor \neg n) \land (t \lor \neg l) \land r \land \neg n \land \neg t \\
+				       &= (c \lor l) \land r \land (c \lor \neg n) \land \neg l \land \neg t \land \neg n \\
+				       &= c\land \neg l \land r \land (c \lor \neg n) \land \neg t \land \neg n \\
+				       &= c \land \neg l \land r \land \neg n \land \neg t \land \neg n \\
+				       & = c \land \neg l \land \neg t \land \neg n
+		\end{align*}
+		Therefore it is not a tautology.
 \end{tcolorbox}
 \subsection{Relations}
 \begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Relation \label{Relation}\end{defn}]
@@ -849,6 +896,8 @@ In an directed graph $G_D = (V_D,E_D)$, there exists an Eulerian cycle if and on
 A cycle in $G= (V,E)$ is Hamiltonian if and only if $\forall v \in V$ appears only exactly once. We yet do not know a certain theorem that would completely define the existence of such a cycle. 
 \end{tcolorbox}
 \subsection{Partial Order Diagrams}
+\subsubsection{Duality}
+Every partially ordered set $P$ gives rise to a dual (or opposite) partially ordered set which is often denoted by $P^{or}$ or $P^{d}$. E.g., $x\le y$ holds in $P^{op}$ iff $y\le x$ holds in $P$. This in fact swaps a Hasse diagram.
 \subsubsection{Definitions}
 Recall that a partial order is reflexive, transitive and antisymmetric. There are ways to combine partial ordered relations. Consider the set $P=\{ 0,1 \}$, where $a \sim b$ denotes $a \le b$. Then, $R = \{ 00, 01, 10, 11 \}$. Then, how would we define the same relation on  $P \times P$? There are two formal ways:
 \begin{enumerate}
@@ -861,10 +910,10 @@ x \lessdot y
 \end{align}
 \end{tcolorbox}
 \begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}The least element \label{The least element}\end{defn}]
-The least element is an element $x \in P$ if $\forall y \in P$, $x \lessdot y$ for some poset $P$. Furthermore, the minimal element if it is the least element and it also implies $y=x$.
+The least element is an element $x \in P$ if $\forall y \in P$, $x \le  y$ for some poset $P$. Furthermore, the minimal element if it is the least element and it also implies $y=x$.
 \end{tcolorbox}
 \begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}The greatest element \label{The greatest element}\end{defn}]
-The greatest element is an element $x \in P$ if $\forall y \in P$, $y \lessdot x$ for some poset $P$. Furthermore, it is also a maximal element if it is the greatest element and it also implies  $x=y$.
+The greatest element is an element $x \in P$ if $\forall y \in P$, $y \le  x$ for some poset $P$. Furthermore, it is also a maximal element if it is the greatest element and it also implies  $x=y$.
 \end{tcolorbox}
 It is important to notice the difference between the maximal element and the greatest element, as it is to notice the difference between the least and the minimal element. As such, consider the following example:
 \begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{exmp}Partial Order Element Distinction \label{Partial Order Element Distinction}\end{exmp}]
@@ -1165,6 +1214,8 @@ The variance measures the spread of a random variable $X$. The standard deviatio
 	       &= E(X^2) - E(X)^2
 \end{align}
 \end{tcolorbox}
+\section{Second Revision Session}
+
 \section{Exam tips}
 \begin{enumerate} 
 	\item For truth tables of $n$ variables, there are $2^{n}$ possible total different inputs.

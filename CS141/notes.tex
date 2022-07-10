@@ -233,383 +233,748 @@ For example, the game magic cookies utilises functional reactive programming to 
 	\item XMonad: Window manager
 	\item OS: Mirage (OCaml), House (Haskell) and more
 \end{itemize}
-\section{Basics of Haskell}
-\subsection{Modules}
-Haskell code is separated into files called modules. A module file always begin with
-\begin{lstlisting}[language = Haskell , caption={Module} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
-module Whatever where
-...
-\end{lstlisting}
-Note that the filename ends with $.hs$, and is the same as the module name.
-\subsection{Imports}
-Similarly, you can import nearby modules. For example, for the file $foo.hs$ :
-\begin{lstlisting}[language = Haskell , caption={Import} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
-module foo where
-double x = x * 2
-\end{lstlisting}
-And then in another file,
-\begin{lstlisting}[language = Haskell , caption={Import of foo} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
-module bar where
-import Foo
-quadruple x = double (double x)
-\end{lstlisting}
-In the same way, libraries are imported as they are just functions. For example,
-\begin{lstlisting}[language = Haskell , caption={Library import} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
-module Whatever where
-import Data.Char
-swapCase c =	 if isUpper c
-					     then toLower c
-				    	 else toUpper c
-\end{lstlisting}
-\subsection{Definitions}
-A Haskell file is a series of definitions. For example, for the code
-\begin{lstlisting}[language = Haskell , caption={Defn.hs} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
-module Defn where
+\section{Haskell Files}
+\subsection{Defining functions}
+A haskell function looks like
+\begin{lstlisting}[language = Haskell , caption={Function Definition} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
 triangle n = sum [1..n]
 \end{lstlisting}
-On the LHS of $=$ is a name, with zero or more arguments. On the RHS is an expression which utilises the arguments. Note that Haskell does not utilise parentheses. Arguments are separated by whitespace.
-\subsection{Lambda Notation and Mapping notations}
-Recall that in lambda calculus we denote inputs using lambdas, that is
+Function calls do not take brackets. We only use parentheses to set the order of operations. 
+\subsubsection{Lambda Functions}
+Recall Alonzho Church's $\lambda$-calculus terms are
 \begin{align*}
-	&\lambda x y . x \times y \\
-	=& \lambda x \lambda y . x \times y 
+	\lambda a. \lambda b. a b
 \end{align*}
-Similarly, in Haskell, the lambda notation is blended with the mapping arrow. That is, for example, we can define our function $multiply$ in following ways:
-\begin{lstlisting}[language = Haskell , caption={Multiply.hs} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
-import Multiply where
-multiply x y = x * y
-multiply = \x y -> x * y
-multiply x = \y -> x * y
-multiply = \x -> \y -> x * y
+In haskell, we can write functions using with lambda notation:
+\begin{lstlisting}[language = Haskell , caption={Lambda} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+double = \x -> x*2
 \end{lstlisting}
-These all are the same thing.
-\subsection{Partial Functions}
-It is possible to provide a singular argument into a function that takes in multiple arguments. For example, for our code above, if declared $multiply 5$, then we would replace $x$ with $5$. Note that it is $x$ in particular because it is the variable that is declared first. 
-\begin{lstlisting}[language = Haskell , caption={Multiply 5} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
-multiply = \x y -> y * x
-multiply 5 --(\y -> y * 5)
+equivalent to
+\begin{align*}
+	\lambda x . x \times 2
+\end{align*}
+Notice this can also be defined as
+\begin{lstlisting}[language = Haskell , caption={syntactic sugar} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+double x = x * 2
+double = \x -> x * 2
 \end{lstlisting}
-\subsection{Smooth Operator}
+and so
+\begin{lstlisting}[language = Haskell , caption={Syntactic sugaring} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+foo x y = x * y
+foo = \x -> \y -> x * y
+\end{lstlisting}
+\subsubsection{Arguments}
 
-Other than declaring functions, it is also possible to declare operators in a similar fashion. Consider the following code:
-\begin{lstlisting}[language = Haskell , caption={Operator} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+Let us see how this will be evaluate by computer step by step
+\begin{lstlisting}[language = Haskell , caption={Step by step evaluation} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+foo 5 6
+-- (\x -> \y -> x * y) 5 6
+-- (\y -> 5 * y) 6
+-- 5 * 6
+-- 30
+\end{lstlisting}
+If we put in a single argument instead,
+\begin{lstlisting}[language = Haskell , caption={Partial function application} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+foo 5
+-- (\x -> \y -> x * y ) 5
+-- (\y -> 5 * y)
+\end{lstlisting}
+Notice that we get back a function. This is called partial function application, and it is used everywhere in functional programming.
+\subsection{Operators}
+We are used to the standard mathematical operators such as $+$, $*$. If we want our own custom operators, we could implement them. Operator definitions look very similar to function definitions:
+\begin{lstlisting}[language = Haskell , caption={defining operators} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
 x ^^^ y = max x y
 \end{lstlisting}
-One can spot the similarities. However, note that operator names are made up of symbols rather than letters.
-Similarly to partial functions, there are also partially applied operators. For example,
-\begin{lstlisting}[language = Haskell , caption={Partially applied operator} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+We can also partially apply them and make them functions:
+\begin{lstlisting}[language = Haskell , caption={Operator} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
 plusFive = (+ 5)
+plus = (+)
+(+) 5 6 
+-- this would give 11 as it is equal to 5 + 6
 \end{lstlisting}
-This would add a $5$ to any other operator.
-\subsection{Difference between a function and an operator}
-Functions are a prefix, whilst operators go between arguments (infix). It is possible to treat a function like an operator. Consider the following code:
-\begin{lstlisting}[language = Haskell , caption={Function to operator} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
-GHCi > 5 `max` 6
-6
-
-GHCI> (*) 5 6
-30
+The difference between operators and functions is that functions go before their arguments (prefix) and operators go between their arguments (infix). We are able to treat a function like an operator by enclosing it in backticks. We are able to treat an operator like a function by enclosing it in parentheses
+\begin{lstlisting}[language = Haskell , caption={Operator Function relation} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+5 `max` 6
+-- gives an answer of 6
+(*) 5 6
+-- gives an answer of 30
 \end{lstlisting}
-For example, the max function is enclosed within $``$ which allows us to use it like an operator.The latter operation is another alternative way of writing it.
+Note that the number of argument stays the same, i.e., you cannot put 3 arguments into $(*)$ function.
 \subsection{Pattern Matching}
-Consider the following definition of factorial of a variable $x$ :
-\begin{lstlisting}[language = Haskell , caption={factorial} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
-fac x = if x == 0 
-						then 1
-						else x * f (x - 1)
+We can change behaviour depending value of arguments. One way to do this is using if statements:
+\begin{lstlisting}[language = Haskell , caption={Factorial} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+fac x = if x == 0
+	then 1
+	else x * f (x - 1)
 \end{lstlisting}
-This can be rewritten as
-\begin{lstlisting}[language = Haskell , caption={factorial redefined} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+This is ugly, and we can find other ways of writing it.
+\begin{lstlisting}[language = Haskell , caption={Cases} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
 fac x = case x of
-		0 -> 1
-		n -> n * f (n - 1)
-\end{lstlisting}	
-You can also express it in top-level patterns. That is, we pattern match our arguments directly
-\begin{lstlisting}[language = Haskell , caption={factorial pattern matched} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+	0 -> 1
+	x -> x * f (x - 1)
+\end{lstlisting}
+In fact, there is another way of writing the same thing
+\begin{lstlisting}[language = Haskell , caption={Top-level pattern} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
 fac 0 = 1
 fac x = x * f (x - 1)
 \end{lstlisting}
-Often, Haskell code is written like this
-Lastly, you can also introduce "guards" for the code. If we need to check some predicate of the input and not a specific pattern
-\begin{lstlisting}[language = Haskell , caption={factorial guard} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+When evaluating code, the computer will pick the first definition whose arguments line up with patterns. Another way to write it is also
+\begin{lstlisting}[language = Haskell , caption={Guards} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
 f x
-			| x == 0 				= 1
-			| otherwise 		= x * f(x-1)
+	| x == 0	= 1
+	| otherwise	= x * f (x - 1)
 \end{lstlisting}
-\section{Data Types}
-\subsection{Compiler}
-The GHCi is an interpreter and runs a REPL loop, that is
-\begin{itemize}
-	\item Read
-	\item Evaluate
-	\item Print
-	\item Loop
-\end{itemize}
-Cabal is a program that manages Haskell packages. The Haskell package repository, Hackage, contains a bunch of packages. It downloads the package and then connects it to GHC. However, instead, we will be using Stack. It is a wrapper around cabal and ghc. It makes them both easier to use and helps with sharing programs across different systems. 
-\subsubsection{Compiling}
-\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Compiling \label{Compiling}\end{defn}]
-Compiling is the process of turning raw source code into a format the computer can run.
-\end{tcolorbox}
-In Haskell, GHC has three main compilation stages:
-\[
-\text{(Raw source)} \implies \text{Parser} \implies \text{Type Checker} \implies \text{Code Generator} \implies \text{(Binary code)}
-\] 
-\subsubsection{Types}
-In Java, we have types e.g.
-\begin{lstlisting}[language = Java , caption={Java data type} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+This is the same as
+\begin{align*}f(x)=
+	\begin{cases}
+		1 & \text{if} x = 0\\
+		x \times f(x-1) & \text{otherwise}
+	\end{cases}
+\end{align*}
+\subsection{Module}
+We separate Haskell code into files called modules. A module file always starts like
+\begin{lstlisting}[language = Haskell , caption={Modules} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+module Whatever where
+\end{lstlisting}
+The filename with $.hs$ and is the same as the module name. We can import one module into another using
+\begin{lstlisting}[language = Haskell , caption={Import} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+module Foo where
+double x = x * 2
+-- In the file Foo.hs
+
+module Bar where
+import Foo
+quadruple x = doubke (double x)
+-- In the file Bar.hs
+\end{lstlisting}
+The same syntax is also used to import libraries. A default library is always loaded, defined as prelude.
+\section{Compiling}
+Compilation is the process of turning raw source code into a format the computer can run. The Haskell compiler GHC has three main compilation stages:
+\begin{align*}
+	\text{Raw source} \implies \text{ Parser} \implies \text{Type checker} \implies \text{Code generator} \implies \text{Binary code}
+\end{align*}
+\subsection{Types}
+In Java, variables have types, e.g.,
+\begin{lstlisting}[language = Java , caption={integer} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
 int x = 5;
 \end{lstlisting}
-In Haskell, every expression has a type. For example,
-\begin{lstlisting}[language = Haskell , caption={Boolean Type} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+we have assigned memory for int type to the variable $x$. In Haskell, every expression has a type. For example,
+\begin{lstlisting}[language = Haskell , caption={Expression} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
 someBoolean = True && False || True
 \end{lstlisting}
-In this case, someBoolean has the type true.
-\begin{lstlisting}[language = Haskell , caption={Integer} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
-five = min 5 6
-\end{lstlisting}
-Five has type Integer. Integer does not have an upper bound unlike in other languages.
-\begin{lstlisting}[language = Haskell , caption={String} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
-string = "Hello, world!"
-\end{lstlisting}
-In this case, string has the type string.
-You can also use GHCi to find the type that a function has. You can
-\subsubsection{Type Declarations}
-You can declare the type of a function just above it using
-\begin{lstlisting}[language = Haskell , caption={Declaration of Data} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+someBoolean has type Bool. The earlier example of  min 5 6 gave us the type Integer. A string has type String.  Concrete types, like String, Bool and Integer always start with an uppercase letter. We need to write type declarations when defining functions, that is
+\begin{lstlisting}[language = Haskell , caption={Defining a function} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
 five :: Integer
 five = min 5 6
 \end{lstlisting}
-$::$ is a special piece of notation that declares the data type of a function. However, if every expression has a type, how did we get away without writing them? The answer is, Haskell figures out what types to use. This is called \textit{type inference}. In fact, in Haskell, even if we declare the type, Haskell checks that for us regardless. And if it checks and it does not line up, we get a type error. The benefit of declaring types is to pinpoint any possible errors that occur when compiling. Some errors include but are not limited to:
-\begin{itemize}
-	\item Giving a function too many arguments
-	\item Forgetting arguments
-	\item Trying to use a value where it does not make sense
-\end{itemize}\\
-Types only exist at compile time. The type checker has guaranteed that all types Lin up, so it does not need to keep that information any more, meaning that we cannot check the type of a value at run time. It is also important to note that Haskell is a \textit{strongly typed} language which means that the types are correct before it runs the program. For example, in Python, it is weakly typed and thus it make take you hours to find the error.
-\subsubsection{Function types}
-In mathematics, the succ function is a function s.t.
-\[
-succ(n) = n+1
-\] 
-We might say that $succ$ is a function from integers to integers, otherwise
-\[
-succ: \mathbb{Z} \to \mathbb{Z}
-\] 
-In Haskell, it is written the same.
-\begin{lstlisting}[language = Haskell , caption={Mapping in Haskell} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
-succ :: Integer -> Integer
-succ n = n + 1
+The $::$ is a special piece of notation, that tells the compiler we're declaring a type. In Haskell, the compiler is able to find what types we are using and therefore we do not necessarily have to declare them. This is called type inference. 
+\subsection{Polymorphism}
+There are 4 types of polymorphism
+\begin{enumerate}
+	\item Parametric
+	\item Ad-hoc
+\end{enumerate}
+Consider the lambda function
+\begin{lstlisting}[language = Haskell , caption={polymorphism} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+\x -> x
 \end{lstlisting}
-\subsubsection{Polymorphism}
-In Haskell, we need to find a method to make sure that we can parse a function with a different types. For example, 
-\begin{lstlisting}[language = Haskell , caption={Identity Function} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+In maths, we call this particular function the identity function. But what is the type of this function?
+\begin{lstlisting}[language = Haskell , caption={Type of id} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+id :: Integer -> Integer
+id :: Bool -> Bool
+id :: String -> String
+\end{lstlisting}
+We could use any of these, but it is not general enough. I.e., we can only define it once. We instead could write
+\begin{lstlisting}[language = Haskell , caption={id} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
 id x = x
 \end{lstlisting}
-To give a general type here, we need to use a type variable. We write these with lowercase letters. In particular,
-\begin{lstlisting}[language = Haskell , caption={Example} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+If we want to give it a general type here, we need to use a type called \textit{variable}. We write these with lowercase letters. E.g.
+\begin{lstlisting}[language = Hakell , caption={variable type} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
 id :: a -> a
 id x = x
 \end{lstlisting}
-The compiler will specialise the type for us when we use the function. We can also ignore arguments using
-\begin{lstlisting}[language = Haskell , caption={Ignore argument} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
-ignoreSecondArgument x y = x
-\end{lstlisting}
-This function takes two arguments and throws away the second one. Since it doesn't use any specific details about either argument, we can treat both arguments as being polymorphic.
-\section{Tuples and Lists}
+The compiler will specialise the type for us when we use the function. This is the same as overloading a function. This works for arguments with more than one argument too.
 \subsection{Tuples}
-\begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Tuple \label{Tuple}\end{defn}]
 A tuple is a sequence of known, finite length. For example,
 \begin{align*}
 	(1,3) \in \mathbb{Z}^2
 \end{align*}
-And in natural language, we know that this equates to "the pair $(1,3)$ is an element of the set of pairs of integers". Indeed, this is not only restricted to pairs, but we could also have
-\begin{align*}
-	(5,True,0.2) \in \mathbb{Z} \times \mathbb{B} \times \mathbb{Q}
-\end{align*}
-The number of elements in a tuple is called the dimension.
-\end{tcolorbox}
-In Haskell, the tuples are represented in a very similar manner. For example,
+Haskell's tuples are very similar to mathematical tuples. We would denote them by, for example,
 \begin{lstlisting}[language = Haskell , caption={Tuple} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
-(5, "Hello")
+(5,"Hello") :: (Int, String)
 \end{lstlisting}
-This is the definition of a tuple in Haskell, and this is the only syntax that you require.
-\subsection{Types of Tuples}
-To declare the types of elements in a tuple, you would similarly declare it in a tuple as well. That is, for example	
-\begin{lstlisting}[language = Haskell , caption={Tuple type} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
-(False, 5) :: (Bool, Int)
-\end{lstlisting}
-With this you can also write functions that can take tuples as an argument. For example,
-\begin{lstlisting}[language = Haskell , caption={Tuple input} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+We can write functions that take tuples as an argument, for example
+\begin{lstlisting}[language = Haskell , caption={combine} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
 combine :: (Int, Int) -> Int
-combine (x,y) = x + y
-\end{lstlisting}
-And indeed functions that also return tuples.
-We can similarly also use pattern matching:
-\begin{lstlisting}[language = Haskell , caption={Pattern Matching} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
-combine p = case p of
-	(x,y) -> x + +y
-\end{lstlisting}
-Pattern matching allows us to inspect the values in a complex type based on its constructors. For tuples, (,) is the constructor. With pattern matching we destructuring, unpacking the pair to get at the values inside of it.
-\subsection{Polymorphic Functions}
-We can indeed write polymorphic functions over tuples, for example
-\begin{lstlisting}[language = Haskell , caption={Polymorphic tuple} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
-fst :: (a,b) -> a
-fst (x,y) = x
+combine (x, y) = x + y
 \end{lstlisting}
 \subsection{Currying}
-We know we can get carry-on functions for things such as
-\begin{lstlisting}[language = Haskell , caption={Currying} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+We know that functions over multiple arguments have a type signature of this shape:
+\begin{lstlisting}[language = Haskell , caption={currying} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
 f :: Int -> Int -> Int
+\end{lstlisting}
+When we apply one argument to $f$, we get back a function that takes the second argument and gives back the final return value. So $f$ 's can be read like this:
+\begin{lstlisting}[language = Haskell , caption={f} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
 f :: Int -> (Int -> Int)
 \end{lstlisting}
-These two are equivalent. That is, the if we were to put in one argument in a function above, we would get another function that returns int -> int.
-The process of taking a function that takes several arguments at once is called currying. However, sometimes we want to write functions over pairs in terms of functions over two arguments. 
-\begin{lstlisting}[language = Haskell , caption={Curry and Uncurry} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
-curry :: ((a, b) -> c) -> ( a -> b -> c )
-uncurry :: (a -> b -> c) -> ((a, b) -> c)
+The process of taking a function that takes several arguments at once and abstracting them one-at-a-time is called currying. All Haskell functions are curried by default, which enables partial function application everywhere. Consider the idea if we want to write functions over pairs in terms of functions over two arguments e.g.
+\begin{lstlisting}[language = Haskell , caption={orPair} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+orPair :: (Bool, Bool) -> Bool
+orPair (x,y) = ...
 \end{lstlisting}
-These functions would allow us to convert how many inputs we take. 
+But we only have access to
+\begin{lstlisting}[language = Haskell , caption={or function} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+(||) :: Bool -> Bool -> Bool
+\end{lstlisting}
+How can we convert from one form to the other? 
+We have two functions:
+\begin{lstlisting}[language = Haskell , caption={curry and uncurry} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+curry :: ((a,b) -> c) -> ( a -> b -> c)
+curry f = \a -> \b -> f (a,b)
+uncurry :: (a -> b -> c) -> ((a,b) -> c)
+uncurry f = \(a,b) -> f a b
+\end{lstlisting}
+Therefore the answer would be
+\begin{lstlisting}[language = Haskell , caption={or pair solved} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+orPair :: (Bool,Bool) -> Bool
+orPair = uncurry (||)
+\end{lstlisting}
 \subsection{Lists}
-Lists in Haskell have two constructors
-\begin{lstlisting}[language = Haskell , caption={Lists} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+Lists are critical tool for building programs with interesting behaviour. Note that lists are homogeneous, meaning that all types in the list must be the same.
+\begin{lstlisting}[language = Haskell , caption={lists} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
 [] :: [a]
+(:) :: a -> [a] -> [a]
 \end{lstlisting}
-The first constructs an empty list. Notice its type is polymorphic - it could be an empty list of any type. 
-Lists in Haskell have two constructors. For literals,
-\begin{lstlisting}[language = Haskell , caption={Literals} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+The second constructor is an operator which we pronounce cons. It takes two elements - the head and the tail - and joins the head to the tail. We can write any lists we like in this way
+\begin{lstlisting}[language = Haskell , caption={: operator} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+True : (False : (True : []))
 ==> [True, False, True]
 \end{lstlisting}
-Similar with tuples, we use pattern matching to restructure a list.
-\begin{lstlisting}[language = Haskell , caption={Destructure} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
-startsWithFive :: [int] -> Bool
-startsWithFive [] = False
-startsWithFive (x:xs) = x == 5
-\end{lstlisting}
-We can also syntactic sugar this by
-\begin{lstlisting}[language = Haskell , caption={Nest Patterning} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+\begin{lstlisting}[language = Haskell , caption={startsWithFive} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
 startsWithFive :: [Int] -> Bool
-startsWithFive (5:xs) = True
-startsWithFive _ = False
+startsWithFive [] 	= False
+startsWithFive (x:xs)	= x == 5
 \end{lstlisting}
-\subsection{Head and Tail}
-We can get the head and tail of a list by using functions which are defined as
-\begin{lstlisting}[language = Haskell , caption={Heads and Tail} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+We can nest pattern matches to simplify the code
+\begin{lstlisting}[language =  Haskell, caption={Starts with five} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+startsWithFive :: [Int] -> Bool
+startsWithFive (5:xs)	= True
+startsWithFive _	= False
+\end{lstlisting}
+We also can obtain the head and the tail of a list using the
+\begin{lstlisting}[language = Haskell , caption={head and tail} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
 head :: [a] -> a
 tail :: [a] -> [a]
 \end{lstlisting}
-However, we cannot get the first the head for an empty list. Furthermore, lists are NOT arrays. Operations on a list are too complex and require too many steps. 
-\subsection{List Comprehensions}
-Haskell borrows comprehension syntax for its list. That is,
-\begin{lstlisting}[language = Haskell , caption={List Comprehension} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+Unfortunately, head and tail is not well defined i.e., non-total functions and do not work for the empty list. Some other useful functions include:
+\begin{lstlisting}[language = Haskell , caption={Useful list functions} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+-- take the first n elements of a list
+take :: Int -> [a] -> [a]
+-- drop the first n emenets of a list
+drop :: Int -> [a] -> [a]
+-- get the nth element of a list
+!! :: [a] -> Int -> a
+-- join lists
+++ :: [a] -> [a] -> [a]
+\end{lstlisting}
+Lists are not the same thing as arrays and getting things like length would take more load and furthermore does not have things like re-defining a specific index element. 
+\section{List Comprehensions}
+In maths, we know how to construct sets with interest features
+\begin{align*}
+	A = \{ x^2 | x \in \{1,2,3\}\}
+\end{align*}
+Informally: "A is the set of elements $x$ squared, for each $x$ in the set $\{1,2,3\}$ ". This is a set comprehension.  Haskell borrows comprehension syntax for its lists.
+\begin{lstlisting}[language = Haskell , caption={List comprehension} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
 a = [ x^2 | x <- [1,2,3] ]
 \end{lstlisting}
-We call $x <- [1,2,3]$ a generator. It binds each of the values in turn so they can be used. $x^2$ is an expression. In other words, the code expresses
-\begin{align*}
-	a = \{ x^2 | x \in \{ 1,2,3 \} \}
-\end{align*}
-In particular, for a list such as 
-\begin{lstlisting}[language = Haskell , caption={Multiple Generators} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+The $x <- [1,2,3]$ is a generator. It binds each of the values in turn so they can be used. $x^2$ is an expression that makes use of the bindings from the generators. The vertical pipe separates the expression from any generators. This allows us to use multiple generators.
+\begin{lstlisting}[language = Haskell , caption={Multiple generators} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
 [ (x,y) | x <- [0..3], y <- [0..x] ]
-// The output is
 [ (0,0)
 , (1,0), (1,1)
 , (2,0), (2,1), (2,2)
 , (3,0), (3,1), (3,2), (3,3)
-]
+[
 \end{lstlisting}
-We can also set up rules for our generators. For example, for the equations
+Sometimes we want to specify a property that must hold for us to include our element in a set
 \begin{align*}
-	Evens = \{ x | x \in \mathbb{N}, \text{$x$ is even} \}
+	\text{Evens}= \{ x | x \in \mathbb{N}, x \text{ is even} \}
 \end{align*}
-In Haskell,
-\begin{lstlisting}[language = Haskell , caption={Even} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
-evens = [ x | x <- [0..], even x]
+In haskell:
+\begin{lstlisting}[language = Haskell , caption={even set} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+evens = [ x | x <- [0..], even x ]
 \end{lstlisting}
-We call this boolean predicate a guard.
-\section{Map and Filter}
-\subsection{Filtering}
-Suppose our previous definition for square numbers. However, how can we get even square numbers?
-Our first option is to wrap it with another list comprehension:
-\begin{lstlisting}[language = Haskell , caption={filtering} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+We call this boolean predicate a guard. Like our guards on functions, it only lets us proceed if it evaluates to true
+\section{Map and filter}
+\subsection{Filter}
+Suppose we already have the function
+\begin{lstlisting}[language = Haskell , caption={squares} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
 squares = [ x^2 | x <- [1..] ]
-evenSquares = [ s | s <- squares, even s]
 \end{lstlisting}
-However, we can use a filter function as well
+How can we get even square numbers from this? We could wrap it with another list comprehension:
+\begin{lstlisting}[language = Haskell , caption={evenSquares} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+evenSquares :: [ s | s <- squares, even s ]
+\end{lstlisting}
+But this is ugly and could be written simpler, using function filter
 \begin{lstlisting}[language = Haskell , caption={filter} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
 filter :: (a -> Bool) -> [a] -> [a]
-evenSquares = filter (\s -> even s) squares --which is the same as
+-- and for our example
+evenSquares = filter (\s -> even s) squares
+-- which is the same as
 evenSquares = filter even squares
 \end{lstlisting}
-This is called $\eta$ reduction. 
-\subsection{Mapping}
-Filter works well until we require to apply a function to a whole list. The map function is defined with the following arguments:
-\begin{lstlisting}[language = Haskell , caption={Mapping} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+\subsection{Map}
+
+We know how to apply a function to a single argument. How can we apply a function to a whole list? This is called \textit{mapping}. 
+\begin{lstlisting}[language = Haskell, caption={Mapping} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
 map :: (a -> b) -> [a] -> [b]
 \end{lstlisting}
 For example,
-\begin{lstlisting}[language = Haskell , caption={Mapping succ} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
-GHCi> map succ [1,2,3]
-[2,3,4]
+\begin{lstlisting}[language = Haskell , caption={mapping example} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+map succ [1,2,3]
+==> [4,5,6]
 \end{lstlisting}
 \subsection{Ranges}
-Lists can be used to write a range of values without having to explicitly type them. The syntax for this is as follows:
-\begin{lstlisting}[language = Haskell , caption={Range} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
-[x .. z]
-\end{lstlisting}
-where $x$ is the start of the range and $z$ is the end of the range. It is also possible to have second element and this can set the step amount. For example
-\begin{lstlisting}[language = Haskell , caption={Step Range} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
-[2,4 .. 16]
-\end{lstlisting}
-This would include all even numbers from and including $2$ to $16$. However note that ranges must always proceed in an arithmetic progression. However, note that the range syntax is a little broken for floating point values.
+We can specify that a list should include a range of values. The syntax is as follows: $[x..z]$ $x$ is the start of the range and $z$ is the end of the range. Note that upper end of the range is optional. Ranges are arithmetic progressions. 
 \section{Type Classes}
-Type classes allow us to define specific rules for functions whose we don't know the type.
-\subsection{Eq class}
-\begin{lstlisting}[language = Haskell , caption={Eq Class} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
-(==) Eq a where
-	(==) :: a -> a -> Bool
+Reminder: parametric polymorphism
+\begin{lstlisting}[language = Haskell , caption={parametric polymorphism} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+id :: a -> a
+id x = x
+($) :: (a -> b) -> a -> b
+($) = \a -> \b -> a b
 \end{lstlisting}
-The first line defines the name of the type of class (Eq) and a type variable (a) to use in the definitions. After that comes a series of function type definitions, without implementations. The type class declaration is a specification that must be implemented for each type that wants to be part of the Eq type class. This is why if you type
-\begin{lstlisting}[language = Haskell , caption={Class} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
-:t 5
--- The output is --
-5 :: Num p => p 
+If we know nothing about the type of our arguments, we are unable to use any interesting features of the type!
+This function works on any type that meets the requirement $X$, $Y$ and $Z$. The solution to this is Type classes. Consider
+\begin{lstlisting}[language = Haskell , caption={Eq} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+:t (==)
+ (==) :: (Eq a) => a -> a -> Bool
 \end{lstlisting}
-And at that point, the program itself still has not specified whether its a float, int, etc. but has defined it as a num type class. Num type class defines things such as multiplication, division, addition, subtraction etc.
-\subsection{Instances}
-After defining the type Eq, we can put an instance for it. We can declare that a type is a member of a type class by writing an instance declaration. For example,
-\begin{lstlisting}[language = Haskell , caption={Instance} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+In other words, this can be read as that the $==$ works as long as $a$ is of the type class $Eq$.
+\begin{lstlisting}[language = Haskell , caption={Eq} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
 class Eq a where
 (==) :: a -> a -> Bool
+\end{lstlisting}
+The first line defines the name of the type class eq, and a type variable a to use in the definitions. After that comes a series of function type definitions, without implementations. The type class declaration is a specification that must be implemented for each type that wants to be part of the Eq type class. This declaration implicitly creates:
+\begin{itemize}
+	\item A set of types called Eq, initially empty;
+	\item An operator called (==) which can be used on any type which is a member of Eq.
+\end{itemize}
+For example
+\begin{lstlisting}[language = Haskell , caption={MyEq} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+module LectureSix where
+
+class MyEq a where
+	(===) :: a -> a -> Bool
+
+-- and if we tried to run this
+True === False
+-- we would get an error saying that Bool is not a part of type class MyEq, since we have not implemented it yet.
+\end{lstlisting}
+There are also other type classes such as the $Num$ type class used in regular operators such as $+, -, \times $ etc.
+\subsection{Implementation}
+We specify that a type is a member of a type class by writing an instance declaration.
+\begin{lstlisting}[language = Haskell , caption={Instance declaration} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+class Eq a where
+	(==) :: a -> a -> Bool
 
 instance Eq Bool where
-True == True = True
-False == False = True
-_ == _ = False
+	True == True	= True
+	False == False	= True
+	_ == _		= False
 \end{lstlisting}
-Note that the underscore denotes anything else.
-\subsection{Using Type Classes}
-Consider the code
-\begin{lstlisting}[language = Haskell , caption={Plus} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
-double :: n -> n
-double \x -> x + x
+Type classes seem similar to interfaces from Java. 
+\subsection{Using type classes}
+For the code
+\begin{lstlisting}[language = Haskell , caption={double} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+doubleInt :: Int -> Int
+doubleInt x = x + x
+doubleFloat :: Float -> Float
+doubleFloat x = x + x
 \end{lstlisting}
-This would create problems as $n$ is not specified for number functions, when we mean numbers. As such,
-\begin{lstlisting}[language = Haskell , caption={PlusFixed} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+It would be easier if we instead used $Num$ type class:
+\begin{lstlisting}[language = Haskell , caption={Num in double} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
 double :: (Num n) => n -> n
 double x = x + x
 \end{lstlisting}
-And now plus is defined as well as we know its a num.
-\subsection{Important Type Classes}
+\subsection{Different Type classes}
 \subsubsection{Eq}
-The eq type class lets us test two values for equality of they are of the same type.
+The Eq type class lets us test two values for equality if they are of the same type. In other words, it gives us access to the function $==$ for polymorphic type $a$.
 \subsubsection{Num}
-Num gives us access to standard mathematical operations.
+Num is the numeric type class and it gives us the access to standard mathematical operations such as $+,-,\times ,abs$. Integer literals are of type $Num$.
 \subsubsection{Ord}
-The ord type classes imposes a total ordering on elements of the type.
+The ord type class that imposes a total ordering on elements of the type.
+I.e., it gives us access to $<, >, <=$ functions which gives us boolean result. Every member of the $Ord$ type class is also a member of $Eq$. 
 \subsubsection{Read and Show}
-Read and Show lets us convert values to and from strings. Read converts from string and show converts to string.
-\subsubsection{Integral}
-This type of class is used for division where it is rounded. It is rounded division.
-\subsubsection{Fractional}
-Fractional implements division without rounding.
+Read and Show let us convert value sto and from strings
+\begin{lstlisting}[language = Haskell , caption={Read and showw} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+read :: (Read a) => String -> a
+show :: (Show a) => a -> String
+-- there is a law about these two type classes
+read (show x) == x
+-- E.g. this would read as Int 5
+read "5" :: Int
+\end{lstlisting}
+\subsubsection{Integral and Floating}
+Integral and floating represent integer-like and floating-types respectively.
+\begin{lstlisting}[language = Haskell , caption={division} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+div :: (Integral a) => a -> a -> a
+(/) :: (Fractional a) => a -> a -> a
+\end{lstlisting}
+Integral rounds off a fractional type to an integer type. The fractional type does not round and outputs floating.
+\subsubsection{Enum}
+The Enum type class plays an important role when working with lists. Recall our original question:
+\begin{itemize}
+	\item How does the list range syntax know how to generate 'a', 'b', .. etc.
+	\item for Char and $1,2,3\ldots$ for Int?
+\end{itemize}
+Haskell uses Enum type class to achieve this.
+\subsubsection{Foldable}
+The foldable type class abstracts those types which can be folded.
+\begin{lstlisting}[language = Haskell , caption={foldable} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+class Foldable t where
+	foldr :: (a -> b -> b) -> b -> t a -> b
+\end{lstlisting}
+The foldable type class only works for type which have a single parameter. Previously, we defined foldr for lists only. However, it does not have to be only lists and we could extend its type classes by
+\begin{lstlisting}[language = Haskell , caption={Sum for more data} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+sum :: (Foldable t, Num a) => t a -> a
+\end{lstlisting}
+so we could use the foldable class for MyList as
+\begin{lstlisting}[language = Haskell , caption={Foldable for MyList} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+foldr f z Nil = z
+folr f z (Cons x xs) = f x (foldr f z xs)
+\end{lstlisting}
+\subsection{Referential Transparency}
+We can always substitute the LHS of an expression for the RHS and vice versa. The ability to perform this substitution is called referential transparency. The LHS and the RHS of a definition mean exactly the same thing, always. 
+\section{Recursion}
+\subsection{Recursion on lists}
+Consider
+\begin{lstlisting}[language = Haskell , caption={sum} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+sum :: Num a => [a] -> a
+sum [1..4]
+-- the answer would be 10
+\end{lstlisting}
+Recall that lists have two constructors:
+\begin{lstlisting}[language = Haskell , caption={constructors of lists} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+[] :: [a]
+(:) :: a -> [a] -> [a]
+\end{lstlisting}
+We can pattern match these.
+\begin{lstlisting}[language = Haskell , caption={pattern matching list constructors} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+sum :: Num a => [a] -> a
+sum []		= 0
+sum (x:xs)	= x + sum xs
+\end{lstlisting}
+Where $x$ is the head and $xs$ is the tail.
+\subsection{Explicit Recursion and Implicit Recursion} 
+When writing recursive functions over lists, we have been pattern matching on the two constructor of lists: [] and (:).  For example,
+\begin{lstlisting}[language = Haskell , caption={Succ all} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+succAll :: Enum a => [a] -> [a]
+sucAll [] = []
+sucAll (x:xs) = succ x : succAll xs
+\end{lstlisting}
+This would explicit recursion. Implicitly, we could use map function. More specifically,
+\begin{lstlisting}[language = Haskell , caption={succ implicit} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+succAll xs = map succ xs
+\end{lstlisting}
+Implementing some recursive behaviour via one of the helper functions is called implicit recursion.
+Note that maps are higher-order functions. That is, it takes a function as an argument as an argument or one that returns a function. So far,
+\begin{lstlisting}[language = Haskell , caption={Higher-order functions} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+map :: (a -> b) -> [a] -> [b]
+filter :: (a -> Bool) -> [a] -> [a]
+\end{lstlisting}
+\subsection{Folding}
+Recall our explicit definition of sum:
+\begin{lstlisting}[language = Haskell , caption={sum} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+sum :: (Num a) => [a] -> a
+sum []		= 0
+sum (x:xs)	= x + sum xs
+\end{lstlisting}
+Can we implement this using our map or filter higher order functions? We need a new kind of recursive pattern here.
+We have:
+\begin{itemize}
+	\item A function we use to combine in the recursive case
+	\item A value for the base case
+	\item The list we are folding over
+\end{itemize}
+\begin{lstlisting}[language = Haskell , caption={folding} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+foldr :: (a -> b -> b) -> b -> [a] -> b {- the first argument is a function, the second argument is base case, the third argument is the list we apply it to -}
+foldr f z [] = z {- in the case it is empty, we return the base case -}
+foldr f z (x:xs) = f x (foldr f z xs) {- we apply x and the parantheses to the function and continue to fold over the tail -} 
+\end{lstlisting}
+For example, for sum we could
+\begin{lstlisting}[language = Haskell , caption={Sum using fold} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+sum :: (Num a) => [a] -> a
+sum xs = foldr (+) 0 xs
+\end{lstlisting}
+Notice that if we expand this definition over the list $[1,2,3]$ we would get a gathering of parentheses on the right, meaning it foldr is right associative. Note that the cons operator (:) is right associative also. E.g., $[1,2,3] = (1 : (2:(3:[])))$ The left associative fold is called
+\begin{lstlisting}[language = Haskell , caption={Left associative fold} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+foldl :: (b -> a -> b) -> b -> [a] -> b
+foldl f z [] = z
+foldl f z (x:xs) = foldl f (f z x) xs
+\end{lstlisting}
+This implementation is different to foldr, but because addition is associative, it does the same job for addition.
+\begin{lstlisting}[language = Haskell , caption={Sum using foldl} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+sum :: Num a => [a] -> a
+sum = foldl (+) 0
+sum [1,2,3]
+sum (1 : 2 : 3 : [])
+foldl (+) 0 (1 : 2 : 3 : [])
+foldl (+) (0 + 1) (2 : 3 : [])
+foldl (+) ((0 + 1) + 2) (3 : [])
+foldl (+) (((0 + 1) + 2) + 3) []
+\end{lstlisting}
+There is also a function called foldl' which does the same thing as foldl, except it calculates everything as it goes instead of leaving it to the end.
+\begin{lstlisting}[language = Haskell , caption={foldl'} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+sum [1,2,3]
+foldl' (+) 0 (1 : 2 : 3 : [])
+foldl' (+) 1 (2 : 3 : [])
+foldl' (+) 3 (3 : [])
+foldl' (+) 6 []
+6
+\end{lstlisting}
+\subsection{Functor}
+We have seen other recursive patterns than foldr. Map applies a function to every element of a list. In theory, we could map over elements of any data structure. The map function is specifically defined for lists. The functor type class is an abstraction of those types which can be mapped over. Like Foldable, this only works for parameterised types.
+\begin{lstlisting}[language = Haskell , caption={functor} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+class Functor f where
+fmap :: (a -> b) -> f a -> f b
+\end{lstlisting}
+\subsection{Laws}
+A type class law is a rule which must be met in order for a type class to be considered "legal". They are not enforced by the compiler - we must check them by hand. The laws for any type class are defined in the documentation that accompanies the type class.
+\subsubsection{Functor laws}
+\begin{enumerate}
+	\item The mapping must be structure preserving - the output shape must be the as the input
+	\item The identity law: 
+		\begin{lstlisting}[language = Haskell , caption={identity law} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+		fmap id === id
+		\end{lstlisting}
+	\item Distributivity of fmap over (.):
+		\begin{lstlisting}[language = Haskell , caption={distributivty of fmap} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+		fmap (f . g) === fmap f . fmap g
+		\end{lstlisting}
+\end{enumerate}
+\subsubsection{Associativity}
+In mathematics we say an operation is associate if we get the same answer no matter where we would put the brackets we would obtain the same result. E.g., addition.
+\begin{align*}
+	a+(b+c) \iff (a+b)+c
+\end{align*}
+Therefore addition is associative. However, not everything is associative. For example. $2^{2^{3}}$ is not associative, i.e., whether it is $2^{8}$ or $4^{3}$. How does haskell know how to compute
+\begin{lstlisting}[language = Haskell , caption={exponentiation} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+2^2^3
+\end{lstlisting}
+For this we introduce the concept of left and right associativity. Every operator in a programming language is either left or right associative. That determines which way bracketing should occur. E.g,
+\begin{align*}
+	a \sim b \sim c \\
+	(a \sim b) \sim c \text{ if the operator is left associative}\\
+	a \sim (b \sim c) \text{ if the operator is right associative}
+\end{align*}
+Normally, functions are left associative. 
+\subsubsection{Operator Precedence}
+Operators have a notion of precedence. In mathematics, this is called the order of operations. Haskell's precedence goes from $0$ to $9$. Each operator has its own precedence.
+\begin{table}[H]
+	\centering
+	\caption{Precedence}
+	\label{tab:precedence}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+	Operator & Meaning & Associativity & Precedence \\ 
+	\hline
+	(\textasciicircum) & Exponentiation & Right & 8 \\
+	(*) & Multiplication & Left & 7 \\
+	(+), (-) & Addition, Subtraction & Left & 6 \\
+	\hline
+	\end{tabular}
+\end{table}
+Note that function application has precedence 10.
+Sometimes we want to implement our own operators and we want to declare its precedence and whether it is left or right associative. This is called fixity declaration. For addition, this is
+\begin{lstlisting}[language = Haskell , caption={Fixity declaration for addition} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+infixl 6 +
+-- The infix suggest that it is a fixity declaration. The l suggests it is left associative. The 6 gives its precedence. The plus shows its name of the operator.
+\end{lstlisting}
+
+
+\section{Let and Where}
+Suppose we want to define the volume of a sphere defined as
+\begin{align*}
+	\frac{4}{3}\pi r^3
+\end{align*}
+Suppose we want to define
+\begin{lstlisting}[language = Haskell , caption={diameterToVol} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+diameterToVol :: Floating a => a -> a
+diameterToVol d = 4/3 * pi * (d/2) * (d/2) * (d/2)
+\end{lstlisting}
+This will compute $\frac{d}{3}$ 3 times. Therefore, in order to make it more efficient, we can use the syntax to define intermediate values let in.
+\begin{lstlisting}[language = Haskell  , caption={Let in} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+diameterToVol d =
+	let
+		r = d / 2
+	in
+		4/3 * pi * r * r * r
+\end{lstlisting}
+Expressions defined inside of a let can access the arguments of their parent function. Let expressions have a friend called where. Where works the same, except it comes after the main expression.
+\begin{lstlisting}[language = Haskell , caption={where} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+diameterToVol d = 4/3 * pi * r * r * r
+	where
+		r = d / 2
+\end{lstlisting}
+The choice of let and where is personal preference, but let is a little more flexible. Where is syntactic sugar for let. 
+\section{Data}
+In oop, data is represented by classes. In Haskell, the definition of our data representation is completely separate from the function that use it. This is a much more flexible way of working with data that is readable and reusable. We introduce new data types with the data keyword. Here is one data declaration
+\begin{lstlisting}[language = Haskell , caption={Bool} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+data Bool = False | True
+\end{lstlisting}
+This definition brings to constructors into scope as values:
+\begin{lstlisting}[language = Haskell , caption={scope as values} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+False :: Bool
+True :: Bool
+\end{lstlisting}
+Note that to print out the Bool for the REPL, we would require to create an instance of Show for Bool so we can convert it to a string and print. I.e.
+\begin{lstlisting}[language = Haskell , caption={REPL for Bool} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+instance Show Bool where
+	show True = "True"
+	show False = "False"
+\end{lstlisting}
+\subsection{Constructors with parameters}
+So far we've been able to create custom values, but we haven't got a way of containing any data in our data types. To do this, we put parameters to our constructors. For example
+\begin{lstlisting}[language = Haskell , caption={Constructors with parameters} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+data Date = 
+	BC Int Int Int
+	| AD Int Int Int
+-- and if we were to write :t BC we would get BC :: Int -> Int -> Int -> Date
+So we could write
+epoch :: Date
+epoch = AD 1 1 1970
+
+instance Show Date where
+show (AD dd mm yyyy)
+	= show yyyy
+	++ "-"
+	++ show mm
+	++ "-"
+	++ show dd
+
+show (BC dd mm yyyy)
+	= show yyyy
+	++ "-"
+	++ show mm
+	++ "-"
+	++ show dd
+	++ "BC"
+\end{lstlisting}
+\subsection{Polymorphic Data types}
+Everything we've seen so far is very concerete: we can't use our types to represent wrappers around arbitrary values. We can introduce polymorphism by adding type variables to our data types::
+\begin{lstlisting}[language = Haskell , caption={Maybe} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+data Maybe a = Nothing | Just a
+\end{lstlisting}
+This brings two constructors into scope:
+\begin{lstlisting}[language = Haskell , caption={scope} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+Nothing :: Maybe a
+Just :: a -> Maybe a
+\end{lstlisting}
+We can use Nothing and Just to construct values of the Maybe type:
+\begin{lstlisting}[language = Haskell , caption={Example} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+noBoolSadTimes :: Maybe Bool
+noBoolSadTimes = Nothing
+yayFive :: Maybe Int
+yayFive = Just 5
+\end{lstlisting}
+And we can pattern match on them as well:
+\begin{lstlisting}[language = Haskell , caption={Pattern matched} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+valueOrZero :: Maybe Int -> Int
+valueOrZero (Just x) 	= x
+valueOrZero Nothing	= 0
+\end{lstlisting}
+	In other words, if we get int we get just, otherwise get nothing. The Maybe type is very important. If we have something of type Maybe a, then we know that either there is a value (the Just constructor), or there is not (the Nothing constructor). The maybe is efficient to use for impartial functions: i.e., we can use it to output errors also which are not necessarily the same type. E.g.,
+	\begin{lstlisting}[language = Haskell , caption={safeDiv} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+	safeDiv :: Integral a => a -> a -> Maybe a
+	safeDiv x 0 = Nothing
+	safeDiv x y = Just (div x y)
+	\end{lstlisting}
+Which would do error handling for division by $0$.
+\subsection{Deriving type classes}
+Sometimes implementations of type classes is very easy to write but requires time. Computers are very good at doing this exact thing.
+\begin{lstlisting}[language = Haskell , caption={data Shape} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+data Shape = Circle Int | Rectangle Int Int
+-- if we ran this
+Rectangle 5 10
+-- We would get an error saying no instance for show shape, where we could create an instance, or we could write
+data Shape = Circle Int | Rectangle Int Int
+	deriving Show
+\end{lstlisting}
+\section{Combinators}
+A combinator is an operator which combines. We have already seen one:
+\begin{lstlisting}[language = Haskell , caption={dollar} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+infixr 0 $
+($) :: (a -> b) -> a -> b
+f $ x = f x
+\end{lstlisting}
+This is right associative and can help us flip the associativity of function application. It has precedence $0$, meaning it is applied last. We can use it to avoid putting parentheses around things.
+\begin{lstlisting}[language = Haskell , caption={dollar sign} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+double $ double 5
+double (double 5)
+-- These are the same thing, as $ has precedence 0, we would start with right hand side first.
+\end{lstlisting}
+\subsection{Function Composition}
+In mathematics, we can compose functions together
+\begin{align*}
+	(g \circ f)(x) = g(f(x))
+\end{align*}
+In haskell, we define this with $.$ and is as follwing
+\begin{lstlisting}[language = Haskell , caption={function composition} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+infixr 9 .
+(.) :: (b -> c) -> (a -> b) -> (a -> c)
+g . f = \x -> g (f x)
+\end{lstlisting}
+\section{Algebraic Data Types}
+An algebra is a system by which we assign meaning to symbols; define relationships between those symbols; and express operations between them. Haskell data types are constructed in the following ways:
+\begin{itemize}
+	\item Built into the language (e.g., Char, Int, Integer)
+	\item Built from constructors with no arguments (like True, False and Nothing)
+	\item A function from one type to another
+	\item The product of one or more types
+	\item The sum of one or more types
+\end{itemize}
+\subsection{Either}
+Either is defined as
+\begin{lstlisting}[language = Haskell , caption={Either} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+data Either a b = Left a | Right b
+-- for example
+data Mark = Mark Int
+intTomark :: Int -> Either String Mark
+	| x < 0		= Left "Too low!"
+	| x > 100	= Left "Too high!"
+	| otherwise	= Right (Mark x)
+\end{lstlisting}
+\subsection{Either}
+Sometimes we may want to give a custom name to an already existing type, so that we ccan treat it in a special way. When we create a data type with a single unary constructor, we tend to call it a wrapper type.
+\begin{lstlisting}[language = Haskell , caption={newtype} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+newtype Mark = Mark Int
+\end{lstlisting}
+Newtypes can also be used to manage type class instances. 
+For example,
+\begin{lstlisting}[language = Haskell , caption={Backwards} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+newtype Backwards = Backwards String
+
+instance Show Backwards where
+	show (Backwards s) = reverse (show s)
+\end{lstlisting}
+\subsection{Recursive data types}
+The (:) constructor for lists takes a list as an argument - recursive. In fact, we could implement our own list also using data:
+\begin{lstlisting}[language = Haskell , caption={Data} , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+data MyList a
+	= Nil
+	| Cons a (MyList a)
+-- this gives us access to following constructors
+Nill :: MyList a
+Cons :: a -> MyList a -> MyList a
+-- which are similar
+OneTwoThree :: [Int]
+oneTwoThree = 1 : (2 : (3 : []))
+oneTwoThree' :: MyList Int
+oneTwoThree' = 1 Cons (2 Cons (3 Cons Nil))
+\end{lstlisting}
+
+
 \end{document}
+
+

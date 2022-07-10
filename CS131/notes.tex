@@ -1101,14 +1101,14 @@ To find eigenvalues and eigenvectors we use the following property: \\
 \begin{tcolorbox}[colback=black!3!white,colframe=black!60!white,title=\begin{defn}Characteristic Equation \label{Characteristic Equation}\end{defn}]
 A number $\lambda$ is an eigenvalue of the matrix $A$ if and only if
 \begin{align}
-|A - \lambda I| = det(A - \alpha I) = 0
+|A - \lambda I| = det(A - \lambda I) = 0
 \end{align}
 This is also a polynomial of degree $n$ in $\lambda$.
 \begin{proof}
 	\begin{align}
 		\lambda \text{ is an eigenvalue of $A$} &\iff A\underline{v} = \lambda \underline{v} \text{ for some non-zero $\underline{v}$} \\
 							&\iff (A - \lambda I)\underline{v} = \underline{0} \text{ for some $\underline{v}$} \\
-							& \iff |A - \lambdaI | = 0
+							& \iff |A - \lambda I | = 0
 	\end{align}
 \end{proof}
 \end{tcolorbox}

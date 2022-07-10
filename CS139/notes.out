@@ -37,12 +37,149 @@
 \BOOKMARK [2][-]{subsection.3.2}{Database table}{section.3}% 37
 \BOOKMARK [2][-]{subsection.3.3}{Relating data}{section.3}% 38
 \BOOKMARK [2][-]{subsection.3.4}{SQL Datatypes}{section.3}% 39
-\BOOKMARK [2][-]{subsection.3.5}{SQL Operations}{section.3}% 40
-\BOOKMARK [3][-]{subsubsection.3.5.1}{Creating a table}{subsection.3.5}% 41
-\BOOKMARK [3][-]{subsubsection.3.5.2}{Deleting a table}{subsection.3.5}% 42
-\BOOKMARK [1][-]{section.4}{CSS}{}% 43
-\BOOKMARK [2][-]{subsection.4.1}{Cascade}{section.4}% 44
-\BOOKMARK [2][-]{subsection.4.2}{Syntax}{section.4}% 45
-\BOOKMARK [2][-]{subsection.4.3}{Selectors}{section.4}% 46
-\BOOKMARK [2][-]{subsection.4.4}{Pseudo-elements}{section.4}% 47
-\BOOKMARK [2][-]{subsection.4.5}{Box Model}{section.4}% 48
+\BOOKMARK [2][-]{subsection.3.5}{Unique Rows}{section.3}% 40
+\BOOKMARK [2][-]{subsection.3.6}{SQL Operations}{section.3}% 41
+\BOOKMARK [3][-]{subsubsection.3.6.1}{Creating a table}{subsection.3.6}% 42
+\BOOKMARK [3][-]{subsubsection.3.6.2}{Inserting data}{subsection.3.6}% 43
+\BOOKMARK [3][-]{subsubsection.3.6.3}{Updating data}{subsection.3.6}% 44
+\BOOKMARK [3][-]{subsubsection.3.6.4}{Deleting data}{subsection.3.6}% 45
+\BOOKMARK [3][-]{subsubsection.3.6.5}{Selecting data}{subsection.3.6}% 46
+\BOOKMARK [3][-]{subsubsection.3.6.6}{Joining tables}{subsection.3.6}% 47
+\BOOKMARK [2][-]{subsection.3.7}{Flask - SQLAlchemy}{section.3}% 48
+\BOOKMARK [3][-]{subsubsection.3.7.1}{Advantages and Disadvantages of SQLite3}{subsection.3.7}% 49
+\BOOKMARK [3][-]{subsubsection.3.7.2}{Connecting to a SQLite database}{subsection.3.7}% 50
+\BOOKMARK [3][-]{subsubsection.3.7.3}{Populating the database}{subsection.3.7}% 51
+\BOOKMARK [3][-]{subsubsection.3.7.4}{Differences between SQL and SQLAlchemy}{subsection.3.7}% 52
+\BOOKMARK [3][-]{subsubsection.3.7.5}{Executing Queries}{subsection.3.7}% 53
+\BOOKMARK [3][-]{subsubsection.3.7.6}{Database Example \(Adding data, linking\)}{subsection.3.7}% 54
+\BOOKMARK [3][-]{subsubsection.3.7.7}{Add data to the forum}{subsection.3.7}% 55
+\BOOKMARK [3][-]{subsubsection.3.7.8}{Serialisation in Python}{subsection.3.7}% 56
+\BOOKMARK [2][-]{subsection.3.8}{GET request and response}{section.3}% 57
+\BOOKMARK [3][-]{subsubsection.3.8.1}{Response Codes}{subsection.3.8}% 58
+\BOOKMARK [1][-]{section.4}{Internet Protocols}{}% 59
+\BOOKMARK [2][-]{subsection.4.1}{Layers of protocol}{section.4}% 60
+\BOOKMARK [2][-]{subsection.4.2}{IP Address}{section.4}% 61
+\BOOKMARK [3][-]{subsubsection.4.2.1}{IPv4}{subsection.4.2}% 62
+\BOOKMARK [3][-]{subsubsection.4.2.2}{IPv6}{subsection.4.2}% 63
+\BOOKMARK [2][-]{subsection.4.3}{Network Address Translation \(NAT\)}{section.4}% 64
+\BOOKMARK [2][-]{subsection.4.4}{Domain Name System \(DNS\)}{section.4}% 65
+\BOOKMARK [2][-]{subsection.4.5}{Resolving a domain name}{section.4}% 66
+\BOOKMARK [2][-]{subsection.4.6}{Domain Name Caching}{section.4}% 67
+\BOOKMARK [2][-]{subsection.4.7}{Uniform Resource Locators}{section.4}% 68
+\BOOKMARK [2][-]{subsection.4.8}{IP Address, Domain Name and URL}{section.4}% 69
+\BOOKMARK [2][-]{subsection.4.9}{Path}{section.4}% 70
+\BOOKMARK [2][-]{subsection.4.10}{Query string}{section.4}% 71
+\BOOKMARK [2][-]{subsection.4.11}{Fragment}{section.4}% 72
+\BOOKMARK [2][-]{subsection.4.12}{Hypertext Transfer Protocol}{section.4}% 73
+\BOOKMARK [2][-]{subsection.4.13}{Web browser}{section.4}% 74
+\BOOKMARK [2][-]{subsection.4.14}{Stateless-ness}{section.4}% 75
+\BOOKMARK [3][-]{subsubsection.4.14.1}{Query String}{subsection.4.14}% 76
+\BOOKMARK [3][-]{subsubsection.4.14.2}{Cookies}{subsection.4.14}% 77
+\BOOKMARK [3][-]{subsubsection.4.14.3}{Sessions}{subsection.4.14}% 78
+\BOOKMARK [1][-]{section.5}{CSS}{}% 79
+\BOOKMARK [2][-]{subsection.5.1}{Cascade}{section.5}% 80
+\BOOKMARK [2][-]{subsection.5.2}{Syntax}{section.5}% 81
+\BOOKMARK [2][-]{subsection.5.3}{Selectors}{section.5}% 82
+\BOOKMARK [2][-]{subsection.5.4}{Pseudo-elements}{section.5}% 83
+\BOOKMARK [2][-]{subsection.5.5}{Box Model}{section.5}% 84
+\BOOKMARK [1][-]{section.6}{Security}{}% 85
+\BOOKMARK [2][-]{subsection.6.1}{Login}{section.6}% 86
+\BOOKMARK [2][-]{subsection.6.2}{Sanitising Query Strings}{section.6}% 87
+\BOOKMARK [2][-]{subsection.6.3}{HTTPS}{section.6}% 88
+\BOOKMARK [3][-]{subsubsection.6.3.1}{Disadvantages}{subsection.6.3}% 89
+\BOOKMARK [2][-]{subsection.6.4}{The role of certificates}{section.6}% 90
+\BOOKMARK [2][-]{subsection.6.5}{Man-in-the-middle attacks}{section.6}% 91
+\BOOKMARK [2][-]{subsection.6.6}{SQL Injection}{section.6}% 92
+\BOOKMARK [3][-]{subsubsection.6.6.1}{Solution: Escape SQL Characters}{subsection.6.6}% 93
+\BOOKMARK [3][-]{subsubsection.6.6.2}{Solution: Parameterised statements}{subsection.6.6}% 94
+\BOOKMARK [2][-]{subsection.6.7}{Database permissions}{section.6}% 95
+\BOOKMARK [2][-]{subsection.6.8}{Session Hijacking}{section.6}% 96
+\BOOKMARK [2][-]{subsection.6.9}{Cross Site Scripting \(XSS\)}{section.6}% 97
+\BOOKMARK [3][-]{subsubsection.6.9.1}{Solution: Filtering the input using jinja2 markup}{subsection.6.9}% 98
+\BOOKMARK [2][-]{subsection.6.10}{Convert special characters to HTML}{section.6}% 99
+\BOOKMARK [2][-]{subsection.6.11}{Persistent XSS}{section.6}% 100
+\BOOKMARK [1][-]{section.7}{JavaScript}{}% 101
+\BOOKMARK [2][-]{subsection.7.1}{Javascript}{section.7}% 102
+\BOOKMARK [3][-]{subsubsection.7.1.1}{Variables}{subsection.7.1}% 103
+\BOOKMARK [3][-]{subsubsection.7.1.2}{Datatypes}{subsection.7.1}% 104
+\BOOKMARK [3][-]{subsubsection.7.1.3}{Javascript Arrays}{subsection.7.1}% 105
+\BOOKMARK [3][-]{subsubsection.7.1.4}{Javascript objects}{subsection.7.1}% 106
+\BOOKMARK [3][-]{subsubsection.7.1.5}{Javascript functions}{subsection.7.1}% 107
+\BOOKMARK [3][-]{subsubsection.7.1.6}{Control Flow}{subsection.7.1}% 108
+\BOOKMARK [3][-]{subsubsection.7.1.7}{Finding an element in Javascript}{subsection.7.1}% 109
+\BOOKMARK [3][-]{subsubsection.7.1.8}{Changing HTML content}{subsection.7.1}% 110
+\BOOKMARK [3][-]{subsubsection.7.1.9}{Changing attributes of an element}{subsection.7.1}% 111
+\BOOKMARK [3][-]{subsubsection.7.1.10}{Changing Styling of an Element}{subsection.7.1}% 112
+\BOOKMARK [3][-]{subsubsection.7.1.11}{Responding to events}{subsection.7.1}% 113
+\BOOKMARK [3][-]{subsubsection.7.1.12}{Event Handling Code}{subsection.7.1}% 114
+\BOOKMARK [3][-]{subsubsection.7.1.13}{Form Validation}{subsection.7.1}% 115
+\BOOKMARK [2][-]{subsection.7.2}{The HTML DOM}{section.7}% 116
+\BOOKMARK [1][-]{section.8}{jQuery}{}% 117
+\BOOKMARK [2][-]{subsection.8.1}{Objects}{section.8}% 118
+\BOOKMARK [2][-]{subsection.8.2}{Adding/removing from the DOM}{section.8}% 119
+\BOOKMARK [2][-]{subsection.8.3}{DOM traversal}{section.8}% 120
+\BOOKMARK [2][-]{subsection.8.4}{jQuery Styling}{section.8}% 121
+\BOOKMARK [2][-]{subsection.8.5}{jQuery objects are not live}{section.8}% 122
+\BOOKMARK [2][-]{subsection.8.6}{Events in jQuery}{section.8}% 123
+\BOOKMARK [2][-]{subsection.8.7}{Event Bubbling in JS}{section.8}% 124
+\BOOKMARK [2][-]{subsection.8.8}{Event Capturing}{section.8}% 125
+\BOOKMARK [2][-]{subsection.8.9}{Animation}{section.8}% 126
+\BOOKMARK [1][-]{section.9}{AJAX \(Json and XML\)}{}% 127
+\BOOKMARK [2][-]{subsection.9.1}{Extensible Markup Language \(XML\)}{section.9}% 128
+\BOOKMARK [3][-]{subsubsection.9.1.1}{Attributes}{subsection.9.1}% 129
+\BOOKMARK [3][-]{subsubsection.9.1.2}{XML Sample}{subsection.9.1}% 130
+\BOOKMARK [3][-]{subsubsection.9.1.3}{Well-formed XML}{subsection.9.1}% 131
+\BOOKMARK [3][-]{subsubsection.9.1.4}{Defining data in XML}{subsection.9.1}% 132
+\BOOKMARK [2][-]{subsection.9.2}{JavaScript Object Notation \(JSON\)}{section.9}% 133
+\BOOKMARK [3][-]{subsubsection.9.2.1}{Datatypes}{subsection.9.2}% 134
+\BOOKMARK [3][-]{subsubsection.9.2.2}{Syntax Rules}{subsection.9.2}% 135
+\BOOKMARK [3][-]{subsubsection.9.2.3}{Example}{subsection.9.2}% 136
+\BOOKMARK [3][-]{subsubsection.9.2.4}{How AJAX Works}{subsection.9.2}% 137
+\BOOKMARK [3][-]{subsubsection.9.2.5}{The XMLHttpRequest Object}{subsection.9.2}% 138
+\BOOKMARK [3][-]{subsubsection.9.2.6}{Sending an XMLHttpRequest to the server}{subsection.9.2}% 139
+\BOOKMARK [3][-]{subsubsection.9.2.7}{Keeping track of the request}{subsection.9.2}% 140
+\BOOKMARK [3][-]{subsubsection.9.2.8}{Processing the server response}{subsection.9.2}% 141
+\BOOKMARK [3][-]{subsubsection.9.2.9}{Example}{subsection.9.2}% 142
+\BOOKMARK [3][-]{subsubsection.9.2.10}{Handling JSON responses}{subsection.9.2}% 143
+\BOOKMARK [3][-]{subsubsection.9.2.11}{What about jQuery}{subsection.9.2}% 144
+\BOOKMARK [1][-]{section.10}{Web Development Hardware and Design}{}% 145
+\BOOKMARK [2][-]{subsection.10.1}{Usability and Accessibility}{section.10}% 146
+\BOOKMARK [3][-]{subsubsection.10.1.1}{Golden rules of Interaction design}{subsection.10.1}% 147
+\BOOKMARK [3][-]{subsubsection.10.1.2}{Software development lifecycle}{subsection.10.1}% 148
+\BOOKMARK [3][-]{subsubsection.10.1.3}{Requirements capture}{subsection.10.1}% 149
+\BOOKMARK [3][-]{subsubsection.10.1.4}{Types of requirements}{subsection.10.1}% 150
+\BOOKMARK [3][-]{subsubsection.10.1.5}{Specification}{subsection.10.1}% 151
+\BOOKMARK [3][-]{subsubsection.10.1.6}{Usability}{subsection.10.1}% 152
+\BOOKMARK [3][-]{subsubsection.10.1.7}{Usability Concepts}{subsection.10.1}% 153
+\BOOKMARK [3][-]{subsubsection.10.1.8}{Feedback}{subsection.10.1}% 154
+\BOOKMARK [3][-]{subsubsection.10.1.9}{Mapping}{subsection.10.1}% 155
+\BOOKMARK [3][-]{subsubsection.10.1.10}{Consistency}{subsection.10.1}% 156
+\BOOKMARK [3][-]{subsubsection.10.1.11}{Usability Heuristics}{subsection.10.1}% 157
+\BOOKMARK [3][-]{subsubsection.10.1.12}{Accessibility}{subsection.10.1}% 158
+\BOOKMARK [3][-]{subsubsection.10.1.13}{Accessibility Needs }{subsection.10.1}% 159
+\BOOKMARK [3][-]{subsubsection.10.1.14}{Assistive technologies}{subsection.10.1}% 160
+\BOOKMARK [3][-]{subsubsection.10.1.15}{WCAG 2.1}{subsection.10.1}% 161
+\BOOKMARK [2][-]{subsection.10.2}{Evaluation and Testing}{section.10}% 162
+\BOOKMARK [3][-]{subsubsection.10.2.1}{Formative vs Summative Evaluation}{subsection.10.2}% 163
+\BOOKMARK [3][-]{subsubsection.10.2.2}{Measuring usability}{subsection.10.2}% 164
+\BOOKMARK [2][-]{subsection.10.3}{Web architecture and performance}{section.10}% 165
+\BOOKMARK [3][-]{subsubsection.10.3.1}{Software Stack}{subsection.10.3}% 166
+\BOOKMARK [3][-]{subsubsection.10.3.2}{Servers}{subsection.10.3}% 167
+\BOOKMARK [3][-]{subsubsection.10.3.3}{Cloud based infrastructure}{subsection.10.3}% 168
+\BOOKMARK [3][-]{subsubsection.10.3.4}{Additional software components}{subsection.10.3}% 169
+\BOOKMARK [3][-]{subsubsection.10.3.5}{Performance}{subsection.10.3}% 170
+\BOOKMARK [3][-]{subsubsection.10.3.6}{Typical application growth path}{subsection.10.3}% 171
+\BOOKMARK [1][-]{section.11}{Supporting Mobile}{}% 172
+\BOOKMARK [2][-]{subsection.11.1}{Responsive web design}{section.11}% 173
+\BOOKMARK [2][-]{subsection.11.2}{CSS Layout and Flexbox}{section.11}% 174
+\BOOKMARK [2][-]{subsection.11.3}{Creating a separate mobile layout}{section.11}% 175
+\BOOKMARK [3][-]{subsubsection.11.3.1}{Pros}{subsection.11.3}% 176
+\BOOKMARK [3][-]{subsubsection.11.3.2}{Cons}{subsection.11.3}% 177
+\BOOKMARK [1][-]{section.12}{Being a web developer}{}% 178
+\BOOKMARK [2][-]{subsection.12.1}{Testing}{section.12}% 179
+\BOOKMARK [3][-]{subsubsection.12.1.1}{Functional Testing}{subsection.12.1}% 180
+\BOOKMARK [3][-]{subsubsection.12.1.2}{Usability Testing}{subsection.12.1}% 181
+\BOOKMARK [3][-]{subsubsection.12.1.3}{Compatibility Testing}{subsection.12.1}% 182
+\BOOKMARK [3][-]{subsubsection.12.1.4}{Performance Testing}{subsection.12.1}% 183
+\BOOKMARK [3][-]{subsubsection.12.1.5}{Security Testing}{subsection.12.1}% 184
+\BOOKMARK [3][-]{subsubsection.12.1.6}{When to run tests}{subsection.12.1}% 185

@@ -1,39 +1,59 @@
-\contentsline {section}{\numberline {1}What is Functional Programming}{2}{section.1}%
-\contentsline {subsection}{\numberline {1.1}History}{2}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Today}{2}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Programming Paradigms}{3}{subsection.1.3}%
-\contentsline {subsection}{\numberline {1.4}What Haskell is good for}{3}{subsection.1.4}%
-\contentsline {subsubsection}{\numberline {1.4.1}Web Services}{3}{subsubsection.1.4.1}%
-\contentsline {subsubsection}{\numberline {1.4.2}Domain-specific language}{3}{subsubsection.1.4.2}%
-\contentsline {subsubsection}{\numberline {1.4.3}Games}{4}{subsubsection.1.4.3}%
-\contentsline {subsubsection}{\numberline {1.4.4}System Software}{4}{subsubsection.1.4.4}%
-\contentsline {section}{\numberline {2}Basics of Haskell}{4}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Modules}{4}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Imports}{4}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Definitions}{5}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Lambda Notation and Mapping notations}{5}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Partial Functions}{5}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Smooth Operator}{5}{subsection.2.6}%
-\contentsline {subsection}{\numberline {2.7}Difference between a function and an operator}{6}{subsection.2.7}%
-\contentsline {subsection}{\numberline {2.8}Pattern Matching}{6}{subsection.2.8}%
-\contentsline {section}{\numberline {3}Data Types}{6}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Compiler}{6}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Compiling}{7}{subsubsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}Types}{7}{subsubsection.3.1.2}%
-\contentsline {subsubsection}{\numberline {3.1.3}Type Declarations}{7}{subsubsection.3.1.3}%
-\contentsline {subsubsection}{\numberline {3.1.4}Function types}{8}{subsubsection.3.1.4}%
-\contentsline {subsubsection}{\numberline {3.1.5}Polymorphism}{8}{subsubsection.3.1.5}%
-\contentsline {section}{\numberline {4}Tuples and Lists}{9}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Tuples}{9}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Types of Tuples}{9}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Polymorphic Functions}{9}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Currying}{10}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Lists}{10}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}Head and Tail}{10}{subsection.4.6}%
-\contentsline {subsection}{\numberline {4.7}List Comprehensions}{11}{subsection.4.7}%
-\contentsline {section}{\numberline {5}Map and Filter}{11}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Filtering}{11}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Mapping}{12}{subsection.5.2}%
+\contentsline {section}{\numberline {1}What is Functional Programming}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}History}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Today}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Programming Paradigms}{4}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}What Haskell is good for}{4}{subsection.1.4}%
+\contentsline {subsubsection}{\numberline {1.4.1}Web Services}{4}{subsubsection.1.4.1}%
+\contentsline {subsubsection}{\numberline {1.4.2}Domain-specific language}{4}{subsubsection.1.4.2}%
+\contentsline {subsubsection}{\numberline {1.4.3}Games}{5}{subsubsection.1.4.3}%
+\contentsline {subsubsection}{\numberline {1.4.4}System Software}{5}{subsubsection.1.4.4}%
+\contentsline {section}{\numberline {2}Haskell Files}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Defining functions}{5}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Lambda Functions}{5}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Arguments}{6}{subsubsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.2}Operators}{6}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Pattern Matching}{6}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Module}{7}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Compiling}{7}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Types}{8}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Polymorphism}{8}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Tuples}{9}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Currying}{9}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Lists}{10}{subsection.3.5}%
+\contentsline {section}{\numberline {4}List Comprehensions}{11}{section.4}%
+\contentsline {section}{\numberline {5}Map and filter}{11}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Filter}{11}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Map}{12}{subsection.5.2}%
 \contentsline {subsection}{\numberline {5.3}Ranges}{12}{subsection.5.3}%
 \contentsline {section}{\numberline {6}Type Classes}{12}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Eq class}{12}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.1}Implementation}{13}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Using type classes}{13}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Different Type classes}{13}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}Eq}{13}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}Num}{13}{subsubsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.3}Ord}{14}{subsubsection.6.3.3}%
+\contentsline {subsubsection}{\numberline {6.3.4}Read and Show}{14}{subsubsection.6.3.4}%
+\contentsline {subsubsection}{\numberline {6.3.5}Integral and Floating}{14}{subsubsection.6.3.5}%
+\contentsline {subsubsection}{\numberline {6.3.6}Enum}{14}{subsubsection.6.3.6}%
+\contentsline {subsubsection}{\numberline {6.3.7}Foldable}{14}{subsubsection.6.3.7}%
+\contentsline {subsection}{\numberline {6.4}Referential Transparency}{15}{subsection.6.4}%
+\contentsline {section}{\numberline {7}Recursion}{15}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Recursion on lists}{15}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Explicit Recursion and Implicit Recursion}{15}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Folding}{16}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Functor}{17}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Laws}{17}{subsection.7.5}%
+\contentsline {subsubsection}{\numberline {7.5.1}Functor laws}{17}{subsubsection.7.5.1}%
+\contentsline {subsubsection}{\numberline {7.5.2}Associativity}{17}{subsubsection.7.5.2}%
+\contentsline {subsubsection}{\numberline {7.5.3}Operator Precedence}{18}{subsubsection.7.5.3}%
+\contentsline {section}{\numberline {8}Let and Where}{18}{section.8}%
+\contentsline {section}{\numberline {9}Data}{19}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Constructors with parameters}{19}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Polymorphic Data types}{20}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Deriving type classes}{20}{subsection.9.3}%
+\contentsline {section}{\numberline {10}Combinators}{21}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Function Composition}{21}{subsection.10.1}%
+\contentsline {section}{\numberline {11}Algebraic Data Types}{21}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Either}{22}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Either}{22}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.3}Recursive data types}{22}{subsection.11.3}%

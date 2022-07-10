@@ -1,0 +1,89 @@
+\documentclass[a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{listings}
+\usepackage{lmodern}
+\usepackage{amsfonts}
+\usepackage{titling}
+\usepackage{lipsum}
+\usepackage[left=1in, right=1in, bottom=1in, top=1in]{geometry}
+\usepackage{amsthm}
+\usepackage{tcolorbox}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{makeidx}
+\usepackage{tikz}
+\usepackage{cases}
+\usepackage{apacite}
+\usepackage{tkz-berge}
+\usepackage{url}
+\usepackage{tgtermes}
+\usepackage{sectsty}
+\usepackage{subcaption}
+\usepackage{setspace}
+\usepackage{float}
+\usepackage{amsmath, amssymb}
+
+
+% figure support
+\usepackage{import}
+\usepackage{xifthen}
+\pdfminorversion=7
+\usepackage{pdfpages}
+\usepackage{transparent}
+\usepackage{color}
+\newcommand{\incfig}[2][1]{%
+    \def\svgwidth{#1\columnwidth}
+    \import{./figures/}{#2.pdf_tex}
+}
+
+%mathstyling
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem*{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}[section]
+\newtheorem{conj}{Conjecture}[section]
+\newtheorem{exmp}{Example}[section]
+\newtheorem{axiom}{Axiom}
+\theoremstyle{remark}
+\newtheorem*{rem}{Remark}
+\newtheorem*{note}{Note}
+
+\definecolor{darkgreen}{rgb}{0.0, 0.5, 0.0}
+
+\pdfsuppresswarningpagegroup=1
+\lstset{
+tabsize = 4, %% set tab space width
+showstringspaces = false, %% prevent space marking in strings, string is defined as the text that is generally printed directly to the console
+numbers = left, %% display line numbers on the left
+commentstyle = \color{darkgreen}, %% set comment color
+keywordstyle = \color{blue}, %% set keyword color
+stringstyle = \color{red}, %% set string color
+rulecolor = \color{black}, %% set frame color to avoid being affected by text color
+basicstyle = \small \ttfamily , %% set listing font and size
+breaklines = true, %% enable line breaking
+numberstyle = \tiny,
+  frame=none,
+  xleftmargin=2pt,
+  stepnumber=1,
+  belowcaptionskip=\bigskipamount,
+  captionpos=b,
+  escapeinside={*'}{'*},
+  language=haskell,
+  tabsize=2,
+  emphstyle={\bf},
+  showspaces=false,
+  columns=flexible,
+  showstringspaces=false,
+  morecomment=[l]\%,
+}
+\begin{document}
+	
+\end{document}
