@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.1.10)  25 APR 2022 21:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.1.10)  17 JUL 2022 23:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -861,10 +861,10 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 Package epstopdf Info: Source file: <crest_black.eps>
-(epstopdf)                    date: 2022-01-09 22:36:06
+(epstopdf)                    date: 2022-01-10 01:36:06
 (epstopdf)                    size: 71748 bytes
 (epstopdf)             Output file: <crest_black-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-01-09 22:36:06
+(epstopdf)                    date: 2022-01-10 01:36:06
 (epstopdf)                    size: 21274 bytes
 (epstopdf)             Command: <repstopdf --outfile=crest_black-eps-converted-to.pdf crest_black.eps>
 (epstopdf)             \includegraphics on input line 84.
@@ -1387,4 +1387,189 @@ an alignment. Proceed, and I'll ignore this case.
 [22] (./figures/hasseexample.pdf_tex
 <./figures/hasseexample.pdf, id=750, page=1, 682.86612pt x 341.43306pt>
 File: ./figures/hasseexample.pdf Graphic file (type pdf)
-<use .
+<use ./figures/hasseexample.pdf, page 1>
+Package pdftex.def Info: ./figures/hasseexample.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 421.66995pt x 210.83708pt.
+)
+./Notes.tex:929: Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.929 \subsubsection
+                    {Hasse Diagrams}
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+[23] (./figures/hassediagram.pdf_tex
+<./figures/hassediagram.pdf, id=763, page=1, 682.86612pt x 341.43306pt>
+File: ./figures/hassediagram.pdf Graphic file (type pdf)
+<use ./figures/hassediagram.pdf, page 1>
+Package pdftex.def Info: ./figures/hassediagram.pdf , page1 used on input line 57.
+(pdftex.def)             Requested size: 421.66995pt x 210.83708pt.
+<./figures/hassediagram.pdf, id=764, page=2, 682.86612pt x 341.43306pt>
+File: ./figures/hassediagram.pdf Graphic file (type pdf)
+<use ./figures/hassediagram.pdf, page 2>
+Package pdftex.def Info: ./figures/hassediagram.pdf , page2 used on input line 63.
+(pdftex.def)             Requested size: 421.66995pt x 210.83708pt.
+)
+./Notes.tex:944: Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.944 \subsection
+                 {Planar Graphs}
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+[24 <./figures/hasseexample.pdf>]
+./Notes.tex:964: Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.964 \end{tcolorbox}
+                     
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+[25 <./figures/hassediagram.pdf> <./figures/hassediagram.pdf>]
+Underfull \hbox (badness 1112) in paragraph at lines 999--1000
+[]$\OML/lmm/m/it/10 G$ \T1/qtm/m/n/10 can be ob-tained from $\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 V; \U/msb/m/n/10 ?\OT1/lmr/m/n/10 )$ \T1/qtm/m/n/10 by adding all the edges in $\OML/lmm/m/it/10 E$\T1/qtm/m/n/10 . Sup-pose these edges are
+ []
+
+./Notes.tex:1019: Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.1019 \end{tcolorbox}
+                      
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+[26]
+./Notes.tex:1035: Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.1035 F
+        or example, if we consider the toss of a coin twice, then we can eit...
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+[27]
+./Notes.tex:1079: Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.1079 \end{tcolorbox}
+                      
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+[28]
+./Notes.tex:1124: Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.1124 \end{tcolorbox}
+                      
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+[29]
+./Notes.tex:1134: Undefined control sequence.
+<recently read> \Oemega 
+                        
+l.1134 $\Oemega
+                = \{h,t\}$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Notes.tex:1167: Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.1167 H
+        owever, the notion of 'average' is complicated. Whilst expectation d...
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+[30]
+./Notes.tex:1208: Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.1208 \subsubsection
+                     {Variance and Standard Deviation}
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+[31]
+./Notes.tex:1224: Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.1224 \newpage
+               
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+[32]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 1226.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1226.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\exists' on input line 1226.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1226.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1226.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\forall' on input line 1226.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1226.
+
+
+AED: lastpage setting LastPage
+./Notes.tex:1245: Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.1245 		\end{document}
+                       
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+[33]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1245.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1245.
+ (./Notes.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1245.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1245.
+Package rerunfilecheck Info: File `Notes.out' has not changed.
+(rerunfilecheck)             Checksum: 082CBAD81CBED41511505C0C81ED928C;6157.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 27134 strings out of 481239
+ 500935 string characters out of 5920377
+ 868034 words of memory out of 5000000
+ 41487 multiletter control sequences out of 15000+600000
+ 577841 words of font info for 56 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 62i,21n,100p,829b,607s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi5.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr5.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmri.pfb>
+Output written on Notes.pdf (34 pages, 419940 bytes).
+PDF statistics:
+ 1028 PDF objects out of 1200 (max. 8388607)
+ 959 compressed objects within 10 object streams
+ 349 named destinations out of 1000 (max. 500000)
+ 781 words of extra memory for PDF output out of 10000 (max. 10000000)
+

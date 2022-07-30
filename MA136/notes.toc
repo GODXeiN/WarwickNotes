@@ -1,0 +1,8 @@
+\contentsline {section}{\numberline {1}Requirements}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Functions}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Matrices}{2}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Elements of Abstract Algebra}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Binary operation}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Commutativity}{5}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Associativity}{5}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Groups}{5}{subsection.2.4}%
